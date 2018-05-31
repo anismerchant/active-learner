@@ -1,6 +1,6 @@
 var myArray1 = new Array();
 
-//push() function: add a new element to the end of an array.
+//push() method: add a new element to the end of an array.
 myArray1.push('Apples');
 myArray1.push('Oranges');
 myArray1.push('Pears');
@@ -12,7 +12,7 @@ console.log(length);
 // output: 4
 
 
-//push() function replaces and add values at index specified.
+//push() method: replaces and add values at index specified.
 var myArray2 = ["Pinapples", "Straberries", "Blueberries"];
 myArray2[1] = "Cherries";
 myArray2[3] = "Kiwi";
@@ -20,7 +20,7 @@ console.log(myArray2);
 //output:  [ 'Pinapples', 'Cherries', 'Blueberries', 'Kiwi' ]
 
 
-//pop() function: removes the last element from an array and returns that value.
+//pop() method: removes the last element from an array and returns that value.
 var myArray3 = ["Apples", "Oranges", "Pears"];
 var lastElement = myArray3.pop();
 console.log(lastElement);
@@ -29,7 +29,7 @@ console.log(myArray3);
 //output: [ 'Apples', 'Oranges' ]
 
 
-/* splicing() function: changes the original array by adding or removing elements from an Array.
+/* splicing() method: changes the original array by adding or removing elements from an Array.
 The function takes three parameters
 (1) The index you will add/remove elements at
 (2) The number of elements you wish to remove (set as 0 if you are not going to remove any
