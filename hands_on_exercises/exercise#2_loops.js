@@ -18,7 +18,7 @@ Passing this string to console.log should show something like this:
 /*PSEUDO CODE
 1. logs #, followed by a space, then #, followed by a space, then #, followed by space, then #, followed by space, newline
 2. logs space space, followed by #, then space, and so forth
-3. points 1 and 3 are repeached four times
+3. points 1 and 3 are repeated four times
 
 */
 
