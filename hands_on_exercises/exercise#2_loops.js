@@ -25,8 +25,8 @@ Passing this string to console.log should show something like this:
 //SOLUTION 0
 function chessBoard(character) {
     var rows = '';
-    space = " ";
-    piece = character;
+    var space = " ";
+    var piece = character;
     for (z=0; z < 8; z++) {
         for (x=0; x < 4; x++) {
             rows += piece;
@@ -47,8 +47,8 @@ chessBoard('&')
 
 //SOLUTION 1
 var rows = '';
-space = " ";
-piece = "#";
+var space = " ";
+var piece = "#";
 for (z=0; z < 8; z++) {
     for (x=0; x < 4; x++) {
         rows += piece;
@@ -67,8 +67,8 @@ console.log('This is my solution 1: ' + '\n' + rows + '\n');
 
 //SOLUTION 2
 var rows = [];
-space = " ";
-piece = "#";
+var space = " ";
+var piece = "#";
 for (z=0; z < 8; z++) {
     for (x=0; x < 4; x++) {
         rows.push(piece);
@@ -90,8 +90,8 @@ console.log('This is my solution 2: ' + '\n' + rows.join('') + '\n');
 console.log('This is my solution 3: ');
 var rowOne = [];
 var rowTwo = [];
-space = " ";
-piece = "#";
+var space = " ";
+var piece = "#";
 for (x=0; x < 4; x++) {
     rowOne.push(piece);
     for (y=0; y < 1; y++) {
@@ -119,8 +119,8 @@ console.log('\n')
 console.log('This is my solution 4: ');
 var rowOne = [];
 var rowTwo = [];
-space = " ";
-piece = "#";
+var space = " ";
+var piece = "#";
 for (x=0; x < 4; x++) {
     rowOne.push(piece);
     for (y=0; y < 1; y++) {
