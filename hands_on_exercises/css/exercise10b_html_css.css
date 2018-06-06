@@ -1,0 +1,102 @@
+html, body {
+margin: 0px;
+padding: 0px;
+border: 0px;
+}
+
+#container {
+    width: 1000px;
+    height:1000px;
+    margin: 0px;
+    padding: 0px;
+    postion: relative;
+}
+
+.box {
+    background-color: red;
+}
+
+#top-left {
+    display: inline-block;
+    margin:0px 0px 20px 0px;
+    padding: 0px;
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+#top-center {
+    display: inline-block;
+    margin:0px 20px 20px 20px;
+    padding: 0px;
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+#top-right {
+    display: inline-block;
+    padding: 0px;
+    margin:0px 0px 20px 0px;
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+/*
+Need clear selector only if container width in increased;
+compare this solution with solution in files:
+exercise10a_html_css.html
+exercise10a_html_css.css
+*/
+
+   div.clear {
+    clear: left;
+}
+
+#center-left {
+    margin:0px 0px 20px 0px;
+    float: left;
+    width: 150px;
+    height: 150px;
+}
+
+#center {
+    margin:0px 20px 20px 20px;
+    float: left;
+    width: 150px;
+    height: 150px;
+}
+
+#center-right {
+    margin:0px 0px 20px 0px;
+    float: left;
+    width: 150px;
+    height: 150px;
+}
+
+#bottom-left {
+    margin:0px 0px 0px 0px;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 340px;
+}
+
+#bottom-center {
+    margin:0px 0px 0px 0px;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 340px;
+    left: 170px;
+}
+
+#bottom-right {
+    margin:0px 0px 0px 0px;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 340px;
+    left: 340px;
+}
