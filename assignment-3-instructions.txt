@@ -1,0 +1,8 @@
+Assignment 3: HTML & CSS
+This assignment will test your working knowledge of HTML and CSS.
+
+Instructions
+Create an HTML file and a CSS file, respectively named resume.html and styles.css.
+Connect the CSS file to the HTML file using a link element.
+Write HTML and CSS code to recreate your resume (which is probably in a word or pdf format) as a webpage.
+Your solution does not need to be perfect. Creating webpages with perfect styling takes a lot of practice. We're looking to see how much time and effort you've put into practicing HTML and CSS. It's okay to not be a perfect replica of your resume hardcopy, please hand in your best effort!
