@@ -1,14 +1,14 @@
 html, body {
-margin: 0px;
-padding: 0px;
-border: 0px;
+margin: 0;
+padding: 0;
+border: 0;
 }
 
 #container {
     width: 490px;
     height: 490px;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     border: 1px solid black;
     postion: relative;
 }
@@ -19,51 +19,51 @@ border: 0px;
 
 #top-left {
     display: inline-block;
-    margin:0px 0px 20px 0px;
-    padding: 0px;
+    margin:0 0 20px 0;
+    padding: 0;
     width: 150px;
     height: 150px;
 }
 
 #top-center {
     display: inline-block;
-    margin:0px 20px 20px 20px;
-    padding: 0px;
+    margin:0 20px 20px 20px;
+    padding: 0;
     width: 150px;
     height: 150px;
 }
 
 #top-right {
     display: inline-block;
-    padding: 0px;
-    margin:0px 0px 20px 0px;
+    padding: 0;
+    margin:0 0 20px 0;
     width: 150px;
     height: 150px;
 }
 
 #center-left {
-    margin:0px 0px 20px 0px;
+    margin:0 0 20px 0;
     float: left;
     width: 150px;
     height: 150px;
 }
 
 #center {
-    margin:0px 20px 20px 20px;
+    margin:0 20px 20px 20px;
     float: left;
     width: 150px;
     height: 150px;
 }
 
 #center-right {
-    margin:0px 0px 20px 0px;
+    margin:0 0 20px 0;
     float: left;
     width: 150px;
     height: 150px;
 }
 
 #bottom-left {
-    margin:0px 0px 0px 0px;
+    margin:0 0 0 0;
     width: 150px;
     height: 150px;
     position: absolute;
@@ -71,7 +71,7 @@ border: 0px;
 }
 
 #bottom-center {
-    margin:0px 0px 0px 0px;
+    margin:0 0 0 0;
     width: 150px;
     height: 150px;
     position: absolute;
@@ -80,7 +80,7 @@ border: 0px;
 }
 
 #bottom-right {
-    margin:0px 0px 0px 0px;
+    margin:0 0 0 0;
     width: 150px;
     height: 150px;
     position: absolute;
