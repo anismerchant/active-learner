@@ -1,0 +1,22 @@
+.box {
+    background-color: darkgray;
+    color: white;
+    width: 200px;
+    padding: 10px 20px;
+    border: 2px dotted;
+}
+
+section {
+    margin: 30px;
+}
+
+#img-1 {
+    width: 200px;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+#img-2 {
+    width: 200px;
+    border: 10px solid lightgray;
+}
