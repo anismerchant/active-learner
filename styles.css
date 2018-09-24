@@ -1,0 +1,80 @@
+html, body {
+margin: 0px;
+padding: 0px;
+border: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    border: 1px solid black;
+    padding: 25px 50px 28px;
+    margin: 50px 200px;
+    border: 1px solid rgb(221, 221, 221) !important;
+    max-width: 564px;
+    margin-left: auto;
+    margin-right: auto;
+    visibility: visible;
+    min-height: 887.765px;
+}
+
+#top {
+    border-top: 0px;
+}
+
+section {
+    margin: 20px 0px 0px 0px;
+    border-top: 1px solid #DDDCE2;
+    border-bottom: none !important;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 700;
+    border-top: 5px solid #191970;
+    border-bottom: none !important;
+    padding: 15px 0px 0px 0px;
+    display: block;
+    margin: 20px 0px 0px 0px;
+
+}
+
+h2 {
+    text-decoration: underline;
+    color: #191970;
+}
+
+h4 {
+    margin: 20px 0px 0px 0px;
+    padding:5px 0px 2px 0px;
+}
+
+h5 {
+    margin: 0px;
+    padding:2px 0px;
+}
+
+.resp-heading {
+    margin: 20px 0px 0px 0px;
+}
+
+a {
+    display: block;
+    text-align: center;
+}
+
+ul {
+    margin: 0px;
+}
+ul li {
+    padding-left: 5px;
+    margin: 0 0 0 -20px;
+}
+
+span {
+    font-weight: bold;
+}
