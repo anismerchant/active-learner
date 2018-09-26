@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Activity: Create a Basic Web Page</title>
+    <style>
+        #fullName {
+            font-size: 18px;
+            font-weight: normal;
+            font-family: Helvetica, sans-serif;
+            color: teal;
+        }
+
+        section {
+            border: 1px solid beige;
+            border-radius: 10px;
+            background-color: beige;
+            margin-bottom: 10px;
+            padding: 0 20px 0 20px;
+        }
+
+        .aboutMe {
+            color: teal;
+        }
+
+        h1 {
+            color: rgb(41,194,190);
+            text-decoration: underline;
+        }
+
+        a:link {
+            color: teal;
+        }
+        
+        img {
+            border: 3px solid rgb(190,199,132);
+            width: 20%;
+            height: auto;
+        }
+
+    </style>
 </head>
 <body>
     <section>
@@ -12,9 +48,9 @@
             <h1>BIO</h1>
         </header>
         <main>
-            <p>Anis M.</p>
+            <p id="fullName">Anis M.</p>
             <img src="./img/anis.jpg" alt="anis-photo"/>
-            <p>
+            <p class="aboutMe">
                 Enjoy building stuff whether it's a character on stage or web-applications that connect
                 artists from around the globe. Spend considerable amount of time learning web-technologies.
                 Calisthenics enthusiast with weakness for chicken wings and pizza. And when I'm not exploring
@@ -30,7 +66,7 @@
             <h1>5 HOBBIES</h1>
         </header>
         <main>
-            <ul>
+            <ul class="aboutMe">
                 <li>Becoming a better coder everyday</li>
                 <li>Calisthenics</li>
                 <li>Reading short stories (and writing my own)</li>
