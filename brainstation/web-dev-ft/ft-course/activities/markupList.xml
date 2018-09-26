@@ -4,20 +4,24 @@
     <director>Denis Villeneuve</director>
     <genre>Drama</genre>
     <rating>R</rating>
-    <actresses>
+    <actress> 
         <name>Isabela Moner</name>
         <age>17</age>
         <height>1.55 m</height>
+    </actress>
+    <actress> 
         <name>Catherine Keener</name>
         <age>59</age>
         <height>1.73 m</height>
-    </actresses>
-    <actors>
+    </actress>
+    <actor>
         <name>Benicio Del Toro</name>
         <age>51</age>
         <height>1.88 m</height>
+    </actor>
+    <actor>
         <name>Josh Brolin</name>
         <age>50</age>
         <height>1.78 m</height>
-    </actors>    
+    </actor>
 </movie>
