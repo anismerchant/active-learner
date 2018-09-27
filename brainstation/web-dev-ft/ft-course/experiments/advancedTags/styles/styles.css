@@ -1,0 +1,33 @@
+header {
+    border: 1px solid red; 
+}
+
+nav {
+    border: 1px solid blue;
+    margin: 5px 5px 5px 5px;
+}
+
+article {
+    border: 1px solid red;
+    margin: 15px 0; 
+}
+
+figure {
+    border: 1px solid blue;
+    margin: 5px 5px 5px 5px;
+}
+
+figcaption {
+    border: 1px solid green;
+    margin: 5px 5px 5px 5px;
+}
+
+aside {
+    border: 1px solid red;
+    margin: 0 0 15px 0; 
+}
+
+footer {
+    border: 1px solid red;
+    margin: 0 0 15px 0; 
+}
