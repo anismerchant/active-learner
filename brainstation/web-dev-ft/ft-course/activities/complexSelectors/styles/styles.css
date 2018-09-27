@@ -1,0 +1,43 @@
+.menu > ul {
+   color: blue;
+}
+
+div.menu {
+    font-size: 1rem;
+    font-family: cursive, monospace, sans-serif;
+}
+
+.list li {
+    background-color: red;
+}
+
+div.list li {
+    border: 2px dashed black;
+}
+
+.no-flex-zone > div {
+    border: 2px dotted green;
+    margin-bottom: 1rem;
+}
+
+.fun-time {
+    color: orange;
+    margin-bottom: 1rem;
+}
+
+.fun-time span {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+div.jumbotron div div > span {
+    color: blueviolet;
+}
+
+div > p, div > span.like-a-p {
+    border: 2px solid black;
+}
+
+.add-space {
+    margin-bottom: 1rem;
+}

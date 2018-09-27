@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Complex Selectors Activity</title>
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />    
+    <link rel="author" type="text/plain" href="starterCodeAuthor.txt" />    
+</head>
+<body>
+    <div class="menu">
+
+        <h1>Drinks</h1>
+    
+        <ul class="list">
+    
+            <li>Pour-over</li>
+    
+            <li>Espresso</li>
+    
+            <li>Tea</li>
+    
+            <li>Matcha</li>
+    
+        </ul>
+    
+        
+        <h1>Scones</h1>
+    
+        <ul class="list">
+    
+            <li>spinach</li>
+    
+            <li>blueberry</li>
+    
+            <li>butter</li>
+    
+            <li>strawberry</li>
+    
+        </ul>
+    
+        <div class="list">
+    
+            <h1>Specials</h1>
+    
+                <ul>
+    
+                    <li>Pumpkin Spice Latte</li>
+    
+                    <li>Turmeric Tea</li>
+    
+                </ul>
+    
+        </div>
+        <div class="no-flex-zone">
+            <div class="jumbotron">
+                Child One: I'm a direct child of 'no-flex-zone'.
+                <div>Descendant of no-flex-zone.</div>
+                <div class="add-space">
+                    I'm a child of Jumbotron.                     
+                    <div class="add-space">
+                        I'm a child of a div who is a direct child of jumbotron. 
+                        <span>And I'm a descendant of jumbotron and no-flex-zone.</span>
+                    </div>
+                    <div>
+                        <span class="like-a-p">And I'm a descendant of jumbotron, and I'm 'like-a-p'.</span>
+                    </div>                     
+                </div>
+                <span class="like-a-p">Direct child of jumbotron, and I'm 'like-a-p'.</span>                
+            </div>
+            <div>
+                Child Two: I'm a direct child of 'no-flex-zone'.
+            </div>
+            <div class="fun-time">
+                Child Three: I'm a direct child of 'no-flex-zone'. <span>And I'm a part of 'fun-time'.</span>
+            </div>
+            <div class="fun-time">
+                Child Four: I'm a direct child of 'no-flex-zone'. <span>And I'm a part of 'fun-time'.</span>
+            </div>
+        </div>
+        <p>
+            Direct parent is the div with class no-flex-zone.
+        </p>         
+        
+    </div>
+    
+</body>
+</html>
