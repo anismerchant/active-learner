@@ -1,0 +1,42 @@
+nav {
+    padding: 2em 1em;
+    background-color: #87cefa;
+    border-top: green solid 6px;
+    border-bottom: green solid 6px;
+    margin-bottom: 2em;
+}
+
+section {
+    margin-right: 1rem;
+    display: inline-block;
+    border: black solid 3px;
+    padding: 1rem 1.2rem;    
+}
+
+#col-one {
+    background-color: #ff7f50;
+}
+
+#col-two {
+    background-color: #fff8dc;
+}
+
+#col-three {
+    background-color: #f0fff0;
+}
+
+span {
+    background-color: #b0ff32;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
