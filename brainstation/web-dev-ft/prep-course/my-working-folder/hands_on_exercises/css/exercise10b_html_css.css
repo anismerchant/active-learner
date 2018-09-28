@@ -50,7 +50,7 @@ exercise10a_html_css.html
 exercise10a_html_css.css
 */
 
-   div.clear {
+div.clear {
     clear: left;
 }
 
