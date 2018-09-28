@@ -8,7 +8,11 @@ header {
 }
 
 h1 {
-    border-bottom: 1px black solid;
+    border-bottom: 1px solid black;
+}
+
+article {
+    display: inline-block;
 }
 
 figure {
