@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {    
+    margin-bottom: 50px;
+    width: 75%;
+}
+
+h1 {
+    border-bottom: 1px black solid;
+}
+
+figure {
+    display: inline-block;    
+    border: 5px solid maroon;
+    background-color: beige;
+    margin: 20px;
+    padding: 20px;    
+    width: 200px;
+    height: 200px;    
+}
+
+figure img {
+    width: 100%;
+    height: auto;    
+}
+
+.favorite {
+    border: 5px solid navy;
+}
+
+figcaption {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 0 25px;
+    width: 200px;
+    height: auto;    
+    text-align: center;  
+}
