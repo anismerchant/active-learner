@@ -30,8 +30,8 @@ body {
   background-color: purple;
 }
 
-/*
-.fixed {
+
+/* .fixed {
   position: fixed;
 }
 */
@@ -47,7 +47,7 @@ body {
     the absolute section 
 */
 
-.parent-square{
+/* .parent-square{
   display: block;
   position: relative;
   width: 500px;
@@ -58,8 +58,5 @@ body {
 .child-square{
   background-color: aquamarine;
   width: 75px;
-  height: 75px;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-}
+  height: 75px; 
+}*/
