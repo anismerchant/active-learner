@@ -16,6 +16,7 @@ body {
 
 .first {
   background-color: blue;
+  top: 1200px;
 }
 
 .second {
