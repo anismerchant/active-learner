@@ -1,0 +1,76 @@
+/* Logo and Background Image */
+body > header {
+    display: block;
+}
+
+#logo {
+    border: 2px solid blue;
+
+}
+
+#logo img {
+    width: 200px;
+    height: auto;
+    border: 2px solid orangered;
+
+}
+
+#background img {
+    width: 100%;
+    height: auto;
+    border: 2px solid green;
+}
+
+#background h1 {
+    border: 2px solid grey;
+}
+
+/* Navigation */
+nav {
+    display: inline-block;
+    border: 1px solid black;
+    width: 20%;
+    height: auto;
+}
+
+/* Main Content */
+main {
+    display: inline-block;
+    border: 1px solid red;
+    width: auto;
+    height: auto;
+    padding-left: 20px;
+}
+
+main > section {
+    display: inline-block;
+}
+
+h2 {
+    display: inline-block;
+    padding-left: 20px;
+    border: 2px solid grey;
+}
+
+#web-dev {
+    display: inline-block;     
+    border: 1px solid black;
+}
+
+#user-exp {
+    display: inline-block;       
+    padding-left: 20px;
+    border: 1px solid black; 
+}
+
+#digital {
+    display: inline-block;      
+    padding-left: 20px;
+    border: 1px solid black;  
+}
+
+#ios {
+    display: inline-block;     
+    padding-left: 20px;
+    border: 1px solid black; 
+}
