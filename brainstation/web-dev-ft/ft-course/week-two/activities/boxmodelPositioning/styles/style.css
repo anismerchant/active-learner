@@ -49,7 +49,7 @@
 nav {
     display: inline-block;
     border: 1px solid black;
-    width: 20%;
+    width: auto;
     height: auto;    
 }
 
@@ -57,33 +57,27 @@ nav {
 main {
     display: inline-block;
     border: 1px solid red;
-    width: auto;
+    width: 100%;
     height: auto;    
 }
 
-section, h2 {
+section, header {
     display: inline-block;
 }
 
 h2 {
-    padding-left: 20px;
     border: 2px solid grey;
 }
 
 #web-dev {
-
     border: 1px solid black;
 }
 
 #user-exp {
-     
-    padding-left: 20px;
     border: 1px solid black; 
 }
 
 #digital {
-     
-    padding-left: 20px;
     border: 1px solid black;  
 }
 
