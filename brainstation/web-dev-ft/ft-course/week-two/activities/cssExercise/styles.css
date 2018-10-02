@@ -2,117 +2,94 @@
     body {
     	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
         font-weight: 300;
-        border: 1px solid black;
     }
     /*** SECTION ONE ***/
-    /* Centers content */
     .container {
     	margin:0 auto;
     	max-width:960px;
         padding-bottom:250px;
-        border: 2px solid black;
     }
 
-    /* Auto adjusts width, responsive */
     .jumbotron {
     	width: 100%;
         background-color:#3498db;
-        border: 4px solid yellow;
     }
 
-    /* Adjusts content typography */
+    /* REVISED */
     .jumbotron h1 {
-    	font-size:80px;
-        font-weight: 100;
-        border: 4px solid yellow;
+    	font-size: 80px;
     }
 
-    /* Duplicates .jumbotron h1*/
-    .jumbotron h2 {
+    /* REVISED */
+    .jumbotron h1, h2 {
         font-weight: 100;
-        border: 4px solid yellow;
+        color: white;
     }
 
-    /* Duplicates some markup .container */
+    /* REVISED*/
     .content {
-    	text-align: center;
-    	color:white;
+    	text-align: center;    	
         padding: 50px;
-        border: 4px solid red;
     }
 
-    /* Auto adjusts width, responsive */
     .content-image {
         width: 100%;
-        border: 4px solid yellow;
     }
 
 
     /*** SECTION TWO ***/
-    /* Pushes content to left, responsive */
     .features {
     	float:left;
-    	width:49.6%; /* change this back to 50% after */
-        background-color: #9b59b6;
-        border: 1px solid yellow;
+    	width:50%; 
+        background-color: #9b59b6;      
     }
 
-    /* Adds space around content */
     .features-content {
-        padding: 20px;
-        border: 4px solid red;
+        padding: 20px;  
     }
 
-    /* Adds space between lines and changes text color */
+    /* REVISED */
     .features-content ul {
-    	color:white;
-        line-height: 30px;
-        border: 4px solid yellow;
+    	line-height: 30px;
     }
 
-    /* Duplicates color markup */
+    /* REVISED */
     .features-heading {
-    	text-decoration: underline;
-        color:white;
-        border: 4px solid yellow;
+    	text-decoration: underline;      
     }
 
+    
     /*** SECTION THREE ***/
-    /* Pushes content to left, responsive */
     .resources {
     	float:left;
-    	width: 49.9%; /* change this back to 50% after */
-        background-color: #2ecc71;
-        border: 1px solid yellow;
+    	width: 50%; 
+        background-color: #2ecc71;     
     }
 
-    /* Adds space around content */
     .resources-content {
-        padding: 20px;
-        border: 4px solid red;
+        padding: 20px;     
     }
 
-    /* Duplicates color markup */
+    /* REVISED */
     .resources-heading {
     	text-decoration: underline;
-        color:white;
-        border: 4px solid yellow;
     }
     
-    /* Duplicates color markup */
+    /* ADDED */
+    ul, a {
+        color: white;
+    }
+
+    /* REVISED */
     .resources-content ul {
-    	color:white;
         line-height: 30px;
-        border: 4px solid yellow;
     }
 
-     /* Duplicates color markup */
+     /* MARKED TO REMOVE 
     .resources-content ul a {
-        color:white;
-        border: 4px solid yellow;
-    }
+    } */
 
-    /* Not used */
+    /* MARKED TO REMOVE 
     .quotes {
         width: 100%;
         border: 4px solid yellow;
@@ -120,10 +97,8 @@
     .quotes-heading {
         color:white;
         border: 4px solid yellow;
-    }
+    } */
     
-    /*Colors specific text */
     .color {
         color:#9b59b6;
-        border: 4px solid yellow;
-    }
+   }
