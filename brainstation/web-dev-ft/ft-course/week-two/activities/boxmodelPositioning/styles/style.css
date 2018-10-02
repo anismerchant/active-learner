@@ -64,6 +64,10 @@ nav ul li a {
     color: #1a45bd; 
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 /* Courses */
 main {
     display: inline-block;
