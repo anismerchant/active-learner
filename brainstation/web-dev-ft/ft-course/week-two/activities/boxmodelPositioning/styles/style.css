@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Logo and Background Image */
@@ -50,7 +51,19 @@ nav {
     display: inline-block;
     border: 1px solid black;
     width: auto;
-    height: auto;    
+    height: auto;
+    padding: 20px 40px 0 20px;       
+}
+
+nav ul {
+    list-style-type: none; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.6em;
+    line-height: 2em;
+    color: #1a45bd; 
 }
 
 /* Main Content */
@@ -82,7 +95,5 @@ h2 {
 }
 
 #ios {
-  
-    padding-left: 20px;
     border: 1px solid black; 
 }
