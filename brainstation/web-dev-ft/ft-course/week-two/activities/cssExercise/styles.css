@@ -1,72 +1,110 @@
+    /* Applied globally */
     body {
     	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     	font-weight: 300;
     }
+    /*** SECTION ONE ***/
+    /* Centers content */
     .container {
     	margin:0 auto;
     	max-width:960px;
     	padding-bottom:250px;
     }
+
+    /* Auto adjusts width, responsive */
     .jumbotron {
     	width: 100%;
     	background-color:#3498db;
     }
+
+    /* Adjusts content typography */
     .jumbotron h1 {
     	font-size:80px;
     	font-weight: 100;
     }
+
+    /* Duplicates .jumbotron h1*/
     .jumbotron h2 {
     	font-weight: 100;
     }
+
+    /* Duplicates some markup .container */
     .content {
     	text-align: center;
     	color:white;
     	padding: 50px;
     }
+
+    /* Auto adjusts width, responsive */
     .content-image {
     	width: 100%;
     }
+
+
+    /*** SECTION TWO ***/
+    /* Pushes content to left, responsive */
     .features {
     	float:left;
     	width:50%;
     	background-color: #9b59b6;
     }
+
+    /* Adds space around content */
     .features-content {
     	padding: 20px;
     }
+
+    /* Adds space between lines and changes text color */
     .features-content ul {
     	color:white;
     	line-height: 30px;
     }
+
+    /* Duplicates color markup */
     .features-heading {
     	text-decoration: underline;
     	color:white;
     }
+
+    /*** SECTION THREE ***/
+    /* Pushes content to left, responsive */
     .resources {
     	float:left;
     	width: 50%;
     	background-color: #2ecc71;
     }
+
+    /* Adds space around content */
     .resources-content {
     	padding: 20px;
     }
+
+    /* Duplicates color markup */
     .resources-heading {
     	text-decoration: underline;
     	color:white;
     }
+    
+    /* Duplicates color markup */
     .resources-content ul {
     	color:white;
     	line-height: 30px;
     }
+
+     /* Duplicates color markup */
     .resources-content ul a {
     	color:white;
     }
+
+    /* Not used */
     .quotes {
     	width: 100%;
     }
     .quotes-heading {
     	color:white;
     }
+    
+    /*Colors specific text */
     .color {
     	color:#9b59b6;
     }
