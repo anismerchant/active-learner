@@ -37,9 +37,8 @@
     height: auto;
 }
 
-
 #background h1 {
-    font-size: 5vw;
+    font-size: 4vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -49,8 +48,7 @@
 /* Navigation */
 nav {
     display: inline-block;
-    border: 1px solid black;
-    width: auto;
+    width: 20%;
     height: auto;
     padding: 20px 40px 0 20px;       
 }
@@ -61,39 +59,76 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    font-size: 1.6em;
+    font-size: 3vh;
     line-height: 2em;
     color: #1a45bd; 
 }
 
-/* Main Content */
+/* Courses */
 main {
     display: inline-block;
-    border: 1px solid red;
-    width: 100%;
-    height: auto;    
 }
 
-section, header {
+#courses {
+    display: inline-block;
+    width: 78%;
+    vertical-align: top;    
+}
+
+#course-headings {
+    width: 100%;
+}
+
+section, h2, h3 {
     display: inline-block;
 }
 
 h2 {
-    border: 2px solid grey;
+    padding: 10px 0 30px 10px;
+    color: #1a45bd;
+    font-size: 3vw;
+    width: 75vw;    
 }
 
 #web-dev {
     border: 1px solid black;
+    padding: 20px 40px 200px 20px;
+    font-size: 2vw;
+    width: 16vw;
+    height: 5vh;
+    border-radius: 10px;
+    vertical-align: top;
+    margin-right: 30px;
 }
 
 #user-exp {
-    border: 1px solid black; 
+    border: 1px solid black;
+    padding: 20px 40px 200px 20px;
+    font-size: 2vw;
+    width: 16vw;
+    height: 5vh;
+    border-radius: 10px;
+    vertical-align: top;
+    margin-right: 30px; 
 }
 
 #digital {
-    border: 1px solid black;  
+    border: 1px solid black;
+    padding: 20px 40px 200px 20px;
+    font-size: 2vw;
+    width: 16vw;
+    height: 5vh;
+    border-radius: 10px;
+    vertical-align: top;
+    margin-right: 30px;
 }
 
 #ios {
-    border: 1px solid black; 
+    border: 1px solid black;
+    padding: 20px 40px 200px 20px;
+    font-size: 2vw;
+    width: 16vw;
+    height: 5vh;
+    border-radius: 10px;
+    vertical-align: top;
 }
