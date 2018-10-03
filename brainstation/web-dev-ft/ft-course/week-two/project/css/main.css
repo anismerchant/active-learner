@@ -4,3 +4,20 @@
     padding: 0;
 }
 
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: #F5DDD0;
+}
+
+/* NAVBAR */
+nav {
+    border-bottom: 4px solid #568D98;
+}
+nav h1 {
+    font-size: 3.1vh;
+    padding: 22px;
+}
+nav h1 a {
+    text-decoration: none;
+    color: black;
+}
