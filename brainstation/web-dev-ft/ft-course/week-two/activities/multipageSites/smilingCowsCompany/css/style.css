@@ -45,4 +45,6 @@ nav a {
     font-size: 2.5vh;  
 }
 
-
+nav a:hover {
+    background-color: #777;
+}
