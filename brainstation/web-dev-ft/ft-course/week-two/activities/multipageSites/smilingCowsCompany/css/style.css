@@ -1,0 +1,48 @@
+/* Global Viewport Reset */
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;   
+}
+
+
+#logo {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #2d1d15;
+    position: fixed;    
+ }
+
+#logo figure img {
+    display: block;
+    width: 15vw;
+    height: auto;
+    margin: 0 auto;
+}
+
+/*Navigation*/
+
+nav {     
+    display:block;
+    position: relative;
+    top: 10.8vw;
+    background-color: black;
+}
+
+nav a {
+    display: block;
+    line-height: 3vh;
+    text-decoration: none;
+    text-align: center;  
+    color: #b09e3a;
+    padding: 0 5px;
+    margin: 0 auto;
+    font-size: 2.5vh;  
+}
+
+
