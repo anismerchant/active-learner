@@ -11,7 +11,7 @@ body {
 }
 
 /* COMMON STYLES */
-nav h1, h2, h3 {
+nav h1, h2 {
     padding: 22px;
 }
 
@@ -43,5 +43,79 @@ nav h1 a {
     height: 10%;
     text-align: center;
     position: relative;
-    bottom: 105px; 
+    bottom: 80px; 
+}
+
+/* BOTTOM-SECTION */
+h3 {
+    padding: 0 0 10px 22px;
+    font-size: 12px;
+    font-weight: 100;
+}
+#pam {
+    display: inline-block;
+    width: 32%;
+    height: auto;
+}
+#pam img {
+    padding: 10px 10px 10px 22px; 
+    width: 100%;
+    height: auto;
+}
+#pam h2 {
+    display: inline-block;
+    position: relative;
+    bottom: 85px;
+    left: 7px; 
+}
+#pam h2 a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px #686868
+}
+
+#dougie {
+    display: inline-block;
+    width: 32%;
+    height: auto;
+}
+#dougie img {
+    padding: 10px 10px 10px 22px; 
+    width: 100%;
+    height: auto;
+}
+#dougie h2 {
+    display: inline-block;
+    position: relative;
+    bottom: 85px;
+    left: 7px;
+}
+
+#dougie h2 a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px #686868
+}
+
+#summer {
+    display: inline-block;
+    width: 32%;
+    height: auto;
+}
+#summer img {
+    padding: 10px 10px 10px 22px; 
+    width: 100%;
+    height: auto;
+}
+#summer h2 {
+    display: inline-block;
+    position: relative;
+    bottom: 85px;
+    left: 7px;
+}
+
+#summer h2 a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px #686868
 }
