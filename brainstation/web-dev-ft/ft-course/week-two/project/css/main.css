@@ -20,7 +20,7 @@ nav {
     border-bottom: 4px solid #568D98;
 }
 nav h1 {
-    font-size: 3.1vh;
+    font-size: 3.1em;
 }
 nav h1 a {
     text-decoration: none;
@@ -49,7 +49,7 @@ nav h1 a {
 /* BOTTOM-SECTION */
 h3 {
     padding: 0 0 10px 22px;
-    font-size: 12px;
+    font-size: 0.8em;
     font-weight: 100;
 }
 #pam {
