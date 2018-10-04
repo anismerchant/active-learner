@@ -28,22 +28,29 @@ nav h1 a {
 }
 
 /* MID-SECTION */
-#family-bio {
+#family-pic {
+    display: inline-block;
+    width: 48%;
+    height: auto;
+}
+#family-pic img {
+    padding: 10px 30px; 
     width: 100%;
     height: auto;
 }
-#family-bio img {
-    padding: 10px 30px; 
-    width: 45%;
+#family-bio {
+    display: inline-block;
+    position: relative;
+    width: 48%;
     height: auto;
 }
 #family-bio p {
     display: inline-block;
-    width: 45%;
+    width: 100%;
     height: 10%;
     text-align: center;
-    position: relative;
-    bottom: 80px; 
+    position:absolute;
+    bottom: 260px; 
 }
 
 /* BOTTOM-SECTION */
