@@ -1,0 +1,46 @@
+html {
+    border: 2px border dashed;
+    background-color: greenyellow;
+    position: relative;
+}
+#one {
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+    display: inline-block;
+   }
+#two {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    display: inline-block;
+
+}
+#three {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    display: inline-block;
+    
+}
+#four {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+    color: white
+}
+#five {
+    width: 200px;
+    height: 200px;
+    background-color: turquoise;
+    display: inline-block;
+
+}
+#six {
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+
+}
