@@ -75,7 +75,7 @@ h3 {
     bottom: 91px;
     left: 7px; 
 }
-#pam h2 a {
+#pam h2 {
     text-decoration: none;
     color: white;
     text-shadow: 2px 2px #686868
@@ -98,7 +98,7 @@ h3 {
     left: 7px;
 }
 
-#dougie h2 a {
+#dougie h2 {
     text-decoration: none;
     color: white;
     text-shadow: 2px 2px #686868
@@ -121,7 +121,7 @@ h3 {
     left: 7px;
 }
 
-#summer h2 a {
+#summer h2 {
     text-decoration: none;
     color: white;
     text-shadow: 2px 2px #686868
