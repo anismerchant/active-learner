@@ -14,4 +14,29 @@ ul {
 ul li {
   font-weight: bold;
 }
+
+.snack-list {
+  background-color: lightsalmon;
+}
+
+.cold-drink-list {
+  background-color: aquamarine;
+}
+
+#cold-drink-special {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#hot-drink-special {
+  background-color: #DC143C;
+}
+
+.hot-drink-list, .cold-drink-list, .snack-list {
+  border: thin dashed black;
+}
 /*# sourceMappingURL=style.css.map */
