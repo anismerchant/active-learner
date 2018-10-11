@@ -1,0 +1,115 @@
+.container-box .box-1, .container-box .box-2, .box-3 {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  margin: auto;
+}
+
+.container-box .box-1 input, .container-box .box-2 input, .box-3 input {
+  width: 100px;
+  height: 50px;
+  border: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container-box {
+  margin: 2em;
+}
+
+.container-box .box-1 {
+  background: #3c3b3b;
+}
+
+.container-box .box-1 input {
+  -webkit-box-shadow: 3px 3px 10px #835d797a;
+          box-shadow: 3px 3px 10px #835d797a;
+  border-radius: 25px;
+  background: none;
+  color: violet;
+  border: violet 2px solid;
+  position: absolute;
+  top: 15%;
+  left: 65%;
+}
+
+.container-box .box-1 input:hover {
+  background: -webkit-gradient(linear, left top, right top, color-stop(7%, violet), color-stop(18%, indigo), color-stop(33%, blue), color-stop(48%, green), color-stop(63%, yellow), color-stop(78%, orange), to(red));
+  background: linear-gradient(to right, violet 7%, indigo 18%, blue 33%, green 48%, yellow 63%, orange 78%, red 100%);
+}
+
+.container-box .box-2 {
+  background: #3c3b3b;
+}
+
+.container-box .box-2 input {
+  -webkit-box-shadow: 3px 3px 10px black;
+          box-shadow: 3px 3px 10px black;
+  background: #3c3b3b;
+  border: solid 2px #ff5c5c;
+  color: #ff5c5c;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.container-box .box-2 input:hover {
+  color: crimson;
+  border: beige 3px dashed;
+}
+
+.box-3 {
+  background: #3c3b3b;
+}
+
+.box-3 input {
+  -webkit-box-shadow: 0px 0px 30px #0000009e;
+          box-shadow: 0px 0px 30px #0000009e;
+  border-radius: 25px;
+  background: none;
+  border: solid 2px #38a9f9;
+  color: #38a9f9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.box-3 input:hover {
+  color: crimson;
+  border: beige 3px dashed;
+}
+
+.box-3 input:focus {
+  color: teal;
+  border: teal 3px dotted;
+}
+
+input {
+  position: absolute;
+  top: 75%;
+  right: 15%;
+  outline: none;
+}
+
+@-webkit-keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

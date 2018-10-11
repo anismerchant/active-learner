@@ -1,0 +1,96 @@
+%box-sizing{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin: auto;
+}
+%button-sizing {
+    width: 100px;
+    height: 50px;
+    border: none;
+}
+
+@mixin transform($top,$left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate(-50%, -50%);
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    text-align: center;
+}
+.container-box{
+    margin: 2em;
+    .box-1 {
+        @extend %box-sizing;
+        background: #3c3b3b;
+        input{
+            @extend %button-sizing;
+            box-shadow: 3px 3px 10px #835d797a;
+            border-radius: 25px;
+            background:none;
+            color: violet;
+            border: violet 2px solid;
+            position: absolute;
+            top: 15%;
+            left: 65%;
+            &:hover {
+                background: linear-gradient(to right, violet 7%, indigo 18%, blue 33%, green 48%, yellow 63%, orange 78%, red 100%);
+            }
+        }
+    }   
+    .box-2{
+        @extend %box-sizing;
+        background: #3c3b3b;
+        input{
+            @extend %button-sizing;
+            box-shadow: 3px 3px 10px black;
+            background: #3c3b3b;
+            border: solid 2px #ff5c5c;
+            color:#ff5c5c;
+            @include transform(75%,50%);  
+                &:hover {
+                color: crimson;
+                border: beige 3px dashed;
+                }
+            }
+        }
+    }
+    .box-3{
+        @extend %box-sizing;
+        background: #3c3b3b;
+        input{
+            @extend %button-sizing;
+            box-shadow: 0px 0px 30px #0000009e;
+            border-radius: 25px;
+            background: none;
+            border: solid 2px #38a9f9;
+            color: #38a9f9;
+            @include transform(50%,50%);
+            &:hover {
+                color: crimson;
+                border: beige 3px dashed;
+            }
+            &:focus {
+                color: teal;
+                border: teal 3px dotted;
+            }
+        }        
+    }
+ input {
+    position: absolute;
+    top: 75%;
+    right: 15%;
+    outline: none;
+}
+@keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }
+
+
+
