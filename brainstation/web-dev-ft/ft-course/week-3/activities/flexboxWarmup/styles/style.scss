@@ -1,0 +1,92 @@
+@mixin personSizing() {
+    width: 50px;
+    height:50px;
+  }
+.spacing{
+    margin: 1em 0 5em 0;
+    padding:1em;
+    border: solid 1em black;
+    &.move{
+        height: 500px;
+    }
+    &.bigger{
+        height: 500px;
+    }
+    .flex{
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        .children {
+                .children-one{
+                    align-items: flex-end;
+                } 
+        }
+        .children-five {
+            align-items: flex-end;
+        }
+    }
+    .children-three{
+        justify-content: center;
+    }
+    .order{
+        display: flex;
+        flex-direction: column-reverse;
+        &.fix{
+            height: 400px; 
+        }
+    }
+    .children-six {
+        flex-direction: column-reverse;
+    }
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h4{
+        margin:.5em;
+    }
+}
+.children{
+    display: flex;
+    justify-content: flex-end;
+    &.right {
+        justify-content: flex-start;
+    }
+    &.middle{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .child {
+        @include personSizing();
+        background: red;
+    }     
+}
+.parent{
+    display: flex;
+    &.right {
+        justify-content: flex-end;
+    }
+    &.photo {
+        justify-content: center;
+    }
+    .mom{
+        @include personSizing();
+        background: blue
+    }
+}
+.green-line{
+    background: green;
+}
+
+.children-four {
+    justify-content: space-between;
+}
+
+.child-2 {
+    align-self: flex-start;
+}
+
+.child-3 {
+    align-self: flex-end
+}
