@@ -5,3 +5,99 @@
     box-sizing: border-box;
 }
 
+.header {
+    position: relative;
+    color: #FFFFFF;
+}
+
+.header__navigation {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
+    font-family: Poppins;
+}
+
+.header__navigation--left {
+    display: flex;
+    justify-content: flex-start;
+    width: 75%;
+    padding: 2% 5%;
+}
+
+.header__navigation--left a {
+    text-decoration: none;
+}
+
+.header__navigation--right {
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    padding: 2% 2%;
+}
+
+.header__navigation--right a {
+    text-decoration: none;
+}
+
+.header__navigation a {
+    color: #FFFFFF;
+}
+
+.header__background-image img {
+    width: 100%;
+    height: auto;
+}
+
+.text-on-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../assets/typography/Poppins-Bold.ttf);
+    font-weigth: bold;
+}
+
+.text-on-image h1 {
+    font-family: Poppins;
+    font-size: 84px;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../assets/typography/Poppins-Thin.ttf);
+}
+
+.text-on-image h3 {
+    font-family: Poppins;
+    font-size: 36px;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../assets/typography/Poppins-SemiBold.ttf);
+}
+
+.text-on-image__button {
+    font-family: Poppins;
+    background-color: #A0A0A0;
+    display: inline-block;
+    color: #FFFFFF;
+    width: 198px;
+    height: 55px;
+    padding: 20px 40px;
+    border: 2px solid #FFFFFF;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 0px;
+    letter-spacing: 1px;
+}
+
+.text-on-image__album-name {
+    padding-bottom: 20px;
+}
