@@ -170,7 +170,7 @@ table {
     width: 45%;
 }
 
-.about__paragraphs {
+.about__info {
     display: flex;
     justify-content: space-evenly; 
 }
