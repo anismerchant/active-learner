@@ -266,25 +266,30 @@ table {
 
 .gallery__header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-left: 8%;
 }
 
-.gallery__header--h1{
+.gallery__header--h1 {
     font-family: "Poppins-Bold";
     font-size: 5.25em;
     width: 30%;
     padding-bottom: 1em;
 }
 
-.gallery__header--spacing{
+.gallery__header--spacing {
     width: 45%;
 }
 
-.gallery__rows{
+.gallery__rows {
     display: flex; 
     justify-content: space-evenly;    
     flex-wrap: wrap;
-    margin-left: 3.5em; 
+}
+.gallery__div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 8%;
 }
 .rows--image-1 {
     width: 285px;
