@@ -261,6 +261,7 @@ table {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
     border: 3px dashed crimson;
 }
 
@@ -292,21 +293,29 @@ table {
 .rowOne--image-1 {
     width: 20vw;
     height: 20vh;
+    background-image: url(../assets/images/1-ian-dooley-resized.jpg);
+    background-size: cover;
     border: 1px dashed crimson;
 }
 .rowOne--image-2 {
     width: 20vw;
     height: 20vh;
+    background-image: url(../assets/images/2-ana-grave-resized.jpg);
+    background-size: cover;
     border: 1px dashed crimson;
 }
 .rowOne--image-3 {
     width: 20vw;
     height: 20vh;
+    background-image: url(../assets/images/3-hanny-naibaho-resized.jpg);
+    background-size: cover;
     border: 1px dashed crimson;
 }
 .rowOne--image-4 {
     width: 20vw;
     height: 20vh;
+    background-image: url(../assets/images/4-bryan-minear-resized.jpg);
+    background-size: cover;
     border: 1px dashed crimson;
 }
 
@@ -316,24 +325,32 @@ table {
     border: 1px dashed crimson;
     margin-bottom: 2em;  
 }
-.rowTwo--image-1 {
+.rowTwo--image-5 {
     width: 20vw;
     height: 20vh;
+    background-image: url(../assets/images/5-mike-giles-resized.jpg);
+    background-size: cover;
+    border: 1px dashed crimson;    
+}
+.rowTwo--image-6 {
+    width: 20vw;
+    height: 20vh;
+    background-image: url(../assets/images/6-melanie-van-leeuwen-resized.jpg);
+    background-size: cover;
     border: 1px dashed crimson;
 }
-.rowTwo--image-2 {
+.rowTwo--image-7 {
     width: 20vw;
     height: 20vh;
+    background-image: url(../assets/images/7-francisco-moreno-resized.jpg);
+    background-size: cover;
     border: 1px dashed crimson;
 }
-.rowTwo--image-3 {
+.rowTwo--image-8 {
     width: 20vw;
     height: 20vh;
-    border: 1px dashed crimson;
-}
-.rowTwo--image-4 {
-    width: 20vw;
-    height: 20vh;
+    background-image: url(../assets/images/8-felix-russell-saw-resized.jpg);
+    background-size: cover;
     border: 1px dashed crimson;
 }
 
@@ -342,23 +359,31 @@ table {
     justify-content: space-evenly;
     border: 1px dashed crimson; 
 }
-.rowThree--image-1 {
+.rowThree--image-9 {
     width: 20vw;
     height: 20vh;
+    background-image: url(../assets/images/9-paulette-wooten-resized.jpg);
+    background-size: cover;
     border: 1px dashed crimson;
 }
-.rowThree--image-2 {
+.rowThree--image-10 {
     width: 20vw;
     height: 20vh;
+    background-image: url(../assets/images/10-wesley-tingey-resized.jpg);
+    background-size: cover;
     border: 1px dashed crimson;
 }
-.rowThree--image-3 {
+.rowThree--image-11 {
     width: 20vw;
     height: 20vh;
+    background-image: url(../assets/images/11-abigail-keenan-resized.jpg);
+    background-size: cover;
     border: 1px dashed crimson;
 }
-.rowThree--image-4 {
+.rowThree--image-12 {
     width: 20vw;
     height: 20vh;
+    background-image: url(../assets/images/12-ciprian-boiciuc-resized.jpg);
+    background-size: cover;
     border: 1px dashed crimson;
 }
