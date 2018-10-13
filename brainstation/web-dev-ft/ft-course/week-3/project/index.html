@@ -34,56 +34,57 @@
    
     <main>
         <!-- ABOUT SECTION -->
-        <section>
-            <div>
+        <section class="about">
+            <div class="about__header">
                 <h1>ABOUT</h1>
             </div>
-            <div>
-                <p>
-                    The Bees Knees are an unconventional, five-piece musical phenomena that is
-                    currently taking the world by storm. Based in Toronto, Ontario, their recent 
-                    5-people-playingone-guitar rendition of Justin Bieber’s “Despacito” recently
-                    exploded on Youtube garnering well over 40 million views in under 3 weeks. 
-                </p>
-            </div>
-            <div>
-                <p>
-                    New fans from around the world immediately fell in love with the band’s organic, 
-                    independent, sincere and honest original songwriting, cover interpretations and 
-                    beautifully filmed videos. For the past 5 years, the band has built a massive 
-                    following of dedicated fans from around the world through their unique and
-                    heartwarming approach to songwriting, filming and constant, open interaction with 
-                    everyone their music touches The chemistry between the members of Meatwook Flack is
-                    undeniable. Marshall, Sarah and Gianni’s individual vocal stylings mesh seamlessly 
-                    with Taylor’s haunting harmonies and keys all the while soaring over epic melodic 
-                    arrangements held together by Joel Cassady’s driving and prolific percussion work.    
-                </p>
+            <div class="about__paragraphs">
+                <div>
+                    <p class= "about__paragraphs--left">
+                        The Bees Knees are an unconventional, five-piece musical phenomena that is
+                        currently taking the world by storm. Based in Toronto, Ontario, their recent 
+                        5-people-playingone-guitar rendition of Justin Bieber’s “Despacito” recently
+                        exploded on Youtube garnering well over 40 million views in under 3 weeks. 
+                    </p>
+                </div>
+                <div class= "about__paragraphs--right">
+                    <p>
+                        New fans from around the world immediately fell in love with the band’s organic, 
+                        independent, sincere and honest original songwriting, cover interpretations and 
+                        beautifully filmed videos. For the past 5 years, the band has built a massive 
+                        following of dedicated fans from around the world through their unique and
+                        heartwarming approach to songwriting, filming and constant, open interaction with 
+                        everyone their music touches The chemistry between the members of Meatwook Flack is
+                        undeniable. Marshall, Sarah and Gianni’s individual vocal stylings mesh seamlessly 
+                        with Taylor’s haunting harmonies and keys all the while soaring over epic melodic 
+                        arrangements held together by Joel Cassady’s driving and prolific percussion work.    
+                    </p>
+                </div>    
             </div>
         </section>
         <!-- MUSIC SECTION -->
-        <section>
-            <div>
+        <section class="music">
+            <div class="music__heading">
                 <h1>MUSIC</h1>
             </div>
-            <div>    
-                <div>THE BEES KNEES</div>
-                <div>DUSK</div>
-                <div></div>   
+            <div class="music__info">
+                <iframe id="music__info--image"></iframe>
+                <div class="music__info--album">
+                    <h2>The Bees Knees - Dusk</h2>
+                    <p>
+                        Dusk, The Bees Knees first full-length studio release, is a concept album that details 
+                        metaphorical experiences of time, seasonal change, and the transient nature of life.
+                        Whimsical guitars, crashing synths, and towering baseliness merge in a caucophony of 
+                        shoe-gaze, melodic fuzz. Their songs don’t sound quite like anything else. The
+                        Bees Knees use of both analog and digital tools creates a raw hybrid energy. Throughout 
+                        the album, drums land with a spongy bounce, while pads exude rich notes of fungal
+                        modular squelch. The combination lends much of the album an organic texture that, in the 
+                        vein of classic Aphex Twin records, hints at technology from an ancient future—
+                        one born of a great cataclysm of the past.
+                    </p>
+                </div>
             </div>
-            <div>
-                <h2>The Bees Knees - Dusk</h2>
-                <p>
-                    Dusk, The Bees Knees first full-length studio release, is a concept album that details 
-                    metaphorical experiences of time, seasonal change, and the transient nature of life.
-                    Whimsical guitars, crashing synths, and towering baseliness merge in a caucophony of 
-                    shoe-gaze, melodic fuzz. Their songs don’t sound quite like anything else. The
-                    Bees Knees use of both analog and digital tools creates a raw hybrid energy. Throughout 
-                    the album, drums land with a spongy bounce, while pads exude rich notes of fungal
-                    modular squelch. The combination lends much of the album an organic texture that, in the 
-                    vein of classic Aphex Twin records, hints at technology from an ancient future—
-                    one born of a great cataclysm of the past.
-                </p>
-            </div>
+           
         </section>
         <!-- GALLERY SECTION -->
         <section>
@@ -180,5 +181,12 @@
             <h4>Copyright The Bees Knees© 2018 All Rights Reserved</h4>
         </section>
     </footer>
+    <script>
+        var doc = document.getElementById('music__info--image').contentWindow.document;
+        doc.open();
+        doc.write("<div class='music__info--left'>THE BEES KNEES</div>");
+        doc.write("<div class='music__info--right'>DUSK</div>")
+        doc.close();
+    </script>
 </body>
 </html>

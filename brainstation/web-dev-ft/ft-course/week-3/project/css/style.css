@@ -1,9 +1,15 @@
 /* GLOBAL RESETS */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url(../assets/typography/Poppins-Bold.ttf);
+}    
 
 .header {
     position: relative;
@@ -15,7 +21,6 @@
     position: absolute;
     width: 100%;
     justify-content: space-between;
-    font-family: Poppins;
 }
 
 .header__navigation--left {
@@ -57,30 +62,13 @@
     text-align: center;
 }
 
-@font-face {
-    font-family: Poppins;
-    src: url(../assets/typography/Poppins-Bold.ttf);
-    font-weigth: bold;
-}
-
 .text-on-image h1 {
-    font-family: Poppins;
     font-size: 84px;
-}
-
-@font-face {
-    font-family: Poppins;
-    src: url(../assets/typography/Poppins-Thin.ttf);
+    font-family: "Poppins-Bold";
 }
 
 .text-on-image h3 {
-    font-family: Poppins;
     font-size: 36px;
-}
-
-@font-face {
-    font-family: Poppins;
-    src: url(../assets/typography/Poppins-SemiBold.ttf);
 }
 
 .text-on-image__button {
@@ -90,7 +78,7 @@
     color: #FFFFFF;
     width: 198px;
     height: 55px;
-    padding: 20px 40px;
+    padding: 15px 20px;
     border: 2px solid #FFFFFF;
     border-radius: 4px;
     font-size: 16px;
@@ -100,4 +88,41 @@
 
 .text-on-image__album-name {
     padding-bottom: 20px;
+}
+
+.about__header {
+    border: 2px solid red;
+}
+
+.about__paragraphs {
+    border: 2px solid yellow;
+    display: flex;
+}
+
+.music {
+    border: 2px solid blue;
+}
+
+.music__info {
+    display:flex;
+    justify-content: flex-start;
+    overflow:hidden;
+}
+
+#music__info--image {
+    background-image: url(../assets/images/music-section-bryan-minear-resized.jpg);
+    background-size: 326px 326px;
+    background-repeat: no-repeat;
+    width: 326px;
+    height: 451px;
+    display: flex;
+    justify-content: left;
+}
+
+.music__info--left {
+    float:left;
+}
+
+.music__info--right {
+    float: right;
 }
