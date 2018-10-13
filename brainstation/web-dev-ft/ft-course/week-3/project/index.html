@@ -60,14 +60,17 @@
         </section>
         <!-- MUSIC SECTION -->
         <section class="music">
-            <div class="music__heading">
-                <h1>MUSIC</h1>
+            <div class="music__header">
+                <h1 class="music__header--h1">MUSIC</h1>
+                <p class="music__header--spacing"></p>
             </div>
             <div class="music__info">
-                <iframe id="music__info--image"></iframe>
+                <div class="music__info--iframe">
+                    <iframe id="iframe__image"></iframe>
+                </div>               
                 <div class="music__info--album">
-                    <h2>The Bees Knees - Dusk</h2>
-                    <p>
+                    <h2 class="music__info--h2"><span>The Bees Knees</span> - Dusk</h2>
+                    <p class="music__info--paragraph">
                         Dusk, The Bees Knees first full-length studio release, is a concept album that details 
                         metaphorical experiences of time, seasonal change, and the transient nature of life.
                         Whimsical guitars, crashing synths, and towering baseliness merge in a caucophony of 
@@ -179,7 +182,7 @@
         </section>
     </footer>
     <script>
-        var doc = document.getElementById('music__info--image').contentWindow.document;
+        var doc = document.getElementById('iframe__image').contentWindow.document;
         doc.open();
         doc.write("<div class='music__info--left'>THE BEES KNEES</div>");
         doc.write("<div class='music__info--right'>DUSK</div>")
