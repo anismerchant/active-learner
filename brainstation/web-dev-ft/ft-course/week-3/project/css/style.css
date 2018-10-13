@@ -253,3 +253,112 @@ table {
     font-size: 1.25em;
     line-height: 1.5em;
 }
+
+.gallery {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 3px dashed crimson;
+}
+
+.gallery__header {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px dashed crimson;
+}
+
+.gallery__header--h1{
+    font-family: "Poppins-Bold";
+    font-size: 5.25em;
+    width: 30%;
+    padding-bottom: 1em;
+    border: 1px dashed crimson;
+}
+
+.gallery__header--spacing{
+    width: 45%;
+    border: 1px dashed crimson;
+}
+
+.gallery__rowOne{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px dashed crimson;
+    margin-bottom: 2em; 
+}
+.rowOne--image-1 {
+    width: 20vw;
+    height: 20vh;
+    border: 1px dashed crimson;
+}
+.rowOne--image-2 {
+    width: 20vw;
+    height: 20vh;
+    border: 1px dashed crimson;
+}
+.rowOne--image-3 {
+    width: 20vw;
+    height: 20vh;
+    border: 1px dashed crimson;
+}
+.rowOne--image-4 {
+    width: 20vw;
+    height: 20vh;
+    border: 1px dashed crimson;
+}
+
+.gallery__rowTwo{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px dashed crimson;
+    margin-bottom: 2em;  
+}
+.rowTwo--image-1 {
+    width: 20vw;
+    height: 20vh;
+    border: 1px dashed crimson;
+}
+.rowTwo--image-2 {
+    width: 20vw;
+    height: 20vh;
+    border: 1px dashed crimson;
+}
+.rowTwo--image-3 {
+    width: 20vw;
+    height: 20vh;
+    border: 1px dashed crimson;
+}
+.rowTwo--image-4 {
+    width: 20vw;
+    height: 20vh;
+    border: 1px dashed crimson;
+}
+
+.gallery__rowThree{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px dashed crimson; 
+}
+.rowThree--image-1 {
+    width: 20vw;
+    height: 20vh;
+    border: 1px dashed crimson;
+}
+.rowThree--image-2 {
+    width: 20vw;
+    height: 20vh;
+    border: 1px dashed crimson;
+}
+.rowThree--image-3 {
+    width: 20vw;
+    height: 20vh;
+    border: 1px dashed crimson;
+}
+.rowThree--image-4 {
+    width: 20vw;
+    height: 20vh;
+    border: 1px dashed crimson;
+}
