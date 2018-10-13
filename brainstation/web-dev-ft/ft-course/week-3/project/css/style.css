@@ -486,3 +486,21 @@ footer {
 .socialMediaIcon--spacing {
     width: 40%;
 }
+
+.copyright {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start
+}
+.copyright--info {
+    font-family: "Poppins-SemiBold";
+    font-size: 0.625em;
+    color: #FFFFFF;
+    margin-left: 11em;
+    margin-top: 10em;
+    width: 50%;
+}
+.copyrigth--spacing {
+    width: 50%;
+}
