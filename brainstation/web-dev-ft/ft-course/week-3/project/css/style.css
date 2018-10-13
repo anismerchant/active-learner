@@ -1,9 +1,50 @@
-/* GLOBAL RESETS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 @font-face {
@@ -88,7 +129,7 @@
 .text__album-name {
     font-size: 2.25em;
     margin-bottom: 1em;
-    font-family: "Poppins-Thin";
+    font-family: "Poppins-Regular";
 }
 
 .text__button {
@@ -105,23 +146,53 @@
     line-height: 0px;
     letter-spacing: 1px;
 }
-
-.text-on-image__album-name {
-    padding-bottom: 20px;
+.about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.about__header {
-    border: 2px solid red;
+.about__header {    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about__header--h1 {
+    font-family: "Poppins-Bold";
+    font-size: 4em;
+    width: 30%;
+    padding-bottom: 1em;
+}
+
+.about__header--spacing {
+    width: 45%;
 }
 
 .about__paragraphs {
-    border: 2px solid yellow;
     display: flex;
+    justify-content: space-evenly; 
+}
+
+.about__paragraph--left {
+    width: 30%;
+    font-family: "Poppins-Bold";
+    font-size: 1.4em;
+    line-height: 1.5em; 
+}
+
+.about__paragraph--right {
+    width: 45%;
+    font-size: 1.3em;
+    font-family: "Poppins-Regular";
+    line-height: 1.4em;   
 }
 
 .music {
     border: 2px solid blue;
 }
+
 
 .music__info {
     display:flex;
