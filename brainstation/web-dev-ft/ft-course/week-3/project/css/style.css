@@ -377,3 +377,78 @@ table {
     background-size: cover;
     margin: 0.5em 0.5em;   
 }
+
+footer {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #272727;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   flex-wrap: wrap;
+}
+.contact__header {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8em;
+}
+.contact__header--h1 {
+    width: 30%;
+    font-family: "Poppins-Bold";
+    font-size: 5.25em;
+    color: #FFFFFF;    
+    padding-bottom: 1em;
+    
+}
+.contact__header--spacing {
+    width: 45%;
+}
+.contact_names {
+    display: flex;
+    justify-content: center; 
+    font-family: "Poppins-SemiBold";
+    font-size: 1.25em;
+    color: #FFFFFF;
+    margin-left: 8%;
+
+}
+.contact__names--one {
+    padding-right: 2em;
+    width: 30%;
+}
+.contact__names--two {
+    padding-right: 2em;
+    width: 30%;
+}
+.contact__names--three {
+    padding-right: 2em;
+    width: 30%;
+}
+.contact__addresses {
+    display: flex;
+    justify-content: end; 
+    font-family: "Poppins-Regular";
+    font-size: 1.25em;
+    color: #FFFFFF;
+    margin-bottom: 1em;
+    margin-left: 8%;
+}
+.contact__addresses a {
+    color: #FFFFFF;
+    text-decoration: none;
+} 
+.contact__addresses--one {
+    padding-right: 2em;
+    width: 30%;
+}
+.contact__addresses--two {
+    padding-top: 1em;
+    padding-right: 2em;
+    width: 30%;    
+}
+.contact__addresses--three {    
+    width: 30%;
+}
