@@ -452,3 +452,37 @@ footer {
 .contact__addresses--three {    
     width: 30%;
 }
+
+.socialMediaIcon {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    margin: 4em 0;
+}
+.socialMediaIcon--instagram {
+    width: 10%;
+    height: 4vh;
+    background-image: url(../assets/social-media-icons/svg/Instagram.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 6.6em;
+    margin-right: 1em;
+}
+.socialMediaIcon--facebook {
+    width: 10%;
+    height: 4vh;
+    background-image: url(../assets/social-media-icons/svg/Facebook.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.socialMediaIcon--twitter {
+    width: 40%;
+    height: 4vh;
+    background-image: url(../assets/social-media-icons/svg/Twitter.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.socialMediaIcon--spacing {
+    width: 40%;
+}
