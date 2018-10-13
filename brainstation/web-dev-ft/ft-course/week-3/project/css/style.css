@@ -9,70 +9,90 @@
 @font-face {
     font-family: "Poppins-Bold";
     src: url(../assets/typography/Poppins-Bold.ttf);
-}    
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url(../assets/typography/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url(../assets/typography/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-Thin";
+    src: url(../assets/typography/Poppins-Thin.ttf);
+}
 
 .header {
-    position: relative;
     color: #FFFFFF;
 }
 
-.header__navigation {
+.header__bgImage {
+    background-image: url(../assets/images/original/ana-grave-156852-unsplash.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.bgImage__navigation {
     display: flex;
-    position: absolute;
     width: 100%;
     justify-content: space-between;
 }
 
-.header__navigation--left {
+.bgImage__navigation--left {
     display: flex;
     justify-content: flex-start;
     width: 75%;
-    padding: 2% 5%;
+    padding: 2% 2%;
+    font-family: "Poppins-Bold";
+    padding-left: 8em;
+    font-size: 1.1em;
 }
 
-.header__navigation--left a {
+.bgImage__navigation--left a {
     text-decoration: none;
+    color: #FFFFFF;   
 }
 
-.header__navigation--right {
+.bgImage__navigation--right {
     display: flex;
     justify-content: space-around;
     width: 25%;
     padding: 2% 2%;
+    font-family: "Poppins-Bold";
+    font-size: 1.1em;
 }
 
-.header__navigation--right a {
+.bgImage__navigation--right a {
     text-decoration: none;
-}
-
-.header__navigation a {
     color: #FFFFFF;
 }
 
-.header__background-image img {
-    width: 100%;
-    height: auto;
-}
-
-.text-on-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.bgImage__text {
+    height: 80vh;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
 
-.text-on-image h1 {
-    font-size: 84px;
+.text__date {
+    font-size: 5.25em;
     font-family: "Poppins-Bold";
 }
 
-.text-on-image h3 {
-    font-size: 36px;
+.text__album-name {
+    font-size: 2.25em;
+    margin-bottom: 1em;
+    font-family: "Poppins-Thin";
 }
 
-.text-on-image__button {
-    font-family: Poppins;
+.text__button {
+    font-family: "Poppins-SemiBold";
     background-color: #A0A0A0;
     display: inline-block;
     color: #FFFFFF;
@@ -81,7 +101,7 @@
     padding: 15px 20px;
     border: 2px solid #FFFFFF;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 0px;
     letter-spacing: 1px;
 }
