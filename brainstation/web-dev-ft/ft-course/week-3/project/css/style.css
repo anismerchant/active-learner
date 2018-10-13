@@ -161,9 +161,9 @@ table {
 }
 
 .about__header--h1 {
-    font-family: "Poppins-Bold";
-    font-size: 4em;
     width: 30%;
+    font-family: "Poppins-Bold";
+    font-size: 4.667em;    
     padding-bottom: 1em;
 }
 
@@ -179,14 +179,14 @@ table {
 .about__paragraph--left {
     width: 30%;
     font-family: "Poppins-Bold";
-    font-size: 1.4em;
+    font-size: 1.5em;
     line-height: 1.5em; 
 }
 
 .about__paragraph--right {
-    width: 45%;
-    font-size: 1.3em;
+    width: 45%;    
     font-family: "Poppins-Regular";
+    font-size: 1.250em;
     line-height: 1.5em;   
 }
 
