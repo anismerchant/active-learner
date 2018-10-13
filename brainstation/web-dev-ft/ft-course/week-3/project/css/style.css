@@ -91,7 +91,7 @@ table {
     padding: 2% 2%;
     font-family: "Poppins-Bold";
     padding-left: 8em;
-    font-size: 1.1em;
+    font-size: 1.125em;
 }
 
 .bgImage__navigation--left a {
@@ -105,7 +105,7 @@ table {
     width: 25%;
     padding: 2% 2%;
     font-family: "Poppins-Bold";
-    font-size: 1.1em;
+    font-size: 1.125em;
 }
 
 .bgImage__navigation--right a {
@@ -122,13 +122,13 @@ table {
 }
 
 .text__date {
-    font-size: 5.25em;
+    font-size: 4.667em;
     font-family: "Poppins-Bold";
 }
 
 .text__album-name {
-    font-size: 2.25em;
-    margin-bottom: 1em;
+    font-size: 2em;
+    padding: 1.2em 0;
     font-family: "Poppins-Regular";
 }
 
@@ -139,10 +139,11 @@ table {
     color: #FFFFFF;
     width: 198px;
     height: 55px;
+    margin-top: 1em;
     padding: 15px 20px;
     border: 2px solid #FFFFFF;
     border-radius: 4px;
-    font-size: 1em;
+    font-size: 1.125em;
     line-height: 0px;
     letter-spacing: 1px;
 }
