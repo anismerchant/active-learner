@@ -81,7 +81,7 @@ table {
 .header .header__bgImage {
   background-image: url(../assets/images/original/ana-grave-156852-unsplash.jpg);
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-size: cover;
 }
 
@@ -110,8 +110,8 @@ table {
 }
 
 .header .header__bgImage .bgImage__navigation .bgImage__navigation--left a {
-  text-decoration: none;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 .header .header__bgImage .bgImage__navigation .bgImage__navigation--right {
@@ -127,8 +127,8 @@ table {
 }
 
 .header .header__bgImage .bgImage__navigation .bgImage__navigation--right a {
-  text-decoration: none;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 .header .header__bgImage .bgImage__text {
@@ -175,7 +175,7 @@ table {
 /* ABOUT SECTION */
 .about {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -235,7 +235,7 @@ table {
 /* MUSIC SECTION */
 .music {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #F9F9F9;
   color: #000000;
   display: -webkit-box;
@@ -650,7 +650,7 @@ footer .copyright .copyright--info {
   width: 50%;
 }
 
-footer .copyright .copyrigth--spacing {
+footer .copyright .copyright--spacing {
   width: 50%;
 }
 /*# sourceMappingURL=style.css.map */

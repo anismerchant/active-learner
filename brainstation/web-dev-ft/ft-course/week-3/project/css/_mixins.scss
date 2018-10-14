@@ -1,0 +1,26 @@
+@mixin imageSize()
+{
+    width: 285px;
+    height: 285px;
+}
+@mixin links()
+{
+    color: $header-footer-color;
+    text-decoration: none;
+}
+@mixin sectionSize()
+{
+    width: 100%;
+    min-height: 100vh;
+}
+@mixin containerOrientation()
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@mixin socialMediaIcon() 
+{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
