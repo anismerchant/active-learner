@@ -37,26 +37,26 @@
 {
     width: 50%;
     padding: 1em 0 0 1em;
-    font-size: 0.8em;
+    font-size: $mobile-font-size-nav;
 }
 @mixin mobileNavigationRight()
 {
     width: 50%;
     padding: 1em 1em 0 0;
-    font-size: 0.8em;
+    font-size: $mobile-font-size-nav;
 }
 @mixin mobileBgImageTextDate()
 {
-    font-size: 2.25em;
+    font-size: $mobile-font-size-bg-image-text-date;
 }
 @mixin mobileBgImageTextAlbumName()
 {
-    font-size: 1.25em;
+    font-size: $mobile-font-size-bg-image-text-album-name;
 }
 @mixin mobileBgImageTextButton()
 {
     letter-spacing: 0.5px;
-    font-size: 0.9em;
+    font-size: $mobile-font-size-bg-image-text-button;
     width: 144px;
     height: 40px;
 }
@@ -69,9 +69,8 @@
 }
 @mixin mobileSectionHeadings()
 {
-    font-size: 2.25em;
-    padding-bottom: 0.8em;
-    
+    font-size: $mobile-font-size-section-headings;
+    padding-bottom: 0.8em;    
 }
 @mixin mobileSpacing()
 {
@@ -85,7 +84,7 @@
 {
     width: 90%;
     margin: 0 1em 1em 1em;
-    font-size: 0.8em;
+    font-size: $mobile-font-size-paragraphs;
 }
 
 /* MUSIC SECTION */
@@ -93,14 +92,14 @@
 {
     background-image: url(../assets/images/for-mobile/max-320px/bryan-minear-mobile-resized.jpg);
     background-size: cover;
-    width: 265px;
-    height: 265px;
+    width: $mobile-image-width;
+    height: $mobile-image-height;
     margin: 0 0 0 1.5em;
 }
 
 @mixin mobileMusicInfoText()
 {
-    font-size: 0.8em;
+    font-size: $mobile-font-size-paragraphs;
 }
 
 @mixin mobileMusicInfoAlbum()
@@ -123,19 +122,37 @@
 
 /* CONTACT SECTION */
 
-@mixin mobileContactNamesContainer()
+@mixin mobileContactAddressesContainer() 
 {
-    font-size: 0.8em;
+    flex-direction: column;
+    margin-left: 1em;
 }
 
-@mixin mobileContactNames()
+@mixin mobileContactAddresses() 
 {
-    padding-right: 2em;
-    width: 25%;
+    width: 100%;
+    padding-bottom: 2em;
 }
 
-@mixin mobileContactAddresses()
+@mixin mobileSocialMediaIconContainer() 
 {
-    font-size: .8em;
-    width: 25%;
+    margin: 2em 0 2em 1em;
+}
+
+@mixin mobileSocialMediaIcon() 
+{
+    width: 30%;
+    margin: 0; 
+}
+
+@mixin mobileCopyRightInfo() 
+{
+    padding: 0 0 2em 1em;
+    margin: 5em 0 0 1em;;
+    width: 90%;
+}
+
+@mixin mobileEmptySpace() 
+{
+    width: 10%;
 }

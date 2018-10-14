@@ -8,7 +8,19 @@ $site-font-bold: "Poppins-Bold";
 $site-font-semibold: "Poppins-SemiBold";
 $site-font-regular: "Poppins-Regular";
 
-$mobile-max-width-small: 320px;
-$mobile-max-width-mid: 768px;
-$mobile-max-width-large: 959px;
-$dt-lp-min-width: 960px;
+$copyright-info-font-size: 0.7em;
+
+/* MOBILE VARIABLES */
+/** HEADER SECTION **/
+$mobile-font-size-nav: 0.8em;
+$mobile-font-size-bg-image-text-date: 2.25em;
+$mobile-font-size-bg-image-text-album-name: 1.25em;
+$mobile-font-size-bg-image-text-button: 0.9em;
+
+/** MAIN SECTION **/
+$mobile-font-size-paragraphs: 0.9em;
+$mobile-font-size-section-headings: 2.25em;
+$mobile-image-width: 285px;
+$mobile-image-height: 285px;
+$mobile-max-width-small: 760px;
+$dt-lpt-min-width: 761px; /* Reserved for next iteration */
