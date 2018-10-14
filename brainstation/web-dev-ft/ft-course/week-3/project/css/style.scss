@@ -79,6 +79,10 @@ table {
         background-image: url(../assets/images/original/ana-grave-156852-unsplash.jpg);
         @include sectionSize();
         background-size: cover;
+
+        @media (max-width: $mobile-max-width-small) {
+            @include mobileHeaderBgImage();
+        }
         
         .bgImage__navigation {
             display: flex;
@@ -97,6 +101,10 @@ table {
                 a {
                     @include links(); 
                 }
+
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileNavigationLeft();
+                }
             }
             .bgImage__navigation--right {
                 display: flex;
@@ -108,6 +116,10 @@ table {
         
                 a {
                     @include links(); 
+                }
+
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileNavigationRight();
                 }
             }
         
@@ -122,11 +134,19 @@ table {
             .text__date {
                 font-size: 5.25em;
                 font-family: $site-font-bold;
+
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileBgImageTextDate();
+                }
             }            
             .text__album-name {
                 font-size: 2.25em;
                 padding: 1.2em 0;
                 font-family: $site-font-regular;
+
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileBgImageTextAlbumName();
+                }
             }            
             .text__button {
                 font-family: $site-font-semibold;
@@ -142,6 +162,10 @@ table {
                 font-size: 1.125em;
                 line-height: 0px;
                 letter-spacing: 1px;
+
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileBgImageTextButton();
+                }
             }
         
         }     
@@ -158,12 +182,21 @@ table {
     .about__header {    
         display: flex;
         justify-content: space-evenly;
-    
+        
+        @media (max-width: $mobile-max-width-small) {
+            @include  mobileSectionHeader();
+        }
+        
         .about__header--h1 {
             width: 30%;
             font-family: $site-font-bold;
             font-size: 5.25em;    
             padding-bottom: 1em;
+            
+            @media (max-width: $mobile-max-width-small) {
+                @include mobileSectionHeadings();
+                @include  mobileSpacing();
+            }
         }        
         .about__header--spacing {
             width: 45%;
@@ -171,19 +204,31 @@ table {
     }
     .about__info {
         display: flex;
-        justify-content: space-evenly; 
-    
+        justify-content: space-evenly;
+       
+        @media (max-width: $mobile-max-width-small) {
+            @include mobileSectionDisplay();
+        }
+
         .about__paragraph--left {
             width: 30%;
             font-family: $site-font-bold;
             font-size: 1.5em;
-            line-height: 1.5em; 
+            line-height: 1.5em;
+            
+            @media (max-width: $mobile-max-width-small) {
+                @include mobileInfoParagraphs();
+            }
         }        
         .about__paragraph--right {
             width: 45%;    
             font-family: $site-font-regular;
             font-size: 1.25em;
-            line-height: 1.5em;   
+            line-height: 1.5em;
+            
+            @media (max-width: $mobile-max-width-small) {
+                @include mobileInfoParagraphs();
+            }          
         }    
     }
 }
@@ -194,15 +239,25 @@ table {
     color: $main-color;
     @include containerOrientation();
 
+    
     .music__header {
         display: flex;
         justify-content: space-evenly;
+
+        @media (max-width: $mobile-max-width-small) {
+            @include  mobileSectionHeader();
+        }
     
         .music__header--h1{
             font-family: $site-font-bold;
             font-size: 5.25em;
             width: 30%;
             padding-bottom: 1em;
+
+            @media (max-width: $mobile-max-width-small) {
+                @include mobileSectionHeadings();
+                @include  mobileSpacing();
+            }
         }    
         .music__header--spacing{
             width: 45%;
@@ -210,8 +265,12 @@ table {
     }
     .music__info {
         display: flex;
-        justify-content: space-evenly; 
-    
+        justify-content: space-evenly;
+        
+        @media (max-width: $mobile-max-width-small) {
+            @include mobileSectionDisplay();
+        }
+       
         .music__info--image {
             width: 285px;
             height: 285px;
@@ -222,7 +281,11 @@ table {
             font-family: $site-font-bold;
             display: flex;
             justify-content: space-between;
-        
+
+            @media (max-width: $mobile-max-width-small) {
+                @include mobileMusicInfoImage();
+            }    
+
             .music__info--left {
                 padding: 1em 1.2em;
             }            
@@ -233,10 +296,18 @@ table {
         .music__info--album {
             width: 50%;
             font-family: $site-font-regular;
+
+            @media (max-width: $mobile-max-width-small) {
+                @include mobileMusicInfoAlbum();
+            }
         
             .music__info--h2{
                 padding-bottom: 1em;
                 font-size: 1.5em;
+
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileMusicInfoText();
+                }  
             }            
             .music__info--h2 span {
                 font-family: $site-font-bold;
@@ -245,6 +316,10 @@ table {
                 font-family: $site-font-regular;
                 font-size: 1.25em;
                 line-height: 1.5em;
+
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileMusicInfoText();
+                }
             }
         }    
     }
@@ -255,18 +330,34 @@ table {
     background-color: $header-footer-color;
     color: $main-color; 
     @include containerOrientation();
-    margin: 8em 0;    
+    margin: 8em 0;
+    
+    @media (max-width: $mobile-max-width-small) {
+        @include mobileSectionContainerMargin();
+    }
 
     .gallery__header {
         display: flex;
         justify-content: space-between;
         margin-left: 8%;
-    
+
+        @media (max-width: $mobile-max-width-small) {
+            @include mobileSectionContainerMargin();
+        }    
+
+        @media (max-width: 320px) {
+            @include  mobileSectionHeader();
+        }    
         .gallery__header--h1 {
             font-family: $site-font-bold;
             font-size: 5.25em;
             width: 30%;
             padding-bottom: 1em;
+
+            @media (max-width: $mobile-max-width-small) {
+                @include mobileSectionHeadings();
+                @include  mobileSpacing();
+            }
         }    
         .gallery__header--spacing {
             width: 45%;
@@ -282,7 +373,11 @@ table {
             display: flex;
             flex-wrap: wrap;
             margin-left: 8%;
-            
+
+            @media (max-width: $mobile-max-width-small) {
+                @include mobileGalleryImages();
+            }
+
             .rows--image-1 {
                 @include imageSize();
                 background-image: url(../assets/images/1-ian-dooley-resized.jpg);
@@ -375,12 +470,25 @@ footer {
             display: flex;
             justify-content: space-evenly;
             margin-top: 8em;
+
+            @media (max-width: $mobile-max-width-small) {
+                @include mobileSectionContainerMargin();
+            }
+            
+            @media (max-width: $mobile-max-width-small) {
+                @include  mobileSectionHeader();
+            }
         
             .contact__header--h1 {
                 width: 30%;
                 font-family: $site-font-bold;
                 font-size: 5.25em;     
                 padding-bottom: 1em;
+
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileSectionHeadings();
+                    @include  mobileSpacing();
+                }
                 
             }
             .contact__header--spacing {
@@ -393,18 +501,35 @@ footer {
             font-family: $site-font-semibold;
             font-size: 1.25em;
             margin-left: 8%;
-        
+
+            @media (max-width: $mobile-max-width-small) {
+                @include mobileContactNamesContainer();
+            }
+
             .contact__names--one {
                 padding-right: 2em;
                 width: 30%;
+
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileContactNames();
+                }
             }
             .contact__names--two {
                 padding-right: 2em;
                 width: 30%;
+
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileContactNames();
+                }
             }
             .contact__names--three {
                 padding-right: 2em;
                 width: 30%;
+
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileContactNames();
+                    padding-left: 2em;
+                }
             }
         }       
         .contact__addresses {

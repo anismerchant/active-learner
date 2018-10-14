@@ -1,3 +1,9 @@
+/* MOBILE */
+/* NAVIGATION */
+/* ABOUT SECTION */
+/* MUSIC SECTION */
+/* GALLERY SECTION */
+/* CONTACT SECTION */
 /* GLOBAL RESET */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -85,6 +91,13 @@ table {
   background-size: cover;
 }
 
+@media (max-width: 320px) {
+  .header .header__bgImage {
+    background-image: url(../assets/images/for-mobile/max-320px/ana-grave-mobile-resized.jpg);
+    background-size: cover;
+  }
+}
+
 .header .header__bgImage .bgImage__navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,6 +127,14 @@ table {
   text-decoration: none;
 }
 
+@media (max-width: 320px) {
+  .header .header__bgImage .bgImage__navigation .bgImage__navigation--left {
+    width: 50%;
+    padding: 1em 0 0 1em;
+    font-size: 0.8em;
+  }
+}
+
 .header .header__bgImage .bgImage__navigation .bgImage__navigation--right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -129,6 +150,14 @@ table {
 .header .header__bgImage .bgImage__navigation .bgImage__navigation--right a {
   color: #FFFFFF;
   text-decoration: none;
+}
+
+@media (max-width: 320px) {
+  .header .header__bgImage .bgImage__navigation .bgImage__navigation--right {
+    width: 50%;
+    padding: 1em 1em 0 0;
+    font-size: 0.8em;
+  }
 }
 
 .header .header__bgImage .bgImage__text {
@@ -150,10 +179,22 @@ table {
   font-family: "Poppins-Bold";
 }
 
+@media (max-width: 320px) {
+  .header .header__bgImage .bgImage__text .text__date {
+    font-size: 2.25em;
+  }
+}
+
 .header .header__bgImage .bgImage__text .text__album-name {
   font-size: 2.25em;
   padding: 1.2em 0;
   font-family: "Poppins-Regular";
+}
+
+@media (max-width: 320px) {
+  .header .header__bgImage .bgImage__text .text__album-name {
+    font-size: 1.25em;
+  }
 }
 
 .header .header__bgImage .bgImage__text .text__button {
@@ -170,6 +211,15 @@ table {
   font-size: 1.125em;
   line-height: 0px;
   letter-spacing: 1px;
+}
+
+@media (max-width: 320px) {
+  .header .header__bgImage .bgImage__text .text__button {
+    letter-spacing: 0.5px;
+    font-size: 0.9em;
+    width: 144px;
+    height: 40px;
+  }
 }
 
 /* ABOUT SECTION */
@@ -198,11 +248,29 @@ table {
           justify-content: space-evenly;
 }
 
+@media (max-width: 320px) {
+  .about .about__header {
+    padding: 2em 0 0 1em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .about .about__header .about__header--h1 {
   width: 30%;
   font-family: "Poppins-Bold";
   font-size: 5.25em;
   padding-bottom: 1em;
+}
+
+@media (max-width: 320px) {
+  .about .about__header .about__header--h1 {
+    font-size: 2.25em;
+    padding-bottom: 0.8em;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .about .about__header .about__header--spacing {
@@ -218,6 +286,12 @@ table {
           justify-content: space-evenly;
 }
 
+@media (max-width: 320px) {
+  .about .about__info {
+    display: block;
+  }
+}
+
 .about .about__info .about__paragraph--left {
   width: 30%;
   font-family: "Poppins-Bold";
@@ -225,11 +299,27 @@ table {
   line-height: 1.5em;
 }
 
+@media (max-width: 320px) {
+  .about .about__info .about__paragraph--left {
+    width: 90%;
+    margin: 0 1em 1em 1em;
+    font-size: 0.8em;
+  }
+}
+
 .about .about__info .about__paragraph--right {
   width: 45%;
   font-family: "Poppins-Regular";
   font-size: 1.25em;
   line-height: 1.5em;
+}
+
+@media (max-width: 320px) {
+  .about .about__info .about__paragraph--right {
+    width: 90%;
+    margin: 0 1em 1em 1em;
+    font-size: 0.8em;
+  }
 }
 
 /* MUSIC SECTION */
@@ -259,11 +349,29 @@ table {
           justify-content: space-evenly;
 }
 
+@media (max-width: 320px) {
+  .music .music__header {
+    padding: 2em 0 0 1em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .music .music__header .music__header--h1 {
   font-family: "Poppins-Bold";
   font-size: 5.25em;
   width: 30%;
   padding-bottom: 1em;
+}
+
+@media (max-width: 320px) {
+  .music .music__header .music__header--h1 {
+    font-size: 2.25em;
+    padding-bottom: 0.8em;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .music .music__header .music__header--spacing {
@@ -277,6 +385,12 @@ table {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+@media (max-width: 320px) {
+  .music .music__info {
+    display: block;
+  }
 }
 
 .music .music__info .music__info--image {
@@ -295,6 +409,16 @@ table {
           justify-content: space-between;
 }
 
+@media (max-width: 320px) {
+  .music .music__info .music__info--image {
+    background-image: url(../assets/images/for-mobile/max-320px/bryan-minear-mobile-resized.jpg);
+    background-size: cover;
+    width: 265px;
+    height: 265px;
+    margin: 0 0 0 1.5em;
+  }
+}
+
 .music .music__info .music__info--image .music__info--left {
   padding: 1em 1.2em;
 }
@@ -308,9 +432,22 @@ table {
   font-family: "Poppins-Regular";
 }
 
+@media (max-width: 320px) {
+  .music .music__info .music__info--album {
+    width: 90%;
+    margin: 1em 1em 1em 1em;
+  }
+}
+
 .music .music__info .music__info--album .music__info--h2 {
   padding-bottom: 1em;
   font-size: 1.5em;
+}
+
+@media (max-width: 320px) {
+  .music .music__info .music__info--album .music__info--h2 {
+    font-size: 0.8em;
+  }
 }
 
 .music .music__info .music__info--album .music__info--h2 span {
@@ -321,6 +458,12 @@ table {
   font-family: "Poppins-Regular";
   font-size: 1.25em;
   line-height: 1.5em;
+}
+
+@media (max-width: 320px) {
+  .music .music__info .music__info--album .music__info--paragraph {
+    font-size: 0.8em;
+  }
 }
 
 /* GALLERY SECTION */
@@ -342,6 +485,12 @@ table {
   margin: 8em 0;
 }
 
+@media (max-width: 320px) {
+  .gallery {
+    margin: 0 0;
+  }
+}
+
 .gallery .gallery__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -352,11 +501,35 @@ table {
   margin-left: 8%;
 }
 
+@media (max-width: 320px) {
+  .gallery .gallery__header {
+    margin: 0 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .gallery .gallery__header {
+    padding: 2em 0 0 1em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .gallery .gallery__header .gallery__header--h1 {
   font-family: "Poppins-Bold";
   font-size: 5.25em;
   width: 30%;
   padding-bottom: 1em;
+}
+
+@media (max-width: 320px) {
+  .gallery .gallery__header .gallery__header--h1 {
+    font-size: 2.25em;
+    padding-bottom: 0.8em;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .gallery .gallery__header .gallery__header--spacing {
@@ -381,6 +554,12 @@ table {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: 8%;
+}
+
+@media (max-width: 320px) {
+  .gallery .gallery__rows .gallery__div {
+    margin: 1em;
+  }
 }
 
 .gallery .gallery__rows .gallery__div .rows--image-1 {
@@ -515,11 +694,35 @@ footer .contact .contact__header {
   margin-top: 8em;
 }
 
+@media (max-width: 320px) {
+  footer .contact .contact__header {
+    margin: 0 0;
+  }
+}
+
+@media (max-width: 320px) {
+  footer .contact .contact__header {
+    padding: 2em 0 0 1em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 footer .contact .contact__header .contact__header--h1 {
   width: 30%;
   font-family: "Poppins-Bold";
   font-size: 5.25em;
   padding-bottom: 1em;
+}
+
+@media (max-width: 320px) {
+  footer .contact .contact__header .contact__header--h1 {
+    font-size: 2.25em;
+    padding-bottom: 0.8em;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 footer .contact .contact__header .contact__header--spacing {
@@ -538,9 +741,22 @@ footer .contact .contact_names {
   margin-left: 8%;
 }
 
+@media (max-width: 320px) {
+  footer .contact .contact_names {
+    font-size: 0.8em;
+  }
+}
+
 footer .contact .contact_names .contact__names--one {
   padding-right: 2em;
   width: 30%;
+}
+
+@media (max-width: 320px) {
+  footer .contact .contact_names .contact__names--one {
+    padding-right: 2em;
+    width: 25%;
+  }
 }
 
 footer .contact .contact_names .contact__names--two {
@@ -548,9 +764,24 @@ footer .contact .contact_names .contact__names--two {
   width: 30%;
 }
 
+@media (max-width: 320px) {
+  footer .contact .contact_names .contact__names--two {
+    padding-right: 2em;
+    width: 25%;
+  }
+}
+
 footer .contact .contact_names .contact__names--three {
   padding-right: 2em;
   width: 30%;
+}
+
+@media (max-width: 320px) {
+  footer .contact .contact_names .contact__names--three {
+    padding-right: 2em;
+    width: 25%;
+    padding-left: 2em;
+  }
 }
 
 footer .contact .contact__addresses {

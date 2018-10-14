@@ -24,3 +24,118 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+/* MOBILE */
+
+/* NAVIGATION */
+@mixin mobileHeaderBgImage()
+{
+    background-image: url(../assets/images/for-mobile/max-320px/ana-grave-mobile-resized.jpg);
+    background-size: cover;
+}
+@mixin mobileNavigationLeft()
+{
+    width: 50%;
+    padding: 1em 0 0 1em;
+    font-size: 0.8em;
+}
+@mixin mobileNavigationRight()
+{
+    width: 50%;
+    padding: 1em 1em 0 0;
+    font-size: 0.8em;
+}
+@mixin mobileBgImageTextDate()
+{
+    font-size: 2.25em;
+}
+@mixin mobileBgImageTextAlbumName()
+{
+    font-size: 1.25em;
+}
+@mixin mobileBgImageTextButton()
+{
+    letter-spacing: 0.5px;
+    font-size: 0.9em;
+    width: 144px;
+    height: 40px;
+}
+
+/* ABOUT SECTION */
+@mixin mobileSectionHeader()
+{
+    padding: 2em 0 0 1em;
+    justify-content: space-between;
+}
+@mixin mobileSectionHeadings()
+{
+    font-size: 2.25em;
+    padding-bottom: 0.8em;
+    
+}
+@mixin mobileSpacing()
+{
+    justify-content: space-around;
+}
+@mixin mobileSectionDisplay() 
+{
+    display: block;
+}
+@mixin mobileInfoParagraphs()
+{
+    width: 90%;
+    margin: 0 1em 1em 1em;
+    font-size: 0.8em;
+}
+
+/* MUSIC SECTION */
+@mixin mobileMusicInfoImage()
+{
+    background-image: url(../assets/images/for-mobile/max-320px/bryan-minear-mobile-resized.jpg);
+    background-size: cover;
+    width: 265px;
+    height: 265px;
+    margin: 0 0 0 1.5em;
+}
+
+@mixin mobileMusicInfoText()
+{
+    font-size: 0.8em;
+}
+
+@mixin mobileMusicInfoAlbum()
+{
+    width: 90%;
+    margin: 1em 1em 1em 1em;
+}
+
+/* GALLERY SECTION */
+
+@mixin mobileSectionContainerMargin()
+{
+    margin: 0 0;
+}
+
+@mixin mobileGalleryImages()
+{
+    margin: 1em;
+}
+
+/* CONTACT SECTION */
+
+@mixin mobileContactNamesContainer()
+{
+    font-size: 0.8em;
+}
+
+@mixin mobileContactNames()
+{
+    padding-right: 2em;
+    width: 25%;
+}
+
+@mixin mobileContactAddresses()
+{
+    font-size: .8em;
+    width: 25%;
+}
