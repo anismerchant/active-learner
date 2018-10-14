@@ -460,14 +460,17 @@ footer {
 .contact__addresses--one {
     padding-right: 2em;
     width: 30%;
+    line-height: 1.5em;
 }
 .contact__addresses--two {
     padding-top: 1em;
     padding-right: 2em;
-    width: 30%;    
+    width: 30%;
+    line-height: 1.5em;    
 }
 .contact__addresses--three {    
     width: 30%;
+    line-height: 1.5em;
 }
 
 .socialMediaIcon {
@@ -511,7 +514,7 @@ footer {
     justify-content: flex-start
 }
 .copyright--info {
-    font-family: "Poppins-SemiBold";
+    font-family: "Poppins-Regular";
     font-size: 0.625em;
     margin-left: 11em;
     margin-top: 10em;
