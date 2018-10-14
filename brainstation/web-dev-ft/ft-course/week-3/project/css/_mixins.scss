@@ -156,3 +156,35 @@
 {
     width: 10%;
 }
+
+/* BONUS */
+
+@mixin imageFilterGrayscale() {
+    filter: grayscale(1);
+    transition: all 1s ease-in-out;
+    &:hover {
+        filter: none;
+        filter: $filter-grayscale;
+        transform: scale(1.01,1.01);
+    }   
+}
+
+@mixin imageFilterHue() {
+    filter: grayscale(1);
+    transition: all 1s ease-in-out;
+    &:hover {
+        filter: none;
+        filter: $filter-hue;
+        transform: scale(1.01,1.01);
+    }   
+}
+
+@mixin imageFilterContrast() {
+    filter: grayscale(1);
+    transition: all 1s ease-in-out;
+    &:hover {
+        filter: none;
+        filter: $filter-contrast;
+        transform: scale(1.01,1.01);
+    }   
+}

@@ -24,3 +24,9 @@ $mobile-image-width: 285px;
 $mobile-image-height: 285px;
 $mobile-max-width-small: 760px;
 $dt-lpt-min-width: 761px; /* Reserved for next iteration */
+
+/* BONUS */
+
+$filter-hue: hue-rotate(270deg);
+$filter-contrast: contrast(300%);
+$filter-grayscale: grayscale(0);
