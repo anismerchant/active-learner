@@ -729,61 +729,6 @@ footer .contact .contact__header .contact__header--spacing {
   width: 45%;
 }
 
-footer .contact .contact_names {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: "Poppins-SemiBold";
-  font-size: 1.25em;
-  margin-left: 8%;
-}
-
-@media (max-width: 320px) {
-  footer .contact .contact_names {
-    font-size: 0.8em;
-  }
-}
-
-footer .contact .contact_names .contact__names--one {
-  padding-right: 2em;
-  width: 30%;
-}
-
-@media (max-width: 320px) {
-  footer .contact .contact_names .contact__names--one {
-    padding-right: 2em;
-    width: 25%;
-  }
-}
-
-footer .contact .contact_names .contact__names--two {
-  padding-right: 2em;
-  width: 30%;
-}
-
-@media (max-width: 320px) {
-  footer .contact .contact_names .contact__names--two {
-    padding-right: 2em;
-    width: 25%;
-  }
-}
-
-footer .contact .contact_names .contact__names--three {
-  padding-right: 2em;
-  width: 30%;
-}
-
-@media (max-width: 320px) {
-  footer .contact .contact_names .contact__names--three {
-    padding-right: 2em;
-    width: 25%;
-    padding-left: 2em;
-  }
-}
-
 footer .contact .contact__addresses {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -801,18 +746,32 @@ footer .contact .contact__addresses .contact__addresses--one {
   padding-right: 2em;
   width: 30%;
   line-height: 1.5em;
+  font-size: 0.8em;
+}
+
+footer .contact .contact__addresses .contact__addresses--one .contact__names--one {
+  font-family: "Poppins-Bold";
 }
 
 footer .contact .contact__addresses .contact__addresses--two {
-  padding-top: 1em;
   padding-right: 2em;
   width: 30%;
   line-height: 1.5em;
+  font-size: 0.8em;
+}
+
+footer .contact .contact__addresses .contact__addresses--two .contact__names--two {
+  font-family: "Poppins-Bold";
 }
 
 footer .contact .contact__addresses .contact__addresses--three {
   width: 30%;
   line-height: 1.5em;
+  font-size: 0.8em;
+}
+
+footer .contact .contact__addresses .contact__addresses--three .contact__names--three {
+  font-family: "Poppins-Bold";
 }
 
 footer .contact .contact__addresses a {

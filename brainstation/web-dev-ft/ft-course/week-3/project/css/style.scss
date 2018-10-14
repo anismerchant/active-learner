@@ -494,44 +494,7 @@ footer {
             .contact__header--spacing {
                 width: 45%;
             }
-        }        
-        .contact_names {
-            display: flex;
-            justify-content: center; 
-            font-family: $site-font-semibold;
-            font-size: 1.25em;
-            margin-left: 8%;
-
-            @media (max-width: $mobile-max-width-small) {
-                @include mobileContactNamesContainer();
-            }
-
-            .contact__names--one {
-                padding-right: 2em;
-                width: 30%;
-
-                @media (max-width: $mobile-max-width-small) {
-                    @include mobileContactNames();
-                }
-            }
-            .contact__names--two {
-                padding-right: 2em;
-                width: 30%;
-
-                @media (max-width: $mobile-max-width-small) {
-                    @include mobileContactNames();
-                }
-            }
-            .contact__names--three {
-                padding-right: 2em;
-                width: 30%;
-
-                @media (max-width: $mobile-max-width-small) {
-                    @include mobileContactNames();
-                    padding-left: 2em;
-                }
-            }
-        }       
+        } 
         .contact__addresses {
             display: flex;
             justify-content: end; 
@@ -544,16 +507,31 @@ footer {
                 padding-right: 2em;
                 width: 30%;
                 line-height: 1.5em;
+                font-size: 0.8em;
+                
+                .contact__names--one {
+                    font-family: "Poppins-Bold";
+                }
+                
             }
             .contact__addresses--two {
-                padding-top: 1em;
                 padding-right: 2em;
                 width: 30%;
-                line-height: 1.5em;    
+                line-height: 1.5em;
+                font-size: 0.8em;
+                
+                .contact__names--two {
+                    font-family: "Poppins-Bold";
+                }
             }
             .contact__addresses--three {    
                 width: 30%;
                 line-height: 1.5em;
+                font-size: 0.8em;
+                
+                .contact__names--three {
+                    font-family: "Poppins-Bold";
+                }
             }
             a {
                 @include links();
