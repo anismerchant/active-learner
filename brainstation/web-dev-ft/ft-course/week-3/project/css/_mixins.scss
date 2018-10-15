@@ -25,7 +25,7 @@
     background-repeat: no-repeat;
 }
 
-/* MOBILE */
+/*** MOBILE ***/
 
 /* NAVIGATION */
 @mixin mobileHeaderBgImage()
@@ -96,12 +96,10 @@
     height: $mobile-image-height;
     margin: 0 0 0 1.5em;
 }
-
 @mixin mobileMusicInfoText()
 {
     font-size: $mobile-font-size-paragraphs;
 }
-
 @mixin mobileMusicInfoAlbum()
 {
     width: 90%;
@@ -109,56 +107,47 @@
 }
 
 /* GALLERY SECTION */
-
 @mixin mobileSectionContainerMargin()
 {
     margin: 0 0;
 }
-
 @mixin mobileGalleryImages()
 {
     margin: 1em;
 }
 
 /* CONTACT SECTION */
-
 @mixin mobileContactAddressesContainer() 
 {
     flex-direction: column;
     margin-left: 1em;
 }
-
 @mixin mobileContactAddresses() 
 {
     width: 100%;
     padding-bottom: 2em;
 }
-
 @mixin mobileSocialMediaIconContainer() 
 {
     margin: 2em 0 2em 1em;
 }
-
 @mixin mobileSocialMediaIcon() 
 {
     width: 30%;
     margin: 0; 
 }
-
 @mixin mobileCopyRightInfo() 
 {
     padding: 0 0 2em 1em;
     margin: 5em 0 0 1em;;
     width: 90%;
 }
-
 @mixin mobileEmptySpace() 
 {
     width: 10%;
 }
 
 /* BONUS */
-
 @mixin imageFilterGrayscale() {
     filter: grayscale(1);
     transition: all 1s ease-in-out;
@@ -168,7 +157,6 @@
         transform: scale(1.01,1.01);
     }   
 }
-
 @mixin imageFilterHue() {
     filter: grayscale(1);
     transition: all 1s ease-in-out;
@@ -178,7 +166,6 @@
         transform: scale(1.01,1.01);
     }   
 }
-
 @mixin imageFilterContrast() {
     filter: grayscale(1);
     transition: all 1s ease-in-out;

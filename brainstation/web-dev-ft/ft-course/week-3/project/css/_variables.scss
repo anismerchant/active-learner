@@ -10,14 +10,15 @@ $site-font-regular: "Poppins-Regular";
 
 $copyright-info-font-size: 0.7em;
 
-/* MOBILE VARIABLES */
-/** HEADER SECTION **/
+/*** MOBILE VARIABLES ***/
+
+/* HEADER SECTION */
 $mobile-font-size-nav: 0.8em;
 $mobile-font-size-bg-image-text-date: 2.25em;
 $mobile-font-size-bg-image-text-album-name: 1.25em;
 $mobile-font-size-bg-image-text-button: 0.9em;
 
-/** MAIN SECTION **/
+/* MAIN SECTION */
 $mobile-font-size-paragraphs: 0.9em;
 $mobile-font-size-section-headings: 2.25em;
 $mobile-image-width: 285px;
@@ -26,7 +27,6 @@ $mobile-max-width-small: 760px;
 $dt-lpt-min-width: 761px; /* Reserved for next iteration */
 
 /* BONUS */
-
 $filter-hue: hue-rotate(270deg);
 $filter-contrast: contrast(300%);
 $filter-grayscale: grayscale(0);

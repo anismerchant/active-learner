@@ -574,7 +574,6 @@ footer {
         height: auto;
         margin: 4em 0;
 
-
         @media (max-width: $mobile-max-width-small) {
             @include mobileSocialMediaIconContainer();            
         }
@@ -586,7 +585,7 @@ footer {
             @include socialMediaIcon();
             margin-left: 6.6em;
             margin-right: 1em;
-
+                      
             @media (max-width: $mobile-max-width-small) {
                 @include mobileSocialMediaIcon();            
             }
