@@ -72,7 +72,7 @@ Create a loop that prints the integers from 1 to 4 in separate rows like the fol
  
 */
 
-for (x=0; x<=4; x++) {
+for (x=1; x<=4; x++) {
     var string = "";
     for (y=0; y<x; y++){
         string += x.toString();        
