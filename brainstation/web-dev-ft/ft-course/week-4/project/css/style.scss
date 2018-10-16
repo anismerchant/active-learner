@@ -1,0 +1,643 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+/* GLOBAL RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url(../assets/typography/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url(../assets/typography/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url(../assets/typography/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-Thin";
+    src: url(../assets/typography/Poppins-Thin.ttf);
+}
+/* NAVIGATION SECTION */
+.header {
+    color: $header-footer-color;
+
+    .header__bgImage {
+        background-image: url(../assets/images/original/ana-grave-156852-unsplash.jpg);
+        @include sectionSize();
+        background-size: cover;
+
+        @media (max-width: $mobile-max-width-small) {
+            @include mobileHeaderBgImage();
+        }
+        
+        .bgImage__navigation {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        
+            .bgImage__navigation--left {
+                display: flex;
+                justify-content: flex-start;
+                width: 75%;
+                padding: 2% 2%;
+                font-family: $site-font-bold;
+                padding-left: 8em;
+                font-size: 1.125em;
+                
+                a {
+                    @include links(); 
+                }
+
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileNavigationLeft();
+                }
+            }
+            .bgImage__navigation--right {
+                display: flex;
+                justify-content: space-around;
+                width: 25%;
+                padding: 2% 2%;
+                font-family: $site-font-bold;
+                font-size: 1.125em;
+        
+                a {
+                    @include links(); 
+                }
+
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileNavigationRight();
+                }
+            }
+        
+        }
+        .bgImage__text {
+            height: 80vh;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            
+            .text__date {
+                font-size: 5.25em;
+                font-family: $site-font-bold;
+
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileBgImageTextDate();
+                }
+            }            
+            .text__album-name {
+                font-size: 2.25em;
+                padding: 1.2em 0;
+                font-family: $site-font-regular;
+
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileBgImageTextAlbumName();
+                }
+            }            
+            .text__button {
+                font-family: $site-font-semibold;
+                background-color: $text-button-color;
+                display: inline-block;
+                color: $header-footer-color;
+                width: 198px;
+                height: 55px;
+                margin-top: 1em;
+                padding: 15px 20px;
+                border: 2px solid $header-footer-color;
+                border-radius: 4px;
+                font-size: 1.125em;
+                line-height: 0px;
+                letter-spacing: 1px;
+
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileBgImageTextButton();
+                }
+            }
+        
+        }     
+         
+    }
+    
+}
+/* ABOUT SECTION */
+.about {
+    @include sectionSize();
+    color: $main-color; 
+    @include containerOrientation();
+
+    .about__header {    
+        display: flex;
+        justify-content: space-evenly;
+        
+        @media (max-width: $mobile-max-width-small) {
+            @include  mobileSectionHeader();
+        }
+        
+        .about__header--h1 {
+            width: 30%;
+            font-family: $site-font-bold;
+            font-size: 5.25em;    
+            padding-bottom: 1em;
+            
+            @media (max-width: $mobile-max-width-small) {
+                @include mobileSectionHeadings();
+                @include  mobileSpacing();
+            }
+        }        
+        .about__header--spacing {
+            width: 45%;
+        }    
+    }
+    .about__info {
+        display: flex;
+        justify-content: space-evenly;
+       
+        @media (max-width: $mobile-max-width-small) {
+            @include mobileSectionDisplay();
+        }
+
+        .about__paragraph--left {
+            width: 30%;
+            font-family: $site-font-bold;
+            font-size: 1.5em;
+            line-height: 1.5em;
+            
+            @media (max-width: $mobile-max-width-small) {
+                @include mobileInfoParagraphs();
+            }
+        }        
+        .about__paragraph--right {
+            width: 45%;    
+            font-family: $site-font-regular;
+            font-size: 1.25em;
+            line-height: 1.5em;
+            
+            @media (max-width: $mobile-max-width-small) {
+                @include mobileInfoParagraphs();
+            }          
+        }    
+    }
+}
+/* MUSIC SECTION */
+.music {
+    @include sectionSize();
+    background-color: $section-background-color;
+    color: $main-color;
+    @include containerOrientation();
+
+    
+    .music__header {
+        display: flex;
+        justify-content: space-evenly;
+
+        @media (max-width: $mobile-max-width-small) {
+            @include  mobileSectionHeader();
+        }
+    
+        .music__header--h1{
+            font-family: $site-font-bold;
+            font-size: 5.25em;
+            width: 30%;
+            padding-bottom: 1em;
+
+            @media (max-width: $mobile-max-width-small) {
+                @include mobileSectionHeadings();
+                @include  mobileSpacing();
+            }
+        }    
+        .music__header--spacing{
+            width: 45%;
+        }
+    }
+    .music__info {
+        display: flex;
+        justify-content: space-evenly;
+        
+        @media (max-width: $mobile-max-width-small) {
+            @include mobileSectionDisplay();
+        }
+       
+        .music__info--image {
+            width: 285px;
+            height: 285px;
+            background-image: url(../assets/images/music-section-bryan-minear-resized.jpg);
+            background-size: cover;
+            color: $header-footer-color;
+            font-size: 0.625em;
+            font-family: $site-font-bold;
+            display: flex;
+            justify-content: space-between;
+
+            @media (max-width: $mobile-max-width-small) {
+                @include mobileMusicInfoImage();
+            }    
+
+            .music__info--left {
+                padding: 1em 1.2em;
+            }            
+            .music__info--right {
+                padding: 1em 1.2em;
+            }
+        }        
+        .music__info--album {
+            width: 50%;
+            font-family: $site-font-regular;
+
+            @media (max-width: $mobile-max-width-small) {
+                @include mobileMusicInfoAlbum();
+            }
+        
+            .music__info--h2{
+                padding-bottom: 1em;
+                font-size: 1.5em;
+
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileMusicInfoText();
+                }  
+            }            
+            .music__info--h2 span {
+                font-family: $site-font-bold;
+            }            
+            .music__info--paragraph {
+                font-family: $site-font-regular;
+                font-size: 1.25em;
+                line-height: 1.5em;
+
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileMusicInfoText();
+                }
+            }
+        }    
+    }
+}
+/* GALLERY SECTION */
+.gallery {
+    @include sectionSize();
+    background-color: $header-footer-color;
+    color: $main-color; 
+    @include containerOrientation();
+    margin: 8em 0;
+    
+    @media (max-width: $mobile-max-width-small) {
+        @include mobileSectionContainerMargin();
+    }
+
+    .gallery__header {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 8%;
+
+        @media (max-width: $mobile-max-width-small) {
+            @include mobileSectionContainerMargin();
+        }    
+
+        @media (max-width: 320px) {
+            @include  mobileSectionHeader();
+        }    
+        .gallery__header--h1 {
+            font-family: $site-font-bold;
+            font-size: 5.25em;
+            width: 30%;
+            padding-bottom: 1em;
+
+            @media (max-width: $mobile-max-width-small) {
+                @include mobileSectionHeadings();
+                @include  mobileSpacing();
+            }
+        }    
+        .gallery__header--spacing {
+            width: 45%;
+        }
+    }
+
+    .gallery__rows {
+        display: flex; 
+        justify-content: space-evenly;    
+        flex-wrap: wrap;
+    
+        .gallery__div {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 8%;
+
+            @media (max-width: $mobile-max-width-small) {
+                @include mobileGalleryImages();
+            }
+
+            .rows--image-1 {
+                @include imageSize();
+                background-image: url(../assets/images/1-ian-dooley-resized.jpg);
+                background-size: cover;
+                margin: 0.5em 0.5em;
+                @include imageFilterHue();
+            }
+            .rows--image-2 {
+                @include imageSize();
+                background-image: url(../assets/images/2-ana-grave-resized.jpg);
+                background-size: cover; 
+                margin: 0.5em 0.5em;
+                @include imageFilterContrast();
+            }
+            .rows--image-3 {
+                @include imageSize();
+                background-image: url(../assets/images/3-hanny-naibaho-resized.jpg);
+                background-size: cover;
+                margin: 0.5em 0.5em;
+                @include imageFilterGrayscale();
+            }
+            .rows--image-4 {
+                @include imageSize();
+                background-image: url(../assets/images/4-bryan-minear-resized.jpg);
+                background-size: cover;
+                margin: 0.5em 0.5em;
+                @include imageFilterGrayscale();
+            }        
+            .rows--image-5 {
+                @include imageSize();
+                background-image: url(../assets/images/5-mike-giles-resized.jpg);
+                background-size: cover;
+                margin: 0.5em 0.5em;
+                @include imageFilterGrayscale();
+            }
+            .rows--image-6 {
+                @include imageSize();
+                background-image: url(../assets/images/6-melanie-van-leeuwen-resized.jpg);
+                background-size: cover;
+                margin: 0.5em 0.5em;
+                @include imageFilterGrayscale();
+            }
+            .rows--image-7 {
+                @include imageSize();
+                background-image: url(../assets/images/7-francisco-moreno-resized.jpg);
+                background-size: cover;
+                margin: 0.5em 0.5em;
+                @include imageFilterContrast()
+            }
+            .rows--image-8 {
+                @include imageSize();
+                background-image: url(../assets/images/8-felix-russell-saw-resized.jpg);
+                background-size: cover;
+                margin: 0.5em 0.5em;
+                @include imageFilterContrast();
+            }        
+            .rows--image-9 {
+                @include imageSize();
+                background-image: url(../assets/images/9-paulette-wooten-resized.jpg);
+                background-size: cover;
+                margin: 0.5em 0.5em;
+                @include imageFilterGrayscale();
+            }
+            .rows--image-10 {
+                @include imageSize();
+                background-image: url(../assets/images/10-wesley-tingey-resized.jpg);
+                background-size: cover;
+                margin: 0.5em 0.5em;
+                @include imageFilterGrayscale();
+            }
+            .rows--image-11 {
+                @include imageSize();
+                background-image: url(../assets/images/11-abigail-keenan-resized.jpg);
+                background-size: cover;
+                margin: 0.5em 0.5em;
+                @include imageFilterGrayscale();
+            }
+            .rows--image-12 {
+                @include imageSize();
+                background-image: url(../assets/images/12-ciprian-boiciuc-resized.jpg);
+                background-size: cover;
+                margin: 0.5em 0.5em;
+                @include imageFilterGrayscale();   
+            }    
+        }
+    
+    }
+
+}
+/* FOOTER SECTION */
+footer {
+    @include sectionSize();
+    background-color: $site-footer-bg-color;
+    color: $header-footer-color; 
+
+    /* CONTACT SECTION */
+    .contact {
+        @include containerOrientation();
+        flex-wrap: wrap;
+    
+        .contact__header {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 8em;
+
+            @media (max-width: $mobile-max-width-small) {
+                @include mobileSectionContainerMargin();
+            }
+            
+            @media (max-width: $mobile-max-width-small) {
+                @include  mobileSectionHeader();
+            }
+        
+            .contact__header--h1 {
+                width: 30%;
+                font-family: $site-font-bold;
+                font-size: 5.25em;     
+                padding-bottom: 1em;
+
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileSectionHeadings();
+                    @include  mobileSpacing();
+                }
+                
+            }
+            .contact__header--spacing {
+                width: 45%;
+            }
+        } 
+        .contact__addresses {
+            display: flex;
+            justify-content: end; 
+            font-family: $site-font-regular;
+            font-size: 1.25em;
+            margin-bottom: 1em;
+            margin-left: 8%;
+
+            @media (max-width: $mobile-max-width-small) {
+                @include mobileContactAddressesContainer();
+            }
+
+            .contact__addresses--one {
+                padding-right: 2em;
+                width: 30%;
+                line-height: 1.5em;
+                font-size: 0.8em;
+
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileContactAddresses();
+                }
+                
+                .contact__names--one {
+                    font-family: "Poppins-Bold";
+                }
+                
+            }
+            .contact__addresses--two {
+                padding-right: 2em;
+                width: 30%;
+                line-height: 1.5em;
+                font-size: 0.8em;
+                
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileContactAddresses();
+                }
+
+                .contact__names--two {
+                    font-family: "Poppins-Bold";
+                }
+            }
+            .contact__addresses--three {    
+                width: 30%;
+                line-height: 1.5em;
+                font-size: 0.8em;
+
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileContactAddresses();
+                }
+                
+                .contact__names--three {
+                    font-family: "Poppins-Bold";
+                }
+            }
+            a {
+                @include links();
+            }
+        }    
+    }
+    /* SOCIAL MEDIA ICONS */    
+    .socialMediaIcon {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        height: auto;
+        margin: 4em 0;
+
+        @media (max-width: $mobile-max-width-small) {
+            @include mobileSocialMediaIconContainer();            
+        }
+            
+        .socialMediaIcon--instagram {
+            width: 10%;
+            height: 4vh;
+            background-image: url(../assets/social-media-icons/svg/Instagram.svg);
+            @include socialMediaIcon();
+            margin-left: 6.6em;
+            margin-right: 1em;
+                      
+            @media (max-width: $mobile-max-width-small) {
+                @include mobileSocialMediaIcon();            
+            }
+        }
+        .socialMediaIcon--facebook {
+            width: 10%;
+            height: 4vh;
+            background-image: url(../assets/social-media-icons/svg/Facebook.svg);
+            @include socialMediaIcon();
+
+            @media (max-width: $mobile-max-width-small) {
+                @include mobileSocialMediaIcon();            
+            }
+        }
+        .socialMediaIcon--twitter {
+            width: 40%;
+            height: 4vh;
+            background-image: url(../assets/social-media-icons/svg/Twitter.svg);
+            @include socialMediaIcon();
+            
+            @media (max-width: $mobile-max-width-small) {
+                @include mobileSocialMediaIcon();            
+            }
+        }
+        .socialMediaIcon--spacing {
+            width: 40%;
+        }
+    }
+    /* COPYRIGHT SECTION */
+    .copyright {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+    
+        .copyright--info {
+            font-family: $site-font-regular;
+            font-size: $copyright-info-font-size;
+            margin-left: 11em;
+            margin-top: 10em;
+            width: 50%;
+
+            @media (max-width: $mobile-max-width-small) {    
+                @include mobileCopyRightInfo();
+            } 
+        }
+        .copyright--spacing {
+            width: 50%;
+
+            @media (max-width: $mobile-max-width-small) {    
+                @include mobileEmptySpace();
+            } 
+        }
+    }
+}

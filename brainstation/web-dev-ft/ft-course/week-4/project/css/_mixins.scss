@@ -1,0 +1,177 @@
+@mixin imageSize()
+{
+    width: 285px;
+    height: 285px;
+}
+@mixin links()
+{
+    color: $header-footer-color;
+    text-decoration: none;
+}
+@mixin sectionSize()
+{
+    width: 100%;
+    min-height: 100vh;
+}
+@mixin containerOrientation()
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@mixin socialMediaIcon() 
+{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*** MOBILE ***/
+
+/* NAVIGATION */
+@mixin mobileHeaderBgImage()
+{
+    background-image: url(../assets/images/for-mobile/max-320px/ana-grave-mobile-resized.jpg);
+    background-size: cover;
+}
+@mixin mobileNavigationLeft()
+{
+    width: 50%;
+    padding: 1em 0 0 1em;
+    font-size: $mobile-font-size-nav;
+}
+@mixin mobileNavigationRight()
+{
+    width: 50%;
+    padding: 1em 1em 0 0;
+    font-size: $mobile-font-size-nav;
+}
+@mixin mobileBgImageTextDate()
+{
+    font-size: $mobile-font-size-bg-image-text-date;
+}
+@mixin mobileBgImageTextAlbumName()
+{
+    font-size: $mobile-font-size-bg-image-text-album-name;
+}
+@mixin mobileBgImageTextButton()
+{
+    letter-spacing: 0.5px;
+    font-size: $mobile-font-size-bg-image-text-button;
+    width: 144px;
+    height: 40px;
+}
+
+/* ABOUT SECTION */
+@mixin mobileSectionHeader()
+{
+    padding: 2em 0 0 1em;
+    justify-content: space-between;
+}
+@mixin mobileSectionHeadings()
+{
+    font-size: $mobile-font-size-section-headings;
+    padding-bottom: 0.8em;    
+}
+@mixin mobileSpacing()
+{
+    justify-content: space-around;
+}
+@mixin mobileSectionDisplay() 
+{
+    display: block;
+}
+@mixin mobileInfoParagraphs()
+{
+    width: 90%;
+    margin: 0 1em 1em 1em;
+    font-size: $mobile-font-size-paragraphs;
+}
+
+/* MUSIC SECTION */
+@mixin mobileMusicInfoImage()
+{
+    background-image: url(../assets/images/for-mobile/max-320px/bryan-minear-mobile-resized.jpg);
+    background-size: cover;
+    width: $mobile-image-width;
+    height: $mobile-image-height;
+    margin: 0 0 0 1.5em;
+}
+@mixin mobileMusicInfoText()
+{
+    font-size: $mobile-font-size-paragraphs;
+}
+@mixin mobileMusicInfoAlbum()
+{
+    width: 90%;
+    margin: 1em 1em 1em 1em;
+}
+
+/* GALLERY SECTION */
+@mixin mobileSectionContainerMargin()
+{
+    margin: 0 0;
+}
+@mixin mobileGalleryImages()
+{
+    margin: 1em;
+}
+
+/* CONTACT SECTION */
+@mixin mobileContactAddressesContainer() 
+{
+    flex-direction: column;
+    margin-left: 1em;
+}
+@mixin mobileContactAddresses() 
+{
+    width: 100%;
+    padding-bottom: 2em;
+}
+@mixin mobileSocialMediaIconContainer() 
+{
+    margin: 2em 0 2em 1em;
+}
+@mixin mobileSocialMediaIcon() 
+{
+    width: 30%;
+    margin: 0; 
+}
+@mixin mobileCopyRightInfo() 
+{
+    padding: 0 0 2em 1em;
+    margin: 5em 0 0 1em;;
+    width: 90%;
+}
+@mixin mobileEmptySpace() 
+{
+    width: 10%;
+}
+
+/* BONUS */
+@mixin imageFilterGrayscale() {
+    filter: grayscale(1);
+    transition: all 1s ease-in-out;
+    &:hover {
+        filter: none;
+        filter: $filter-grayscale;
+        transform: scale(1.01,1.01);
+    }   
+}
+@mixin imageFilterHue() {
+    filter: grayscale(1);
+    transition: all 1s ease-in-out;
+    &:hover {
+        filter: none;
+        filter: $filter-hue;
+        transform: scale(1.01,1.01);
+    }   
+}
+@mixin imageFilterContrast() {
+    filter: grayscale(1);
+    transition: all 1s ease-in-out;
+    &:hover {
+        filter: none;
+        filter: $filter-contrast;
+        transform: scale(1.01,1.01);
+    }   
+}
