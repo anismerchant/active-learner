@@ -1,0 +1,3 @@
+Author Credit:
+
+BrainStation created this starter code for a JavaScript exercise (and answers by accident).
