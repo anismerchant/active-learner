@@ -82,8 +82,7 @@ table {
 
         @media (max-width: $mobile-max-width-small) {
             @include mobileHeaderBgImage();
-        }
-        
+        }        
         .bgImage__navigation {
             display: flex;
             width: 100%;
@@ -170,6 +169,104 @@ table {
         
         }     
          
+    }
+
+     /* SHOWS PAGE SECTION */
+    .header__shows__bgImage {
+        background-image: url(../assets/images/original/hanny-naibaho-388579-unsplash.png);
+        @include sectionSize();
+        background-size: cover;
+        @include imageShowsFilterGrayscale();
+        
+        @media (max-width: $mobile-max-width-small) {
+            @include mobileHeaderShowsBgImage();
+        }
+        .bgImage__navigation {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        
+            .bgImage__navigation--left {
+                display: flex;
+                justify-content: flex-start;
+                width: 75%;
+                padding: 2% 2%;
+                font-family: $site-font-bold;
+                padding-left: 8em;
+                font-size: 1.125em;
+                
+                a {
+                    @include links(); 
+                }
+
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileNavigationLeft();
+                }
+            }
+            .bgImage__navigation--right {
+                display: flex;
+                justify-content: space-around;
+                width: 25%;
+                padding: 2% 2%;
+                font-family: $site-font-bold;
+                font-size: 1.125em;
+        
+                a {
+                    @include links(); 
+                }
+
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileNavigationRight();
+                }
+            }
+        
+        }        
+        .bgImage__shows__text {
+            color: $main-color;             
+
+            .shows__header {    
+                display: flex;
+                justify-content: center;
+                padding-top: 6em;
+                color: $header-footer-color;
+                
+                @media (max-width: $mobile-max-width-small) {
+                    @include  mobileSectionHeader();
+                }
+                
+                .shows__header--h1 {
+                    width: 30%;
+                    font-family: $site-font-bold;
+                    font-size: 5.25em;    
+                    padding-bottom: 1em;
+                    
+                    @media (max-width: $mobile-max-width-small) {
+                        @include mobileSectionHeadings();
+                        @include  mobileSpacing();
+                    }
+                }        
+                .shows__header--spacing {
+                    width: 45%;
+                }    
+            }
+
+        }
+        .table__shows{
+            width: 100%;
+            height: auto;            
+            
+            table {
+               border: 1px solid #D7D7D7 ;
+               
+               
+               td {
+                    text-align: left;
+                    padding-right:100px;
+                }                
+            }
+
+        }
+
     }
     
 }
@@ -467,6 +564,7 @@ table {
     }
 
 }
+
 /* FOOTER SECTION */
 footer {
     @include sectionSize();

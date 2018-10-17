@@ -33,6 +33,11 @@
     background-image: url(../assets/images/for-mobile/max-320px/ana-grave-mobile-resized.jpg);
     background-size: cover;
 }
+@mixin mobileHeaderShowsBgImage()
+{
+    background-image: url(../assets/images/3-hanny-naibaho-resized.jpg);
+    background-size: cover;
+}
 @mixin mobileNavigationLeft()
 {
     width: 50%;
@@ -145,6 +150,11 @@
 @mixin mobileEmptySpace() 
 {
     width: 10%;
+}
+
+/* SHOWS PAGE */
+@mixin imageShowsFilterGrayscale() {
+    filter: grayscale(10%) saturate(0%) brightness(100%) contrast(110%)
 }
 
 /* BONUS */
