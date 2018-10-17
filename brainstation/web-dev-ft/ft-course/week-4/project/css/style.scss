@@ -173,7 +173,7 @@ table {
 
      /* SHOWS PAGE SECTION */
     .header__shows__bgImage {
-        background-image: url(../assets/images/original/hanny-naibaho-388579-unsplash.png);
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/original/hanny-naibaho-388579-unsplash.png);
         @include sectionSize();
         background-size: cover;
         @include imageShowsFilterGrayscale();
@@ -251,23 +251,18 @@ table {
             }
 
         }
-        .table__shows{
-            width: 100%;
-            height: auto;            
-            
-            table {
-               border: 1px solid #D7D7D7 ;
-               
-               
-               td {
-                    text-align: left;
-                    padding-right:100px;
-                }                
+        .shows {
+            width: 75%;
+            margin: 0 auto;
+            .shows__table {
+                width: 100%;
+                text-align: left;            
             }
-
         }
 
     }
+    
+    
     
 }
 /* ABOUT SECTION */

@@ -231,7 +231,8 @@ table {
 }
 
 .header .header__shows__bgImage {
-  background-image: url(../assets/images/original/hanny-naibaho-388579-unsplash.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../assets/images/original/hanny-naibaho-388579-unsplash.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/original/hanny-naibaho-388579-unsplash.png);
   width: 100%;
   min-height: 100vh;
   background-size: cover;
@@ -352,18 +353,14 @@ table {
   width: 45%;
 }
 
-.header .header__shows__bgImage .table__shows {
+.header .header__shows__bgImage .shows {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.header .header__shows__bgImage .shows .shows__table {
   width: 100%;
-  height: auto;
-}
-
-.header .header__shows__bgImage .table__shows table {
-  border: 1px solid #D7D7D7;
-}
-
-.header .header__shows__bgImage .table__shows table td {
   text-align: left;
-  padding-right: 100px;
 }
 
 /* ABOUT SECTION */
