@@ -3,6 +3,7 @@
 /* MAIN SECTION */
 /* Reserved for next iteration */
 /* BONUS */
+/* SHOWS PAGE */
 /*** MOBILE ***/
 /* NAVIGATION */
 /* ABOUT SECTION */
@@ -233,11 +234,9 @@ table {
 .header .header__shows__bgImage {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../assets/images/original/hanny-naibaho-388579-unsplash.png);
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/original/hanny-naibaho-388579-unsplash.png);
+  background-size: cover;
   width: 100%;
   min-height: 100vh;
-  background-size: cover;
-  -webkit-filter: grayscale(10%) saturate(0%) brightness(100%) contrast(110%);
-          filter: grayscale(10%) saturate(0%) brightness(100%) contrast(110%);
 }
 
 @media (max-width: 760px) {
@@ -360,7 +359,56 @@ table {
 
 .header .header__shows__bgImage .shows .shows__table {
   width: 100%;
+  text-align: right;
+}
+
+.header .header__shows__bgImage .shows .shows__table tr .last,
+.header .header__shows__bgImage .shows .shows__table tr .shows__table__rows--date,
+.header .header__shows__bgImage .shows .shows__table tr .shows__table__rows--location,
+.header .header__shows__bgImage .shows .shows__table tr .shows__table__rows--ticket {
+  border-bottom: 0 solid #D7D7D7;
+}
+
+.header .header__shows__bgImage .shows .shows__table tr .shows__table__rows--date {
+  font-size: 1.25em;
+  font-family: "Poppins-Bold";
+  padding: 0 15em 0 0;
+}
+
+.header .header__shows__bgImage .shows .shows__table tr td {
+  font-size: 1.25em;
+  font-family: "Poppins-Regular";
+  border-bottom: 1px solid #D7D7D7;
+}
+
+.header .header__shows__bgImage .shows .shows__table tr td button {
+  font-family: "Poppins-SemiBold";
+  background-color: #A0A0A0;
+  display: inline-block;
+  color: #FFFFFF;
+  width: 198px;
+  height: 55px;
+  margin-top: 1em;
+  padding: 15px 20px;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+  font-size: 1.125em;
+  line-height: 0px;
+  letter-spacing: 1px;
+}
+
+.header .header__shows__bgImage .shows .shows__table tr .shows__table__rows--date,
+.header .header__shows__bgImage .shows .shows__table tr .shows__table__rows--location,
+.header .header__shows__bgImage .shows .shows__table tr .shows__table__rows--venue {
   text-align: left;
+}
+
+.header .header__shows__bgImage .shows .shows__table tr .shows__table__rows--venue {
+  padding-bottom: 2em;
+}
+
+.header .header__shows__bgImage .shows .shows__table tr .last {
+  padding-bottom: 8em;
 }
 
 /* ABOUT SECTION */

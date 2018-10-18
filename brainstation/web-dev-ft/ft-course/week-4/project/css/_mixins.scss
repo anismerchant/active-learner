@@ -24,6 +24,51 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+@mixin buttons()
+{
+    font-family: $site-font-semibold;
+                background-color: $text-button-color;
+                display: inline-block;
+                color: $header-footer-color;
+                width: 198px;
+                height: 55px;
+                margin-top: 1em;
+                padding: 15px 20px;
+                border: 2px solid $header-footer-color;
+                border-radius: 4px;
+                font-size: 1.125em;
+                line-height: 0px;
+                letter-spacing: 1px;
+}
+
+/* SHOWS PAGE */
+
+@mixin showsContainer()
+{
+    width: 75%;
+    margin: 0 auto;
+}
+@mixin showsTable()
+{
+    width: 100%;
+    text-align: right;
+}
+@mixin showsTableRowDates()
+{
+    font-size: 1.25em;
+    font-family: $site-font-bold;
+    padding: 0 15em 0 0 ;
+}
+@mixin showsTableData()
+{
+    font-size: 1.25em;
+    font-family: $site-font-regular;
+}
+
+@mixin showsBorderHiddin()
+{
+    border-bottom: 0 solid $divider-color;
+}
 
 /*** MOBILE ***/
 
@@ -153,8 +198,9 @@
 }
 
 /* SHOWS PAGE */
-@mixin imageShowsFilterGrayscale() {
-    filter: grayscale(10%) saturate(0%) brightness(100%) contrast(110%)
+@mixin imageShowsLinearGradient() {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/original/hanny-naibaho-388579-unsplash.png);
+    background-size: cover;
 }
 
 /* BONUS */
