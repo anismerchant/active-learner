@@ -1,10 +1,5 @@
 var commentForm = document.getElementById('grabComments');
         
-// commentForm.onsubmit = function(e) {
-//     e.preventDefault();    
-//     alert('Form was submitted!');
-// }
-
 commentForm.addEventListener("submit", function(e) {
     e.preventDefault();    
     alert('Form was submitted!');
