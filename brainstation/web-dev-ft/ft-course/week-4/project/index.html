@@ -114,16 +114,17 @@
                 <h1 class="comments__header--h1">COMMENTS</h1>
                 <div class="comments__header--spacing"></div>
             </div>
-            <div>
+            <div id="comments__container">
                 <form id="grabComments">
                     <label>
                         Name
-                        <input type="text" name="commentersName" placeholder="Please enter your name" required/>
+                        <input type="text" name="name" id="name" placeholder="Please enter your name" required/>
                     </label>
                     <label>
                         Add a new comment
-                        <textarea></textarea>
+                        <textarea name="comment" id="comment"></textarea>
                     </label>
+                    <input type="submit" value="Post Comment"/>
                 </form>
             </div>
         </section>
@@ -173,5 +174,6 @@
             <div class="copyright--spacing"></div>
         </section>
     </footer>
+    <script src="./javascript/comment.js"></script>
 </body>
 </html>
