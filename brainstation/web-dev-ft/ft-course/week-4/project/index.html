@@ -116,18 +116,18 @@
             </div>
             <div id="comments__container">
                 <form id="grabComments">
-                    <label>
-                        Name
-                        <input type="text" name="name" id="name" placeholder="Please enter your name" required/>
+                    <label class="grabComments__name">
+                        <p class="grabComments__name--heading">Name</p>                                           
+                        <input type="text" name="name" id="name" placeholder="Please enter your fullname." required/>                       
                     </label>
                     <label>
-                        Add a new comment
-                        <textarea name="comment" id="comment"></textarea>
+                        <p class="grabComments__comment--heading">Add a new comment</p>                        
+                        <textarea name="comment" id="comment" placeholder="What's on your mind?" required></textarea>                        
                     </label>
-                    <input type="submit" value="Post Comment"/>
+                    <input type="submit" value="POST COMMENT"/>                    
                     <div id = "message"></div>
                 </form>
-                <section id="comments_posts"></section>
+                <section id="comments__posts"></section>
             </div>
         </section>
     </main>

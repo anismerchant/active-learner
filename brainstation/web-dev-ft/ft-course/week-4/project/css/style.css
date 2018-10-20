@@ -1,3 +1,4 @@
+/*** ALL DEVICES' VARIABLES ***/
 /*** MOBILE VARIABLES ***/
 /* HEADER SECTION */
 /* MAIN SECTION */
@@ -1057,6 +1058,66 @@ table {
 
 .comments .comments__header .comments__header--spacing {
   width: 45%;
+}
+
+#grabComments {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#grabComments .grabComments__name--heading {
+  width: 30%;
+  font-size: 2.25em;
+  font-family: "Poppins-Bold";
+  margin-left: 3.3em;
+  margin-bottom: 0.7em;
+}
+
+#grabComments #name {
+  width: 50%;
+  height: 5vh;
+  font-size: 1.25em;
+  margin-left: 6em;
+  margin-bottom: 3em;
+  padding: 0.5em;
+  font-family: "Poppins-Regular";
+}
+
+#grabComments .grabComments__comment--heading {
+  width: 30%;
+  font-size: 2.25em;
+  font-family: "Poppins-Bold";
+  margin-left: 3.3em;
+  margin-bottom: 0.7em;
+}
+
+#grabComments #comment {
+  width: 50%;
+  height: 30vh;
+  font-size: 1.25em;
+  margin-left: 6em;
+  margin-bottom: 3em;
+  padding: 0.5em;
+  font-family: "Poppins-Regular";
+}
+
+#grabComments input[type="submit"] {
+  width: 198px;
+  height: 55px;
+  color: #FFFFFF;
+  background-color: #000000;
+  padding: 12px 20px;
+  margin-left: 6em;
+  border-radius: 4px;
+  font-size: 1.25em;
+  font-family: "Poppins-SemiBold";
+  text-align: center;
 }
 
 /* FOOTER SECTION */

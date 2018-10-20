@@ -2,12 +2,14 @@ var commentForm = document.getElementById('grabComments');
         
 commentForm.addEventListener("submit", function(e) {
     e.preventDefault();    
-    document.getElementById('comments_posts').innerHTML="";
+    document.getElementById('comments__posts').innerHTML="";
     setTimeout(() => {messageAppear()}, 10);
     setTimeout(() => {messageDisppear()}, 3000);
-    // alert('Form was submitted!'); 
+    
     getVal();
     displayVal();
+    
+    // clear fields 
     document.getElementById('name').value ="";
     document.getElementById('comment').value="";
 });
@@ -33,7 +35,7 @@ function getVal() {
 
 function displayVal() {
     for (i=0; i<arr.length; i++) {
-        let commentSection = document.getElementById('comments_posts');
+        let commentSection = document.getElementById('comments__posts');
         
         let nameElement = document.createElement('div');
         let spanElement = document.createElement('span');
