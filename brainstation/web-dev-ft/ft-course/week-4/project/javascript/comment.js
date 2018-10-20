@@ -14,14 +14,36 @@ commentForm.addEventListener("submit", function(e) {
     
     // Get values and subsequently display values
     getVal();
-    displayVal();
+    displayComment(arrayOfDynamicComments);
     
     // Clear fields 
-    document.getElementById('name').value ="";
-    document.getElementById('comment').value="";
+    document.getElementById('name').value = "";
+    document.getElementById('comment').value = "";
 });
 
-let arrayOfComments = [];
+// Empty array to capture dynamic data from html form
+let arrayOfDynamicComments = [];
+
+// Hard coded array with objects
+let arrayOfSampleComments = [
+    { 
+        userName: "Jack Deng",
+        userComment: "They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed.",
+    },
+    { 
+        userName: "Corey Kohan",
+        userComment: "Its just amazing all the sounds that come out of this band. Neil is just an animal on the drum kit and Geddy and Alex are just as good on their instruments."
+    },
+    { 
+        userName: "Edward Anthony",
+        userComment: "These guys are beyond great. The opening melody was incredible and had to be very difficult. The #1 band I regret not seeing LIVE."
+    },
+    { 
+        userName: "Jill Saunders",
+        userComment: "Masters of their instruments and on time with each other all the time, perfect what a pleasure."
+    }
+]
+
 
 // Message confirming to user that their comment posted.
 function messageAppear() {
@@ -37,17 +59,17 @@ function messageDisppear() {
 
 // Grabs values from the comment form fields 
 // and places them in the object
-// which is subsequently pushed into an array
+// which is subsequently pushed into an array 
 function getVal() {
-    let obj = {};
+    let obj = {};       
     obj.userName = document.getElementById('name').value;
     obj.userComment = document.getElementById('comment').value;
-    arrayOfComments.push(obj);
+    arrayOfDynamicComments.push(obj);
 }
 
 // Displays userNames and userComments 
-function displayVal() {
-    for (i=0; i < arrayOfComments.length; i++) {
+function displayComment(commentObject) {
+    for (i=0; i < commentObject.length; i++) {
         
         // Parent within which all constructed elements are placed
         let commentSection = document.getElementById('comments__posts');
@@ -76,10 +98,10 @@ function displayVal() {
         nameElement.appendChild(paragraphElement); 
         commentSection.appendChild(nameElement);
 
-        // userNames and time displayed
-        spanElement.innerHTML = arrayOfComments[i].userName;        
+        // userNames, userComments, and time displayed
+        spanElement.innerHTML = commentObject[i].userName;        
         timeElement.innerHTML = dispalyTime();
-        paragraphElement.innerHTML = arrayOfComments[i].userComment;    
+        paragraphElement.innerHTML = commentObject[i].userComment;    
     }        
 }
  
