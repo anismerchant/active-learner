@@ -1,62 +1,86 @@
-var commentForm = document.getElementById('grabComments');
+// Container from where all user values are grabbed
+let commentForm = document.getElementById('grabComments');
         
 commentForm.addEventListener("submit", function(e) {
-    e.preventDefault();    
-    document.getElementById('comments__posts').innerHTML="";
-    setTimeout(() => {messageAppear()}, 10);
-    setTimeout(() => {messageDisppear()}, 3000);
+    // Prevents page from auto-refreshing
+    e.preventDefault();
     
+    // Clears DOM of comment posts section
+    document.getElementById('comments__posts').innerHTML="";
+    
+    // Comment posted confirmation message
+    setTimeout(() => {messageAppear()}, 10);
+    setTimeout(() => {messageDisppear()}, 5000);
+    
+    // Get values and subsequently display values
     getVal();
     displayVal();
     
-    // clear fields 
+    // Clear fields 
     document.getElementById('name').value ="";
     document.getElementById('comment').value="";
 });
 
-let arr = [];
+let arrayOfComments = [];
 
+// Message confirming to user that their comment posted.
 function messageAppear() {
     let message = document.getElementById('message').innerHTML = "Thanks for sharing your comment!";
     return message;
 }
 
+// Message confirmation disappears
 function messageDisppear() {
     let message = document.getElementById('message').innerHTML = "";
     return message;
 }
 
+// Grabs values from the comment form fields 
+// and places them in the object
+// which is subsequently pushed into an array
 function getVal() {
     let obj = {};
     obj.userName = document.getElementById('name').value;
     obj.userComment = document.getElementById('comment').value;
-    arr.push(obj);
+    arrayOfComments.push(obj);
 }
 
+// Displays userNames and userComments 
 function displayVal() {
-    for (i=0; i<arr.length; i++) {
+    for (i=0; i < arrayOfComments.length; i++) {
+        
+        // Parent within which all constructed elements are placed
         let commentSection = document.getElementById('comments__posts');
         
+        // Newly constructed elements: userName and userComment
         let nameElement = document.createElement('div');
         let spanElement = document.createElement('span');
-        let timeElement = document.createElement('span')
-
-        nameElement.appendChild(spanElement);
-        nameElement.appendChild(timeElement);
-        commentSection.appendChild(nameElement);
-
-        spanElement.innerHTML = arr[i].userName;
-        timeElement.innerHTML = dispalyTime();
-
-        let commentElement = document.createElement('div');
+        let timeElement = document.createElement('span');
         let paragraphElement = document.createElement('p');
 
-        commentElement.appendChild(paragraphElement);
-        commentSection.appendChild(commentElement); 
-        paragraphElement.innerHTML = arr[i].userComment;
+        // Classes for each newly constructed elements: userName and userComment
+        nameElement.className = 'comments__posts__name';
+        spanElement.className = 'comments__posts__name--bold';
+        timeElement.className = 'comments__posts__name--time';
+        paragraphElement.className = 'comments__posts__paragraph--normal'; 
+
+        // Elements styled in-line
+        nameElement.style.cssText = " ";
+        
+        // Elements attached to their relative parents
+        nameElement.appendChild(spanElement);
+        nameElement.appendChild(timeElement);
+        nameElement.appendChild(paragraphElement); 
+        commentSection.appendChild(nameElement);
+
+        // userNames and time displayed
+        spanElement.innerHTML = arrayOfComments[i].userName;        
+        timeElement.innerHTML = dispalyTime();
+        paragraphElement.innerHTML = arrayOfComments[i].userComment;    
     }        
 }
-  
+ 
+// Displays date when userComment was posted
 function dispalyTime() {
     const month = [];
     month[0] = "January";

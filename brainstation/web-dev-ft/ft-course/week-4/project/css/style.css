@@ -1060,7 +1060,7 @@ table {
   width: 45%;
 }
 
-#grabComments {
+.comments #comments__form #grabComments {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1071,43 +1071,52 @@ table {
           flex-direction: column;
 }
 
-#grabComments .grabComments__name--heading {
-  width: 30%;
+.comments #comments__form #grabComments #message {
+  font-size: 1.25em;
+  font-family: "Poppins-Bold";
+  margin: 2em 0 2em 6em;
+  color: #272727;
+}
+
+.comments #comments__form #grabComments .grabComments__name--heading {
+  width: 50%;
   font-size: 2.25em;
   font-family: "Poppins-Bold";
   margin-left: 3.3em;
-  margin-bottom: 0.7em;
+  margin-bottom: 0.85em;
 }
 
-#grabComments #name {
+.comments #comments__form #grabComments #name {
   width: 50%;
   height: 5vh;
   font-size: 1.25em;
   margin-left: 6em;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   padding: 0.5em;
+  border: 1px solid #D7D7D7;
   font-family: "Poppins-Regular";
 }
 
-#grabComments .grabComments__comment--heading {
-  width: 30%;
+.comments #comments__form #grabComments .grabComments__comment--heading {
+  width: 50%;
   font-size: 2.25em;
   font-family: "Poppins-Bold";
   margin-left: 3.3em;
-  margin-bottom: 0.7em;
+  margin-bottom: 0.85em;
 }
 
-#grabComments #comment {
+.comments #comments__form #grabComments #comment {
   width: 50%;
   height: 30vh;
   font-size: 1.25em;
   margin-left: 6em;
   margin-bottom: 3em;
   padding: 0.5em;
+  border: 1px solid #D7D7D7;
   font-family: "Poppins-Regular";
 }
 
-#grabComments input[type="submit"] {
+.comments #comments__form #grabComments input[type="submit"] {
   width: 198px;
   height: 55px;
   color: #FFFFFF;
@@ -1118,6 +1127,16 @@ table {
   font-size: 1.1em;
   font-family: "Poppins-SemiBold";
   text-align: center;
+}
+
+.comments #comments__form #comments__posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 
 /* FOOTER SECTION */

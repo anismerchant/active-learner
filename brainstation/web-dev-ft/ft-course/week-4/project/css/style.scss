@@ -606,60 +606,76 @@ table {
             width: 45%;
         }    
     }
-}
 
-#grabComments {    
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    #comments__form {
+        #grabComments {    
+            width: 100%;
+            display: flex;
+            flex-direction: column;
 
-    .grabComments__name--heading {
-        width: 30%;
-        font-size: 2.25em;
-        font-family: "Poppins-Bold";
-        margin-left: 3.3em;
-        margin-bottom: 0.7em;       
-    }
+            #message {
+                font-size: 1.25em;
+                font-family: "Poppins-Bold";
+                margin: 2em 0 2em 6em;
+                color: $site-footer-bg-color;
+            }
 
-    #name {
-        width: 50%;
-        height: 5vh;
-        font-size: 1.25em;
-        margin-left: 6em;
-        margin-bottom: 3em;
-        padding: 0.5em;
-        font-family: $site-font-regular;
-    }
+            .grabComments__name--heading {
+                width: 50%;
+                font-size: 2.25em;
+                font-family: "Poppins-Bold";
+                margin-left: 3.3em;
+                margin-bottom: 0.85em;       
+            }
 
-    .grabComments__comment--heading {
-        width: 30%;
-        font-size: 2.25em;
-        font-family: "Poppins-Bold";
-        margin-left: 3.3em;
-        margin-bottom: 0.7em;       
-    }
+            #name {
+                width: 50%;
+                height: 5vh;
+                font-size: 1.25em;
+                margin-left: 6em;
+                margin-bottom: 2em;
+                padding: 0.5em;
+                border: 1px solid $divider-color;
+                font-family: $site-font-regular;
+            }
 
-    #comment {
-        width: 50%;
-        height: 30vh;
-        font-size: 1.25em;
-        margin-left: 6em;
-        margin-bottom: 3em;
-        padding: 0.5em;
-        font-family: $site-font-regular;
-    }
+            .grabComments__comment--heading {
+                width: 50%;
+                font-size: 2.25em;
+                font-family: "Poppins-Bold";
+                margin-left: 3.3em;
+                margin-bottom: 0.85em;       
+            }
 
-    input[type="submit"] {
-        width: 198px;
-        height: 55px;
-        color: $header-footer-color;
-        background-color: #000000;
-        padding: 15px 20px;
-        margin-left: 6.7em;
-        border-radius: 4px;
-        font-size: 1.1em;
-        font-family: $site-font-semibold;
-        text-align: center;
+            #comment {
+                width: 50%;
+                height: 30vh;
+                font-size: 1.25em;
+                margin-left: 6em;
+                margin-bottom: 3em;
+                padding: 0.5em;
+                border: 1px solid $divider-color;
+                font-family: $site-font-regular;
+            }
+
+            input[type="submit"] {
+                width: 198px;
+                height: 55px;
+                color: $header-footer-color;
+                background-color: #000000;
+                padding: 15px 20px;
+                margin-left: 6.7em;
+                border-radius: 4px;
+                font-size: 1.1em;
+                font-family: $site-font-semibold;
+                text-align: center;
+            }
+
+        }
+        #comments__posts {
+            display: flex;
+            flex-direction: column-reverse;
+        }
     }
 
 }
