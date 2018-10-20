@@ -1116,7 +1116,7 @@ table {
   font-family: "Poppins-Regular";
 }
 
-.comments #comments__form #grabComments input[type="submit"] {
+.comments #comments__form #grabComments button[type="submit"] {
   width: 198px;
   height: 55px;
   color: #FFFFFF;
