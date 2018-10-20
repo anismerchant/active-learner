@@ -2,24 +2,38 @@ var commentForm = document.getElementById('grabComments');
         
 commentForm.addEventListener("submit", function(e) {
     e.preventDefault();    
-    alert('Form was submitted!');
+    document.getElementById('comments_posts').innerHTML="";
+    setTimeout(() => {messageAppear()}, 10);
+    setTimeout(() => {messageDisppear()}, 3000);
+    // alert('Form was submitted!'); 
     getVal();
     displayVal();
+    document.getElementById('name').value ="";
+    document.getElementById('comment').value="";
 });
 
-let names = [];
-let comments = [];
+let arr = [];
+
+function messageAppear() {
+    let message = document.getElementById('message').innerHTML = "Thanks for sharing your comment!";
+    return message;
+}
+
+function messageDisppear() {
+    let message = document.getElementById('message').innerHTML = "";
+    return message;
+}
 
 function getVal() {
-    let userName = document.getElementById('name').value;
-    let userComment = document.getElementById('comment').value;
-    names.push(userName);
-    comments.push(userComment);    
+    let obj = {};
+    obj.userName = document.getElementById('name').value;
+    obj.userComment = document.getElementById('comment').value;
+    arr.push(obj);
 }
 
 function displayVal() {
-    for (i=0; i<names.length; i++) {
-        let commentSection = document.getElementById("comments__container");
+    for (i=0; i<arr.length; i++) {
+        let commentSection = document.getElementById('comments_posts');
         
         let nameElement = document.createElement('div');
         let spanElement = document.createElement('span');
@@ -28,18 +42,19 @@ function displayVal() {
         nameElement.appendChild(spanElement);
         nameElement.appendChild(timeElement);
         commentSection.appendChild(nameElement);
-        spanElement.innerHTML = names[i];
-        timeElement.innerHTML = dispalyTime()
+
+        spanElement.innerHTML = arr[i].userName;
+        timeElement.innerHTML = dispalyTime();
 
         let commentElement = document.createElement('div');
         let paragraphElement = document.createElement('p');
 
         commentElement.appendChild(paragraphElement);
-        commentSection.appendChild(commentElement);
-        paragraphElement.innerHTML = comments[i];        
-    }
+        commentSection.appendChild(commentElement); 
+        paragraphElement.innerHTML = arr[i].userComment;
+    }        
 }
-
+  
 function dispalyTime() {
     const month = [];
     month[0] = "January";
