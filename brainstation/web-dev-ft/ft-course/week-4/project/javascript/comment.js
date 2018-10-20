@@ -1,6 +1,6 @@
 // Container from where all user values are grabbed
 let commentForm = document.getElementById('grabComments');
-        
+
 commentForm.addEventListener("submit", function(e) {
     // Prevents page from auto-refreshing
     e.preventDefault();
@@ -10,7 +10,7 @@ commentForm.addEventListener("submit", function(e) {
     
     // Comment posted confirmation message
     setTimeout(() => {messageAppear()}, 10);
-    setTimeout(() => {messageDisppear()}, 5000);
+    setTimeout(() => {messageDisppear()}, 2000);
     
     // Get values and subsequently display values
     getVal();
@@ -62,11 +62,14 @@ function displayVal() {
         nameElement.className = 'comments__posts__name';
         spanElement.className = 'comments__posts__name--bold';
         timeElement.className = 'comments__posts__name--time';
-        paragraphElement.className = 'comments__posts__paragraph--normal'; 
+        paragraphElement.className = 'comments__posts__name--paragraph'; 
 
-        // Elements styled in-line
-        nameElement.style.cssText = " ";
-        
+        // Elements in-line css
+        nameElement.style.cssText="width: 590px; margin-left: 7.5em; border-top: 1px solid #D7D7D7; padding: 2em 0;"
+        spanElement.style.cssText = "width: 100%; font-size: 1.25em; font-family: 'Poppins-Bold';";
+        timeElement.style.cssText = "width: 100%; font-size: 1.25em; font-family: 'Poppins-Regular';  padding-left: 1em; color: #A0A0A0; ";
+        paragraphElement.style.cssText = "width: 100%; font-size: 1.25em; font-family: 'Poppins-Regular'; padding-top: 1em;";
+
         // Elements attached to their relative parents
         nameElement.appendChild(spanElement);
         nameElement.appendChild(timeElement);
