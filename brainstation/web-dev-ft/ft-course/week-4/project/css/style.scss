@@ -312,8 +312,7 @@ table {
         }    
     }
     .about__info {
-        display: flex;
-        justify-content: space-evenly;
+        @include sectionDisplaySpaceEvenly();
        
         @media (max-width: $mobile-max-width-small) {
             @include mobileSectionDisplay();
@@ -350,8 +349,7 @@ table {
 
     
     .music__header {
-        display: flex;
-        justify-content: space-evenly;
+        @include sectionDisplaySpaceEvenly();
 
         @media (max-width: $mobile-max-width-small) {
             @include  mobileSectionHeader();
@@ -426,9 +424,7 @@ table {
     }
 
     .gallery__header {
-        display: flex;
-        justify-content: space-between;
-        margin-left: 8%;
+        @include sectionDisplaySpaceEvenly();
 
         @media (max-width: $mobile-max-width-small) {
             @include mobileSectionContainerMargin();

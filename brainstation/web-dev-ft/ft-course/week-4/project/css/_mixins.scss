@@ -40,16 +40,21 @@
                 line-height: 0px;
                 letter-spacing: 1px;
 }
+@mixin sectionDisplaySpaceEvenly()
+{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 /* MUSIC SECTION */
 @mixin musiciFrame()
 {
-    width: 30%;
+    width: $section-width-left;
 }
 
 @mixin musicInfoAlbum()
 {
-    width: 45%;
+    width: $section-width-right;
     font-family: $site-font-regular;
 }
 
