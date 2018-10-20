@@ -41,8 +41,19 @@
                 letter-spacing: 1px;
 }
 
-/* SHOWS PAGE */
+/* MUSIC SECTION */
+@mixin musiciFrame()
+{
+    width: 30%;
+}
 
+@mixin musicInfoAlbum()
+{
+    width: 45%;
+    font-family: $site-font-regular;
+}
+
+/* SHOWS PAGE */
 @mixin showsContainer()
 {
     width: 85%;
