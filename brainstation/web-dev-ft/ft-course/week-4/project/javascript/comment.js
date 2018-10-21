@@ -14,7 +14,7 @@ commentForm.addEventListener("submit", function(e) {
     
     // Get values and subsequently display values
     getVal();
-    displayComment(arrayOfSampleComments);
+    displayComment(arrayOfDynamicComments);    
     
     // Clear fields 
     document.getElementById('name').value = "";
@@ -26,8 +26,8 @@ let arrayOfDynamicComments = [];
 
 // Hard-coded array with objects for testing purposes
 // To test, please replace 'arrayOfDynamicComments' with 'arrayOfSampleComments'
-// in the dispalyComment function and enter userName and userComment in the form 
-// fields and press the button
+// in the displayComment function above and enter userName and userComment in 
+// the html form fields and press the button, 'POST COMMENT'
 let arrayOfSampleComments = [
     { 
         userName: "Jack Deng",
@@ -86,7 +86,7 @@ function displayComment(commentObject) {
         // Classes for each newly constructed elements: userName and userComment
         nameElement.className = 'comments__posts__name';
         spanElement.className = 'comments__posts__name--bold';
-        timeElement.className = 'comments__posts__name--time';
+        timeElement.id = 'comments__posts__name--time';
         paragraphElement.className = 'comments__posts__name--paragraph'; 
 
         // Elements in-line css
@@ -108,24 +108,66 @@ function displayComment(commentObject) {
     }        
 }
  
-// Displays date when userComment was posted
+//Displays date when userComment is posted
 function dispalyTime() {
-    const month = [];
-    month[0] = "January";
-    month[1] = "February";
-    month[2] = "March";
-    month[3] = "April";
-    month[4] = "May";
-    month[5] = "June";
-    month[6] = "July";
-    month[7] = "August";
-    month[8] = "September";
-    month[9] = "October";
-    month[10] = "November";
-    month[11] = "December";
+    
+    // Build current date 
+    let currentDate = new Date();
+    let currentYear = currentDate.getYear();
+        if (currentYear < 1000) {
+            currentYear += 1900;
+        }
+    let currentDay = currentDate.getDay();
+    let currentMonth = currentDate.getMonth();
+    let currentDayOfMonth = currentDate.getDate();
+    
+    let dayOfWeekArray = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let monthArray = [];
+    monthArray[0] = "January";
+    monthArray[1] = "February";
+    monthArray[2] = "March";
+    monthArray[3] = "April";
+    monthArray[4] = "May";
+    monthArray[5] = "June";
+    monthArray[6] = "July";
+    monthArray[7] = "August";
+    monthArray[8] = "September";
+    monthArray[9] = "October";
+    monthArray[10] = "November";
+    monthArray[11] = "December";
 
-    const date = new Date();
-    const m = month[date.getMonth()];
+    // Build current time    
+    let currentTime = new Date();
+    let hour = currentTime.getHours();
+    let minutes = currentTime.getMinutes();
+    let seconds = currentTime.getSeconds();    
+        if (hour === 24) {
+            hour = 0;
+        } else if (hour > 12) {
+            hour = hour - 0;
+        }
 
-    return m;
+        if (hour < 10) {
+            hour = "0" + hour;
+        }
+
+        if (minutes < 10) {
+            minutes = "0" + minutes;
+        }
+
+        if (seconds < 10) {
+            seconds = "0" + seconds;
+        }
+
+    // Assign a variable to the element id where timestamp will appear 
+    let postTimeId = document.getElementById("comments__posts__name--time");
+    
+    // Display newly formatted timestamp
+    let timeStamp = postTimeId.innerHTML = "" + dayOfWeekArray[currentDay]+ " " + currentDayOfMonth + " " + monthArray[currentMonth] + " " +  currentYear + " | " + hour + ":" + minutes + ":" + seconds; 
+
+    return timeStamp;     
 }
+
+setInterval(() => {
+    dispalyTime();
+}, 5000);
