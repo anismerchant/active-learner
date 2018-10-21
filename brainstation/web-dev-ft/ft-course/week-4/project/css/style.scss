@@ -633,7 +633,13 @@ table {
                 font-size: 2.25em;
                 font-family: "Poppins-Bold";
                 margin-left: 3.3em;
-                margin-bottom: 0.85em;       
+                margin-bottom: 0.85em;
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileCommentsHeadings;
+                }
+                @media (min-width: $dt-lpt-min-width) and (max-width: $dt-lpt-max-width) {
+                    @include mobileLargeCommentsHeadings;
+                }       
             }
 
             #name {
@@ -645,6 +651,12 @@ table {
                 padding: 0.5em;
                 border: 1px solid $divider-color;
                 font-family: $site-font-regular;
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileCommentsNameInputBox;
+                }
+                @media (min-width: $dt-lpt-min-width) and (max-width: $dt-lpt-max-width) {
+                    @include mobileLargeCommentsNameInputBox;
+                }   
             }
 
             .grabComments__comment--heading {
@@ -652,7 +664,13 @@ table {
                 font-size: 2.25em;
                 font-family: "Poppins-Bold";
                 margin-left: 3.3em;
-                margin-bottom: 0.85em;       
+                margin-bottom: 0.85em;
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileCommentsHeadings;
+                }
+                @media (min-width: $dt-lpt-min-width) and (max-width: $dt-lpt-max-width) {
+                    @include mobileLargeCommentsHeadings;
+                }            
             }
 
             #comment {
@@ -664,6 +682,12 @@ table {
                 padding: 0.5em;
                 border: 1px solid $divider-color;
                 font-family: $site-font-regular;
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileCommentsInputBox;
+                }
+                @media (min-width: $dt-lpt-min-width) and (max-width: $dt-lpt-max-width) {
+                    @include mobileLargeCommentsInputBox;
+                }  
             }
 
             button[type="submit"] {
@@ -677,6 +701,13 @@ table {
                 font-size: 1.1em;
                 font-family: $site-font-semibold;
                 text-align: center;
+
+                @media (max-width: $mobile-max-width-small) {
+                    margin-left: .7em;
+                }
+                @media (min-width: $dt-lpt-min-width) and (max-width: $dt-lpt-max-width) {
+                    margin-left: 4.7em;
+                }  
             }
 
         }

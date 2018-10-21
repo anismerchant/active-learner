@@ -185,6 +185,49 @@
     margin: 1em;
 }
 
+/* COMMENTS SECTION */
+@mixin mobileCommentsHeadings
+{
+    margin-left: .8em;
+    font-size: 1.5em;
+    width: 100%;
+}
+@mixin mobileCommentsNameInputBox
+{
+    margin-left: .8em;
+    font-size: 1em;
+    height: 4vh;
+    width: 80%;
+}
+@mixin mobileCommentsInputBox
+{
+    margin-left: .8em;
+    font-size: 1em;
+    height:10vh;
+    width: 80%;
+}
+@mixin mobileLargeCommentsHeadings
+{
+    margin-left: 3.5em;
+    font-size: 1.5em;
+    width: 100%;
+}
+@mixin mobileLargeCommentsNameInputBox
+{
+    margin-left:  5.2em;
+    font-size: 1em;
+    height: 3vh;
+    width: 68%;
+}
+@mixin mobileLargeCommentsInputBox
+{
+    margin-left:  5.2em;
+    font-size: 1em;
+    height: 20vh;
+    width: 68%;
+}
+
+
 /* CONTACT SECTION */
 @mixin mobileContactAddressesContainer() 
 {

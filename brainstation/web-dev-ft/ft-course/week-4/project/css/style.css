@@ -10,6 +10,7 @@
 /* ABOUT SECTION */
 /* MUSIC SECTION */
 /* GALLERY SECTION */
+/* COMMENTS SECTION */
 /* CONTACT SECTION */
 /* SHOWS PAGE */
 /* BONUS */
@@ -1114,6 +1115,22 @@ table {
   margin-bottom: 0.85em;
 }
 
+@media (max-width: 760px) {
+  .comments #comments__form #grabComments .grabComments__name--heading {
+    margin-left: .8em;
+    font-size: 1.5em;
+    width: 100%;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 900px) {
+  .comments #comments__form #grabComments .grabComments__name--heading {
+    margin-left: 3.5em;
+    font-size: 1.5em;
+    width: 100%;
+  }
+}
+
 .comments #comments__form #grabComments #name {
   width: 50%;
   height: 5vh;
@@ -1125,12 +1142,46 @@ table {
   font-family: "Poppins-Regular";
 }
 
+@media (max-width: 760px) {
+  .comments #comments__form #grabComments #name {
+    margin-left: .8em;
+    font-size: 1em;
+    height: 4vh;
+    width: 80%;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 900px) {
+  .comments #comments__form #grabComments #name {
+    margin-left: 5.2em;
+    font-size: 1em;
+    height: 3vh;
+    width: 68%;
+  }
+}
+
 .comments #comments__form #grabComments .grabComments__comment--heading {
   width: 50%;
   font-size: 2.25em;
   font-family: "Poppins-Bold";
   margin-left: 3.3em;
   margin-bottom: 0.85em;
+}
+
+@media (max-width: 760px) {
+  .comments #comments__form #grabComments .grabComments__comment--heading {
+    margin-left: .8em;
+    font-size: 1.5em;
+    width: 100%;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 900px) {
+  .comments #comments__form #grabComments .grabComments__comment--heading {
+    margin-left: 3.5em;
+    font-size: 1.5em;
+    width: 100%;
+  }
 }
 
 .comments #comments__form #grabComments #comment {
@@ -1144,6 +1195,24 @@ table {
   font-family: "Poppins-Regular";
 }
 
+@media (max-width: 760px) {
+  .comments #comments__form #grabComments #comment {
+    margin-left: .8em;
+    font-size: 1em;
+    height: 10vh;
+    width: 80%;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 900px) {
+  .comments #comments__form #grabComments #comment {
+    margin-left: 5.2em;
+    font-size: 1em;
+    height: 20vh;
+    width: 68%;
+  }
+}
+
 .comments #comments__form #grabComments button[type="submit"] {
   width: 198px;
   height: 55px;
@@ -1155,6 +1224,18 @@ table {
   font-size: 1.1em;
   font-family: "Poppins-SemiBold";
   text-align: center;
+}
+
+@media (max-width: 760px) {
+  .comments #comments__form #grabComments button[type="submit"] {
+    margin-left: .7em;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 900px) {
+  .comments #comments__form #grabComments button[type="submit"] {
+    margin-left: 4.7em;
+  }
 }
 
 .comments #comments__form #comments__posts {
