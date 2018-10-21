@@ -226,6 +226,16 @@
     height: 20vh;
     width: 68%;
 }
+@mixin mobileMessage 
+{
+    font-size: 1em;
+    margin: 2em 0 2em .8em;
+}
+@mixin mobileLargeMessage 
+{
+    font-size: 1em;
+    margin: 2em 0 2em 5.2em;
+}
 
 
 /* CONTACT SECTION */

@@ -10,12 +10,12 @@ commentForm.addEventListener("submit", function(e) {
     
     // Comment posted confirmation message
     setTimeout(() => {messageAppear()}, 10);
-    setTimeout(() => {messageDisppear()}, 2000);
+    //setTimeout(() => {messageDisppear()}, 2000);
     
     // Get values and subsequently display values
     getVal();
-    displayComment(arrayOfDynamicComments);    
-    
+    displayComment(arrayOfDynamicComments);
+
     // Clear fields 
     document.getElementById('name').value = "";
     document.getElementById('comment').value = "";
@@ -90,9 +90,21 @@ function displayComment(commentObject) {
         paragraphElement.className = 'comments__posts__name--paragraph'; 
 
         // Elements in-line css
-        nameElement.style.cssText="width: 590px; margin-left: 7.5em; border-top: 1px solid #D7D7D7; padding: 2em 0;"
+        const mq = window.matchMedia("(max-width:760px)");
+        if (mq.matches) {
+            nameElement.style.cssText="width: 320px; margin-left: 1.1em; border-top: 1px solid #D7D7D7; padding: 2em 0; font-size: 1em;"
+        } else {
+            nameElement.style.cssText="width: 590px; margin-left: 7.5em; border-top: 1px solid #D7D7D7; padding: 2em 0;"
+        }      
+                
         spanElement.style.cssText = "width: 100%; font-size: 1.25em; font-family: 'Poppins-Bold';";
-        timeElement.style.cssText = "width: 100%; font-size: 1.25em; font-family: 'Poppins-Regular';  padding-left: 1em; color: #A0A0A0; ";
+        
+        if (mq.matches) {
+            timeElement.style.cssText="width: 100%; font-size: 1em; font-family: 'Poppins-Regular';  padding-left: 1em; color: #A0A0A0;";
+        } else {
+            timeElement.style.cssText="width: 100%; font-size: 1.25em; font-family: 'Poppins-Regular';  padding-left: 1em; color: #A0A0A0;";
+        }          
+      
         paragraphElement.style.cssText = "width: 100%; font-size: 1.25em; font-family: 'Poppins-Regular'; padding-top: 1em;";
 
         // Elements attached to their relative parents
@@ -105,7 +117,7 @@ function displayComment(commentObject) {
         spanElement.innerHTML = commentObject[i].userName;        
         paragraphElement.innerHTML = commentObject[i].userComment;
         let currentTime = formattedDispalyTime();
-        timeElement.innerHTML = currentTime;    
+        timeElement.innerHTML = currentTime;             
     }        
 }
  
@@ -166,7 +178,8 @@ function formattedDispalyTime() {
     // Display newly formatted timestamp
     // let timeStamp = "" + seconds;
     // let timeStamp = postTimeId.innerHTML = "" + currentYear + " " + currentMonth + " " + currentDay + "T" + hour + ":" + minutes + ":" + seconds +"Z"
-    let timeStamp = postTimeId.innerHTML = "" + dayOfWeekArray[currentDay]+ " " + currentDayOfMonth + " " + monthArray[currentMonth] + " " +  currentYear + " | " + hour + ":" + minutes + ":" + seconds; 
+    // let timeStamp = postTimeId.innerHTML = "" + dayOfWeekArray[currentDay]+ " " + currentDayOfMonth + " " + monthArray[currentMonth] + " " +  currentYear + " | " + hour + ":" + minutes + ":" + seconds;
+    let timeStamp = postTimeId.innerHTML = "" + dayOfWeekArray[currentDay]+ " " + currentDayOfMonth + " " + monthArray[currentMonth] + " " +  currentYear;
     
     return timeStamp;     
 }
@@ -176,7 +189,7 @@ setInterval(() => {
 }, 5000);
 
 
-/* PSEUDO CODE: For later...
+/* PSEUDO CODE: For later... (in development)
 
 function timeDiff() {
     let date = new Date();
