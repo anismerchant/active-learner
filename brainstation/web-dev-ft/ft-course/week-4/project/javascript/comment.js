@@ -14,7 +14,7 @@ commentForm.addEventListener("submit", function(e) {
     
     // Get values and subsequently display values
     getVal();
-    displayComment(arrayOfDynamicComments);
+    displayComment(arrayOfSampleComments);
     
     // Clear fields 
     document.getElementById('name').value = "";
@@ -24,7 +24,10 @@ commentForm.addEventListener("submit", function(e) {
 // Empty array to capture dynamic data from html form
 let arrayOfDynamicComments = [];
 
-// Hard coded array with objects
+// Hard-coded array with objects for testing purposes
+// To test, please replace 'arrayOfDynamicComments' with 'arrayOfSampleComments'
+// in the dispalyComment function and enter userName and userComment in the form 
+// fields and press the button
 let arrayOfSampleComments = [
     { 
         userName: "Jack Deng",
@@ -45,7 +48,7 @@ let arrayOfSampleComments = [
 ]
 
 
-// Message confirming to user that their comment posted.
+// Message confirming to user that their comment posted
 function messageAppear() {
     let message = document.getElementById('message').innerHTML = "Thanks for sharing your comment!";
     return message;
