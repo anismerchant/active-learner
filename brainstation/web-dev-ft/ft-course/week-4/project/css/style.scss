@@ -166,7 +166,7 @@ table {
         
         
         @media (max-width: $mobile-max-width-small) {
-            @include mobileHeaderShowsBgImage();
+            @include mobileImageShowsLinearGradient();
         }
         .bgImage__navigation {
             display: flex;

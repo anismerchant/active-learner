@@ -59,6 +59,10 @@
 }
 
 /* SHOWS PAGE */
+@mixin imageShowsLinearGradient() {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/original/hanny-naibaho-388579-unsplash.png);
+    background-size: cover;
+}
 @mixin showsContainer()
 {
     width: 85%;
@@ -80,11 +84,11 @@
     font-size: 1.25em;
     font-family: $site-font-regular;
 }
-
 @mixin showsBorderHiddin()
 {
     border-bottom: 0 solid $divider-color;
 }
+
 
 /*** MOBILE ***/
 
@@ -92,11 +96,6 @@
 @mixin mobileHeaderBgImage()
 {
     background-image: url(../assets/images/for-mobile/max-320px/ana-grave-mobile-resized.jpg);
-    background-size: cover;
-}
-@mixin mobileHeaderShowsBgImage()
-{
-    background-image: url(../assets/images/3-hanny-naibaho-resized.jpg);
     background-size: cover;
 }
 @mixin mobileNavigationLeft()
@@ -214,8 +213,8 @@
 }
 
 /* SHOWS PAGE */
-@mixin imageShowsLinearGradient() {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/original/hanny-naibaho-388579-unsplash.png);
+@mixin mobileImageShowsLinearGradient() {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/for-mobile/max-320px/hanny-naibaho-mobile-resized.jpg);
     background-size: cover;
 }
 
