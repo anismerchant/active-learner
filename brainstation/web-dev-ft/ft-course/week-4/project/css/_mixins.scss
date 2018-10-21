@@ -101,8 +101,12 @@
 @mixin mobileNavigationLeft()
 {
     width: 50%;
-    padding: 1em 0 0 1em;
+    padding: 1em 0 0 1.5em;
     font-size: $mobile-font-size-nav;
+}
+@mixin mobileLargeNavigationLeft() 
+{
+    padding-left: 5.5em !important;
 }
 @mixin mobileNavigationRight()
 {
@@ -214,10 +218,28 @@
 
 /* SHOWS PAGE */
 @mixin mobileImageShowsLinearGradient() {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/for-mobile/max-320px/hanny-naibaho-mobile-resized.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/for-mobile/max-320px/hanny-naibaho-mobile-resized.jpg);
     background-size: cover;
 }
-
+@mixin mobileShowTableRows
+{
+    display: flex;
+    flex-direction: column;
+    font-size: .7em;
+    padding: 2em 0;
+}
+@mixin mobileLargeShowTableRows
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    padding: 2em 0;
+}
+@mixin mobileButton{
+    width: 175px;
+    height: 30px;
+    font-size: .9em;
+}
 /* BONUS */
 @mixin imageFilterGrayscale() {
     filter: grayscale(1);

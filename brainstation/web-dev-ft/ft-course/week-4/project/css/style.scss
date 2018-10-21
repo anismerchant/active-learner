@@ -77,8 +77,9 @@ table {
 
     .header__bgImage {
         background-image: url(../assets/images/original/ana-grave-156852-unsplash.jpg);
-        @include sectionSize();
         background-size: cover;
+        @include sectionSize();
+        
 
         @media (max-width: $mobile-max-width-small) {
             @include mobileHeaderBgImage();
@@ -103,6 +104,10 @@ table {
 
                 @media (max-width: $mobile-max-width-small) {
                     @include mobileNavigationLeft();
+                }
+
+                @media (min-width: $dt-lpt-min-width) {
+                    @include mobileLargeNavigationLeft(); 
                 }
             }
             .bgImage__navigation--right {
@@ -163,8 +168,7 @@ table {
     .header__shows__bgImage {
         @include imageShowsLinearGradient();
         @include sectionSize();     
-        
-        
+                
         @media (max-width: $mobile-max-width-small) {
             @include mobileImageShowsLinearGradient();
         }
@@ -242,9 +246,34 @@ table {
             @include showsContainer();            
             
             .shows__table {
-                @include showsTable();     
-                                 
+                @include showsTable();
+                
+                .show__table__rows {
+                    @media (max-width: $mobile-max-width-small) {
+                        @include mobileShowTableRows;
+                    }
+                    @media (min-width: $dt-lpt-min-width) and (max-width: $dt-lpt-max-width) {
+                        @include mobileLargeShowTableRows;
+                    }
+                    .shows__table__rows--ticket {
+                        text-align: left;
+                        button {
+                            @media (max-width: $mobile-max-width-small) {
+                                @include mobileButton;
+                            }
+                        }
+                        
+                    }                    
+                }
+                               
                 tr {
+                    .shows__table__rows--venue { 
+                        @media (max-width: $mobile-max-width-small) {                        
+                            font-size: 1em;
+                        }
+                    }
+                    
+
                     .last,
                     .shows__table__rows--date,
                     .shows__table__rows--location,
@@ -294,10 +323,10 @@ table {
         
         @media (max-width: $mobile-max-width-small) {
             @include  mobileSectionHeader();
-        }
+        }     
         
         .about__header--h1 {
-            width: $ection-width-left;
+            width: $section-width-left;
             font-family: $site-font-bold;
             font-size: 5.25em;    
             padding-bottom: 1em;
@@ -308,7 +337,7 @@ table {
             }
         }        
         .about__header--spacing {
-            width: $ection-width-right;
+            width: $section-width-right;
         }    
     }
     .about__info {
@@ -358,8 +387,8 @@ table {
         .music__header--h1{
             font-family: $site-font-bold;
             font-size: 5.25em;
-            width: $ection-width-left;
-            padding-bottom: 1em;
+            width: $section-width-left;
+            padding-bottom: 1em;            
 
             @media (max-width: $mobile-max-width-small) {
                 @include mobileSectionHeadings();
@@ -367,7 +396,7 @@ table {
             }
         }    
         .music__header--spacing{
-            width: $ection-width-right;
+            width: $section-width-right;
         }
     }
     .music__info {

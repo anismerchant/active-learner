@@ -2,7 +2,6 @@
 /*** MOBILE VARIABLES ***/
 /* HEADER SECTION */
 /* MAIN SECTION */
-/* Reserved for next iteration */
 /* BONUS */
 /* MUSIC SECTION */
 /* SHOWS PAGE */
@@ -97,9 +96,9 @@ table {
 
 .header .header__bgImage {
   background-image: url(../assets/images/original/ana-grave-156852-unsplash.jpg);
+  background-size: cover;
   width: 100%;
   min-height: 100vh;
-  background-size: cover;
 }
 
 @media (max-width: 760px) {
@@ -141,8 +140,14 @@ table {
 @media (max-width: 760px) {
   .header .header__bgImage .bgImage__navigation .bgImage__navigation--left {
     width: 50%;
-    padding: 1em 0 0 1em;
+    padding: 1em 0 0 1.5em;
     font-size: 0.8em;
+  }
+}
+
+@media (min-width: 761px) {
+  .header .header__bgImage .bgImage__navigation .bgImage__navigation--left {
+    padding-left: 5.5em !important;
   }
 }
 
@@ -243,7 +248,8 @@ table {
 
 @media (max-width: 760px) {
   .header .header__shows__bgImage {
-    background-image: url(../assets/images/3-hanny-naibaho-resized.jpg);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../assets/images/for-mobile/max-320px/hanny-naibaho-mobile-resized.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/for-mobile/max-320px/hanny-naibaho-mobile-resized.jpg);
     background-size: cover;
   }
 }
@@ -280,7 +286,7 @@ table {
 @media (max-width: 760px) {
   .header .header__shows__bgImage .bgImage__navigation .bgImage__navigation--left {
     width: 50%;
-    padding: 1em 0 0 1em;
+    padding: 1em 0 0 1.5em;
     font-size: 0.8em;
   }
 }
@@ -362,6 +368,52 @@ table {
 .header .header__shows__bgImage .shows .shows__table {
   width: 100%;
   text-align: right;
+}
+
+@media (max-width: 760px) {
+  .header .header__shows__bgImage .shows .shows__table .show__table__rows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: .7em;
+    padding: 2em 0;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 900px) {
+  .header .header__shows__bgImage .shows .shows__table .show__table__rows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 1em;
+    padding: 2em 0;
+  }
+}
+
+.header .header__shows__bgImage .shows .shows__table .show__table__rows .shows__table__rows--ticket {
+  text-align: left;
+}
+
+@media (max-width: 760px) {
+  .header .header__shows__bgImage .shows .shows__table .show__table__rows .shows__table__rows--ticket button {
+    width: 175px;
+    height: 30px;
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 760px) {
+  .header .header__shows__bgImage .shows .shows__table tr .shows__table__rows--venue {
+    font-size: 1em;
+  }
 }
 
 .header .header__shows__bgImage .shows .shows__table tr .last,
@@ -656,10 +708,9 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: 8%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 @media (max-width: 760px) {
