@@ -243,7 +243,10 @@ table {
 
         }
         .shows {
-            @include showsContainer();            
+            @include showsContainer();
+            @media (max-width: $mobile-max-width-small) {
+                width: 90%; 
+            }                       
             
             .shows__table {
                 @include showsTable();

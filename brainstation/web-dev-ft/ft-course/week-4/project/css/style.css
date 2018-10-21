@@ -365,6 +365,12 @@ table {
   margin: 0 auto;
 }
 
+@media (max-width: 760px) {
+  .header .header__shows__bgImage .shows {
+    width: 90%;
+  }
+}
+
 .header .header__shows__bgImage .shows .shows__table {
   width: 100%;
   text-align: right;
