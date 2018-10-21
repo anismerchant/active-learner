@@ -164,8 +164,9 @@ function formattedDispalyTime() {
     let postTimeId = document.getElementById("comments__posts__name--time");
     
     // Display newly formatted timestamp
+    // let timeStamp = "" + seconds;
+    // let timeStamp = postTimeId.innerHTML = "" + currentYear + " " + currentMonth + " " + currentDay + "T" + hour + ":" + minutes + ":" + seconds +"Z"
     let timeStamp = postTimeId.innerHTML = "" + dayOfWeekArray[currentDay]+ " " + currentDayOfMonth + " " + monthArray[currentMonth] + " " +  currentYear + " | " + hour + ":" + minutes + ":" + seconds; 
-    // let timeStamp = "" + dayOfWeekArray[currentDay]+ " " + currentDayOfMonth + " " + monthArray[currentMonth] + " " +  currentYear + " | " + hour + ":" + minutes + ":" + seconds; 
     
     return timeStamp;     
 }
@@ -173,3 +174,32 @@ function formattedDispalyTime() {
 setInterval(() => {
     formattedDispalyTime();
 }, 5000);
+
+
+/* PSEUDO CODE: For later...
+
+function timeDiff() {
+    let date = new Date();
+    let milliSeconds = date.getTime();
+
+    diff = (postDate - milliSeconds);
+
+}
+    if diff < 60 {
+        "just now"
+    } else if (diff < 120) {
+        " 1 minute ago"
+    } else if (diff < 3600) {
+        Math.floor (diff / 3600) + " minutes ago"
+    } else if (diff < 7200) {
+        " 1 hour " + Math.floor (diff / 3600) + " minutes ago"
+    } else if ( diff < 7200 && diff < 43200) {
+        "More than two hours ago"
+    } else if (diff > 43200 && diff < 86400) {
+        "More than 12 hours ago"
+    } else if (diff >= 86400 && diff < 172800) {
+        "More than a day ago"
+    } else {
+        "More than two days"
+    }
+*/
