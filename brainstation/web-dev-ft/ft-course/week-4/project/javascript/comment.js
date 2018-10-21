@@ -103,13 +103,14 @@ function displayComment(commentObject) {
 
         // userNames, userComments, and time displayed
         spanElement.innerHTML = commentObject[i].userName;        
-        timeElement.innerHTML = dispalyTime();
-        paragraphElement.innerHTML = commentObject[i].userComment;    
+        paragraphElement.innerHTML = commentObject[i].userComment;
+        let currentTime = formattedDispalyTime();
+        timeElement.innerHTML = currentTime;    
     }        
 }
  
 //Displays date when userComment is posted
-function dispalyTime() {
+function formattedDispalyTime() {
     
     // Build current date 
     let currentDate = new Date();
@@ -164,10 +165,11 @@ function dispalyTime() {
     
     // Display newly formatted timestamp
     let timeStamp = postTimeId.innerHTML = "" + dayOfWeekArray[currentDay]+ " " + currentDayOfMonth + " " + monthArray[currentMonth] + " " +  currentYear + " | " + hour + ":" + minutes + ":" + seconds; 
-
+    // let timeStamp = "" + dayOfWeekArray[currentDay]+ " " + currentDayOfMonth + " " + monthArray[currentMonth] + " " +  currentYear + " | " + hour + ":" + minutes + ":" + seconds; 
+    
     return timeStamp;     
 }
 
 setInterval(() => {
-    dispalyTime();
+    formattedDispalyTime();
 }, 5000);
