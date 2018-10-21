@@ -1107,6 +1107,20 @@ table {
   color: #272727;
 }
 
+@media (max-width: 760px) {
+  .comments #comments__form #grabComments #message {
+    font-size: 1em;
+    margin: 2em 0 2em .8em;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 900px) {
+  .comments #comments__form #grabComments #message {
+    font-size: 1em;
+    margin: 2em 0 2em 5.2em;
+  }
+}
+
 .comments #comments__form #grabComments .grabComments__name--heading {
   width: 50%;
   font-size: 2.25em;

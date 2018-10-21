@@ -626,6 +626,13 @@ table {
                 font-family: "Poppins-Bold";
                 margin: 2em 0 2em 6em;
                 color: $site-footer-bg-color;
+
+                @media (max-width: $mobile-max-width-small) {
+                    @include mobileMessage;
+                }
+                @media (min-width: $dt-lpt-min-width) and (max-width: $dt-lpt-max-width) {
+                    @include mobileLargeMessage;
+                }  
             }
 
             .grabComments__name--heading {
