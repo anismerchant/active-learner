@@ -10,7 +10,7 @@ commentForm.addEventListener("submit", function(e) {
     
     // Comment posted confirmation message
     setTimeout(() => {messageAppear()}, 10);
-    //setTimeout(() => {messageDisppear()}, 2000);
+    setTimeout(() => {messageDisppear()}, 4000);
     
     // Get values and subsequently display values
     getVal();
