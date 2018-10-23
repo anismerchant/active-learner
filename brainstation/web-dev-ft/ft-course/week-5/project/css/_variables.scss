@@ -1,0 +1,37 @@
+/*** ALL DEVICES' VARIABLES ***/
+$header-footer-color: #FFFFFF;
+$main-color: #000000;
+$section-background-color: #F9F9F9;
+$site-footer-bg-color: #272727;
+$text-button-color: #A0A0A0;
+$divider-color: #D7D7D7;
+
+$site-font-bold: "Poppins-Bold";
+$site-font-semibold: "Poppins-SemiBold";
+$site-font-regular: "Poppins-Regular";
+
+$copyright-info-font-size: 0.7em;
+
+$section-width-left:30%;
+$section-width-right:45%;
+
+
+/*** MOBILE VARIABLES ***/
+/* HEADER SECTION */
+$mobile-font-size-nav: 0.8em;
+$mobile-font-size-bg-image-text-date: 2.25em;
+$mobile-font-size-bg-image-text-album-name: 1.25em;
+$mobile-font-size-bg-image-text-button: 0.9em;
+
+/* MAIN SECTION */
+$mobile-font-size-paragraphs: 0.9em;
+$mobile-font-size-section-headings: 2.25em;
+$mobile-image-width: 285px;
+$mobile-image-height: 285px;
+$mobile-max-width-small: 760px;
+$dt-lpt-min-width: 761px; 
+$dt-lpt-max-width: 900px;
+/* BONUS */
+$filter-hue: hue-rotate(270deg);
+$filter-contrast: contrast(300%);
+$filter-grayscale: grayscale(0);

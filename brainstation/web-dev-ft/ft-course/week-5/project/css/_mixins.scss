@@ -1,0 +1,323 @@
+@mixin imageSize()
+{
+    width: 285px;
+    height: 285px;
+}
+@mixin links()
+{
+    color: $header-footer-color;
+    text-decoration: none;
+}
+@mixin sectionSize()
+{
+    width: 100%;
+    min-height: 100vh;
+}
+@mixin containerOrientation()
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@mixin socialMediaIcon() 
+{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@mixin buttons()
+{
+    font-family: $site-font-semibold;
+                background-color: $text-button-color;
+                display: inline-block;
+                color: $header-footer-color;
+                width: 198px;
+                height: 55px;
+                margin-top: 1em;
+                padding: 15px 20px;
+                border: 2px solid $header-footer-color;
+                border-radius: 4px;
+                font-size: 1.125em;
+                line-height: 0px;
+                letter-spacing: 1px;
+}
+@mixin sectionDisplaySpaceEvenly()
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* MUSIC SECTION */
+@mixin musiciFrame()
+{
+    width: $section-width-left;
+}
+
+@mixin musicInfoAlbum()
+{
+    width: $section-width-right;
+    font-family: $site-font-regular;
+}
+
+/* SHOWS PAGE */
+@mixin imageShowsLinearGradient() {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/original/hanny-naibaho-388579-unsplash.png);
+    background-size: cover;
+}
+@mixin showsContainer()
+{
+    width: 85%;
+    margin: 0 auto;
+}
+@mixin showsTable()
+{
+    width: 100%;
+    text-align: right;
+}
+@mixin showsTableRowDates()
+{
+    font-size: 1.25em;
+    font-family: $site-font-bold;
+    padding: 0 15em 0 0 ;
+}
+@mixin showsTableData()
+{
+    font-size: 1.25em;
+    font-family: $site-font-regular;
+}
+@mixin showsBorderHiddin()
+{
+    border-bottom: 0 solid $divider-color;
+}
+
+
+/*** MOBILE ***/
+
+/* NAVIGATION */
+@mixin mobileHeaderBgImage()
+{
+    background-image: url(../assets/images/for-mobile/max-320px/ana-grave-mobile-resized.jpg);
+    background-size: cover;
+}
+@mixin mobileNavigationLeft()
+{
+    width: 50%;
+    padding: 1em 0 0 1.5em;
+    font-size: $mobile-font-size-nav;
+}
+@mixin mobileLargeNavigationLeft() 
+{
+    padding-left: 5.5em !important;
+}
+@mixin mobileNavigationRight()
+{
+    width: 50%;
+    padding: 1em 1em 0 0;
+    font-size: $mobile-font-size-nav;
+}
+@mixin mobileBgImageTextDate()
+{
+    font-size: $mobile-font-size-bg-image-text-date;
+}
+@mixin mobileBgImageTextAlbumName()
+{
+    font-size: $mobile-font-size-bg-image-text-album-name;
+}
+@mixin mobileBgImageTextButton()
+{
+    letter-spacing: 0.5px;
+    font-size: $mobile-font-size-bg-image-text-button;
+    width: 144px;
+    height: 40px;
+}
+
+/* ABOUT SECTION */
+@mixin mobileSectionHeader()
+{
+    padding: 2em 0 0 1em;
+    justify-content: space-between;
+}
+@mixin mobileSectionHeadings()
+{
+    font-size: $mobile-font-size-section-headings;
+    padding-bottom: 0.8em;    
+}
+@mixin mobileSpacing()
+{
+    justify-content: space-around;
+}
+@mixin mobileSectionDisplay() 
+{
+    display: block;
+}
+@mixin mobileInfoParagraphs()
+{
+    width: 90%;
+    margin: 0 1em 1em 1em;
+    font-size: $mobile-font-size-paragraphs;
+}
+
+/* MUSIC SECTION */
+@mixin mobileMusicInfoImage()
+{
+    background-image: url(../assets/images/for-mobile/max-320px/bryan-minear-mobile-resized.jpg);
+    background-size: cover;
+    width: $mobile-image-width;
+    height: $mobile-image-height;
+    margin: 0 0 0 1.5em;
+}
+@mixin mobileMusicInfoText()
+{
+    font-size: $mobile-font-size-paragraphs;
+}
+@mixin mobileMusicInfoAlbum()
+{
+    width: 90%;
+    margin: 1em 1em 1em 1em;
+}
+
+/* GALLERY SECTION */
+@mixin mobileSectionContainerMargin()
+{
+    margin: 0 0;
+}
+@mixin mobileGalleryImages()
+{
+    margin: 1em;
+}
+
+/* COMMENTS SECTION */
+@mixin mobileCommentsHeadings
+{
+    margin-left: .8em;
+    font-size: 1.5em;
+    width: 100%;
+}
+@mixin mobileCommentsNameInputBox
+{
+    margin-left: .8em;
+    font-size: 1em;
+    height: 4vh;
+    width: 80%;
+}
+@mixin mobileCommentsInputBox
+{
+    margin-left: .8em;
+    font-size: 1em;
+    height:10vh;
+    width: 80%;
+}
+@mixin mobileLargeCommentsHeadings
+{
+    margin-left: 3.5em;
+    font-size: 1.5em;
+    width: 100%;
+}
+@mixin mobileLargeCommentsNameInputBox
+{
+    margin-left:  5.2em;
+    font-size: 1em;
+    height: 3vh;
+    width: 68%;
+}
+@mixin mobileLargeCommentsInputBox
+{
+    margin-left:  5.2em;
+    font-size: 1em;
+    height: 20vh;
+    width: 68%;
+}
+@mixin mobileMessage 
+{
+    font-size: 1em;
+    margin: 2em 0 2em .8em;
+}
+@mixin mobileLargeMessage 
+{
+    font-size: 1em;
+    margin: 2em 0 2em 5.2em;
+}
+
+
+/* CONTACT SECTION */
+@mixin mobileContactAddressesContainer() 
+{
+    flex-direction: column;
+    margin-left: 1em;
+}
+@mixin mobileContactAddresses() 
+{
+    width: 100%;
+    padding-bottom: 2em;
+}
+@mixin mobileSocialMediaIconContainer() 
+{
+    margin: 2em 0 2em 1em;
+}
+@mixin mobileSocialMediaIcon() 
+{
+    width: 30%;
+    margin: 0; 
+}
+@mixin mobileCopyRightInfo() 
+{
+    padding: 0 0 2em 1em;
+    margin: 5em 0 0 1em;;
+    width: 90%;
+}
+@mixin mobileEmptySpace() 
+{
+    width: 10%;
+}
+
+/* SHOWS PAGE */
+@mixin mobileImageShowsLinearGradient() {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/for-mobile/max-320px/hanny-naibaho-mobile-resized.jpg);
+    background-size: cover;
+}
+@mixin mobileShowTableRows
+{
+    display: flex;
+    flex-direction: column;
+    font-size: .7em;
+    padding: 2em 0;
+}
+@mixin mobileLargeShowTableRows
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    padding: 2em 0;
+}
+@mixin mobileButton{
+    width: 175px;
+    height: 30px;
+    font-size: .9em;
+}
+/* BONUS */
+@mixin imageFilterGrayscale() {
+    filter: grayscale(1);
+    transition: all 1s ease-in-out;
+    &:hover {
+        filter: none;
+        filter: $filter-grayscale;
+        transform: scale(1.01,1.01);
+    }   
+}
+@mixin imageFilterHue() {
+    filter: grayscale(1);
+    transition: all 1s ease-in-out;
+    &:hover {
+        filter: none;
+        filter: $filter-hue;
+        transform: scale(1.01,1.01);
+    }   
+}
+@mixin imageFilterContrast() {
+    filter: grayscale(1);
+    transition: all 1s ease-in-out;
+    &:hover {
+        filter: none;
+        filter: $filter-contrast;
+        transform: scale(1.01,1.01);
+    }   
+}
