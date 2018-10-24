@@ -72,11 +72,11 @@ function getVal() {
     const init = {
         method: 'POST',
         body: JSON.stringify(obj),
-        header: {
+        headers: {
             'content-Type': 'application/json',
         }
     }
-    const promise = fetch(baseUrl + path + queryString, init);
+    const promise = fetch(baseUrl + commentsPath + API_KEY, init);
     
     return promise.then((response) => {
         return response.json();
