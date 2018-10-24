@@ -6,19 +6,19 @@ commentForm.addEventListener("submit", function(e) {
     e.preventDefault();
     
     // Clears DOM of comment posts section
-    document.getElementById('comments__posts').innerHTML="";
+    //document.getElementById('comments__posts').innerHTML="";
     
     // Comment posted confirmation message
-    setTimeout(() => {messageAppear()}, 10);
-    setTimeout(() => {messageDisppear()}, 4000);
+    //setTimeout(() => {messageAppear()}, 10);
+    //setTimeout(() => {messageDisppear()}, 4000);
     
     // Get values and subsequently display values
     getVal();
-    displayComment(arrayOfDynamicComments);
+    //displayComment(arrayOfDynamicComments);
 
     // Clear fields 
-    document.getElementById('name').value = "";
-    document.getElementById('comment').value = "";
+    //document.getElementById('name').value = "";
+    //document.getElementById('comment').value = "";
 });
 
 // Empty array to capture dynamic data from html form
@@ -30,20 +30,20 @@ let arrayOfDynamicComments = [];
 // the html form fields and press the button, 'POST COMMENT'
 let arrayOfSampleComments = [
     { 
-        userName: "Jack Deng",
-        userComment: "They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed.",
+        name: "Jack Deng",
+        comment: "They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed.",
     },
     { 
-        userName: "Corey Kohan",
-        userComment: "Its just amazing all the sounds that come out of this band. Neil is just an animal on the drum kit and Geddy and Alex are just as good on their instruments."
+        name: "Corey Kohan",
+        comment: "Its just amazing all the sounds that come out of this band. Neil is just an animal on the drum kit and Geddy and Alex are just as good on their instruments."
     },
     { 
-        userName: "Edward Anthony",
-        userComment: "These guys are beyond great. The opening melody was incredible and had to be very difficult. The #1 band I regret not seeing LIVE."
+        name: "Edward Anthony",
+        comment: "These guys are beyond great. The opening melody was incredible and had to be very difficult. The #1 band I regret not seeing LIVE."
     },
     { 
-        userName: "Jill Saunders",
-        userComment: "Masters of their instruments and on time with each other all the time, perfect what a pleasure."
+        name: "Jill Saunders",
+        comment: "Masters of their instruments and on time with each other all the time, perfect what a pleasure."
     }
 ]
 
@@ -65,9 +65,26 @@ function messageDisppear() {
 // which is subsequently pushed into an array 
 function getVal() {
     let obj = {};       
-    obj.userName = document.getElementById('name').value;
-    obj.userComment = document.getElementById('comment').value;
-    arrayOfDynamicComments.push(obj);
+    obj.name = document.getElementById('name').value;
+    obj.comment = document.getElementById('comment').value;
+    console.log(obj);
+        
+    const init = {
+        method: 'POST',
+        body: JSON.stringify(obj),
+        header: {
+            'content-Type': 'application/json',
+        }
+    }
+    const promise = fetch(baseUrl + path + queryString, init);
+    
+    return promise.then((response) => {
+        return response.json();
+    }).then((data) => {
+        console.log(data);
+        // commentObject = arrayOfDynamicComments.push(data);
+        //return displayComment(commentObject);
+    });
 }
 
 // Displays userNames and userComments 
@@ -184,10 +201,11 @@ function formattedDispalyTime() {
     return timeStamp;     
 }
 
+/*
 setInterval(() => {
     formattedDispalyTime();
 }, 5000);
-
+*/
 
 /* PSEUDO CODE: For later... (in development)
 
