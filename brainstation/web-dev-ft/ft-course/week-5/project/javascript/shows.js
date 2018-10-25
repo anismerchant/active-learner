@@ -1,4 +1,4 @@
-const promise = fetch(baseUrl + showsPath + queryString);
+const promise = fetch(baseUrl + showsPath + queryString + API_KEY);
 
 // Parent within which all constructed elements are placed
 let showsSection = document.getElementById("shows");
