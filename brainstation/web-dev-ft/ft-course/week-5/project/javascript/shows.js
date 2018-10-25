@@ -66,6 +66,6 @@ promise.then((response) => {
             "shows__table__rows--venue",
             "last"
         ];
-        rows = (data.length);
+        let rows = (data.length);
         return buildTableRows(elemSymbols, tbClassNames, data, rows);
 }); 
