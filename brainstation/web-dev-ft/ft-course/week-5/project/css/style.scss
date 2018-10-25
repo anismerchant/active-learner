@@ -277,7 +277,7 @@ table {
                     }
                     
 
-                    .last,
+                    #last,
                     .shows__table__rows--date,
                     .shows__table__rows--location,
                     .shows__table__rows--ticket {
@@ -302,7 +302,7 @@ table {
                     .shows__table__rows--venue {
                         padding-bottom: 2em;
                     }
-                    .last{
+                    #last{
                         padding-bottom: 8em;
                     }                    
             

@@ -423,7 +423,7 @@ table {
   }
 }
 
-.header .header__shows__bgImage #shows .shows__table tr .last,
+.header .header__shows__bgImage #shows .shows__table tr #last,
 .header .header__shows__bgImage #shows .shows__table tr .shows__table__rows--date,
 .header .header__shows__bgImage #shows .shows__table tr .shows__table__rows--location,
 .header .header__shows__bgImage #shows .shows__table tr .shows__table__rows--ticket {
@@ -468,7 +468,7 @@ table {
   padding-bottom: 2em;
 }
 
-.header .header__shows__bgImage #shows .shows__table tr .last {
+.header .header__shows__bgImage #shows .shows__table tr #last {
   padding-bottom: 8em;
 }
 
