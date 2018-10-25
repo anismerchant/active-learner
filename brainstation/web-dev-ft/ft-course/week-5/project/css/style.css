@@ -361,24 +361,24 @@ table {
   width: 55%;
 }
 
-.header .header__shows__bgImage .shows {
+.header .header__shows__bgImage #shows {
   width: 85%;
   margin: 0 auto;
 }
 
 @media (max-width: 760px) {
-  .header .header__shows__bgImage .shows {
+  .header .header__shows__bgImage #shows {
     width: 90%;
   }
 }
 
-.header .header__shows__bgImage .shows .shows__table {
+.header .header__shows__bgImage #shows .shows__table {
   width: 100%;
   text-align: right;
 }
 
 @media (max-width: 760px) {
-  .header .header__shows__bgImage .shows .shows__table .show__table__rows {
+  .header .header__shows__bgImage #shows .shows__table .show__table__rows {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -392,7 +392,7 @@ table {
 }
 
 @media (min-width: 761px) and (max-width: 900px) {
-  .header .header__shows__bgImage .shows .shows__table .show__table__rows {
+  .header .header__shows__bgImage #shows .shows__table .show__table__rows {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -405,12 +405,12 @@ table {
   }
 }
 
-.header .header__shows__bgImage .shows .shows__table .show__table__rows .shows__table__rows--ticket {
+.header .header__shows__bgImage #shows .shows__table .show__table__rows .shows__table__rows--ticket {
   text-align: left;
 }
 
 @media (max-width: 760px) {
-  .header .header__shows__bgImage .shows .shows__table .show__table__rows .shows__table__rows--ticket button {
+  .header .header__shows__bgImage #shows .shows__table .show__table__rows .shows__table__rows--ticket button {
     width: 175px;
     height: 30px;
     font-size: .9em;
@@ -418,31 +418,31 @@ table {
 }
 
 @media (max-width: 760px) {
-  .header .header__shows__bgImage .shows .shows__table tr .shows__table__rows--venue {
+  .header .header__shows__bgImage #shows .shows__table tr .shows__table__rows--venue {
     font-size: 1em;
   }
 }
 
-.header .header__shows__bgImage .shows .shows__table tr .last,
-.header .header__shows__bgImage .shows .shows__table tr .shows__table__rows--date,
-.header .header__shows__bgImage .shows .shows__table tr .shows__table__rows--location,
-.header .header__shows__bgImage .shows .shows__table tr .shows__table__rows--ticket {
+.header .header__shows__bgImage #shows .shows__table tr .last,
+.header .header__shows__bgImage #shows .shows__table tr .shows__table__rows--date,
+.header .header__shows__bgImage #shows .shows__table tr .shows__table__rows--location,
+.header .header__shows__bgImage #shows .shows__table tr .shows__table__rows--ticket {
   border-bottom: 0 solid #D7D7D7;
 }
 
-.header .header__shows__bgImage .shows .shows__table tr .shows__table__rows--date {
+.header .header__shows__bgImage #shows .shows__table tr .shows__table__rows--date {
   font-size: 1.25em;
   font-family: "Poppins-Bold";
   padding: 0 15em 0 0;
 }
 
-.header .header__shows__bgImage .shows .shows__table tr td {
+.header .header__shows__bgImage #shows .shows__table tr td {
   font-size: 1.25em;
   font-family: "Poppins-Regular";
   border-bottom: 1px solid #D7D7D7;
 }
 
-.header .header__shows__bgImage .shows .shows__table tr td button {
+.header .header__shows__bgImage #shows .shows__table tr td button {
   font-family: "Poppins-SemiBold";
   background-color: #A0A0A0;
   display: inline-block;
@@ -458,17 +458,17 @@ table {
   letter-spacing: 1px;
 }
 
-.header .header__shows__bgImage .shows .shows__table tr .shows__table__rows--date,
-.header .header__shows__bgImage .shows .shows__table tr .shows__table__rows--location,
-.header .header__shows__bgImage .shows .shows__table tr .shows__table__rows--venue {
+.header .header__shows__bgImage #shows .shows__table tr .shows__table__rows--date,
+.header .header__shows__bgImage #shows .shows__table tr .shows__table__rows--location,
+.header .header__shows__bgImage #shows .shows__table tr .shows__table__rows--venue {
   text-align: left;
 }
 
-.header .header__shows__bgImage .shows .shows__table tr .shows__table__rows--venue {
+.header .header__shows__bgImage #shows .shows__table tr .shows__table__rows--venue {
   padding-bottom: 2em;
 }
 
-.header .header__shows__bgImage .shows .shows__table tr .last {
+.header .header__shows__bgImage #shows .shows__table tr .last {
   padding-bottom: 8em;
 }
 

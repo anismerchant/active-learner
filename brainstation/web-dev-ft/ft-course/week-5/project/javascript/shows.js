@@ -1,30 +1,71 @@
-const promise = fetch(baseUrl + pathShowDates + queryString);
+const promise = fetch(baseUrl + showsPath + queryString);
+const rows = 6;
+
+// Parent within which all constructed elements are placed
+let showsSection = document.getElementById('shows');
+
+ // Table Parent
+ let showsTable = document.createElement('table');
+ showsSection.appendChild(showsTable);
+ showsTable.className = 'shows__table';
+
+// Builds a single table with rows
+function buildTableRows(elementSymbols, tableClassNames, data) {
+    for (let i=0; i<rows; i++) {
+        // Primary row to hold shows details
+        let showsTableRows = document.createElement(elementSymbols[0]);
+        showsTable.appendChild(showsTableRows);
+
+        let showsTableRowsDate = document.createElement(elementSymbols[1]);
+        showsTableRows.appendChild(showsTableRowsDate);
+        showsTableRowsDate.innerHTML = data[i].date;
+
+        let showsTableRowsLocation = document.createElement(elementSymbols[1]);
+        showsTableRows.appendChild(showsTableRowsLocation);
+        showsTableRowsLocation.innerHTML = data[i].location;
+
+        let showsTableRowsTicket = document.createElement(elementSymbols[1]);
+        showsTableRows.appendChild(showsTableRowsTicket);
+
+        let button = document.createElement(elementSymbols[2]);
+        showsTableRowsTicket.appendChild(button);
+        button.innerHTML = "GET TICKETS";
+
+        // Secondary row to hold shows venues
+        let showsTableRow = document.createElement(elementSymbols[0]);
+        showsTable.appendChild(showsTableRow);
+
+        let showsTableRowsVenue = document.createElement(elementSymbols[1]);
+        showsTableRow.appendChild(showsTableRowsVenue);
+        showsTableRowsVenue.innerHTML = data[i].place;
+        
+        // Assign class names to newly constructed elements
+        showsTableRows.className = tableClassNames[0];
+        showsTableRowsDate.className = tableClassNames[1];
+        showsTableRowsLocation.className = tableClassNames[2];
+        showsTableRowsTicket.className = tableClassNames[3];
+        button.className = tableClassNames[4];
+        showsTableRowsVenue.className = tableClassNames[5];
+        showsTableRowsVenue.setAttribute("colspan", "3");
+    }
+    let rowsVenue = document.querySelectorAll("td");
+    let lastChild = rowsVenue[rowsVenue.length-1];
+    lastChild.setAttribute("id", "last");  
+}
 
 promise.then((response) => {
     return response.json();
-}).then((data) => {
-    // Code will be refactored in future development
-    document.getElementById('row__one__date').innerHTML = data[0].date;
-    document.getElementById('row__one__location').innerHTML = data[0].location;
-    document.getElementById('row__one__venue').innerHTML = data[0].place;
-
-    document.getElementById('row__two__date').innerHTML = data[1].date;
-    document.getElementById('row__two__location').innerHTML = data[1].location;
-    document.getElementById('row__two__venue').innerHTML = data[1].place;
-
-    document.getElementById('row__three__date').innerHTML = data[2].date;
-    document.getElementById('row__three__location').innerHTML = data[2].location;
-    document.getElementById('row__three__venue').innerHTML = data[2].place;
-
-    document.getElementById('row__four__date').innerHTML = data[3].date;
-    document.getElementById('row__four__location').innerHTML = data[3].location;
-    document.getElementById('row__four__venue').innerHTML = data[3].place;
-
-    document.getElementById('row__five__date').innerHTML = data[4].date;
-    document.getElementById('row__five__location').innerHTML = data[4].location;
-    document.getElementById('row__five__venue').innerHTML = data[4].place;
-
-    document.getElementById('row__six__date').innerHTML = data[5].date;
-    document.getElementById('row__six__location').innerHTML = data[5].location;
-    document.getElementById('row__six__venue').innerHTML = data[5].place;    
-});
+})
+.then((data) => {
+        const elemSymbols =["tr", "td", "button"];
+        const tbClassNames = [
+            "show__table__rows",
+            "shows__table__rows--date",
+            "shows__table__rows--location",
+            "shows__table__rows--ticket",
+            "button",
+            "shows__table__rows--venue",
+            "last"
+        ];
+        return buildTableRows(elemSymbols, tbClassNames, data);
+}); 
