@@ -1,12 +1,12 @@
 const promise = fetch(baseUrl + showsPath + queryString);
 
 // Parent within which all constructed elements are placed
-let showsSection = document.getElementById('shows');
+let showsSection = document.getElementById("shows");
 
  // Table Parent
- let showsTable = document.createElement('table');
+ let showsTable = document.createElement("table");
  showsSection.appendChild(showsTable);
- showsTable.className = 'shows__table';
+ showsTable.className = "shows__table";
 
 // Builds a single table with rows
 function buildTableRows(elementSymbols, tableClassNames, data, rows) {
