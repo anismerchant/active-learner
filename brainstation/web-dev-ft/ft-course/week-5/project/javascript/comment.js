@@ -6,23 +6,21 @@ commentForm.addEventListener("submit", function(e) {
     e.preventDefault();
     
     // Clears DOM of comment posts section
-    //document.getElementById('comments__posts').innerHTML="";
+    document.getElementById('comments__posts').innerHTML="";
     
     // Comment posted confirmation message
     //setTimeout(() => {messageAppear()}, 10);
     //setTimeout(() => {messageDisppear()}, 4000);
     
     // Get values and subsequently display values
+    getData()
     getVal();
-    //displayComment(arrayOfDynamicComments);
+    displayComment(arrayOfDynamicComments);
 
     // Clear fields 
-    //document.getElementById('name').value = "";
-    //document.getElementById('comment').value = "";
+    document.getElementById('name').value = "";
+    document.getElementById('comment').value = "";
 });
-
-// Empty array to capture dynamic data from html form
-let arrayOfDynamicComments = [];
 
 // Hard-coded array with objects for testing purposes
 // To test, please replace 'arrayOfDynamicComments' with 'arrayOfSampleComments'
@@ -60,15 +58,29 @@ function messageDisppear() {
     return message;
 }
 
-// Grabs values from the comment form fields 
-// and places them in the object
-// which is subsequently pushed into an array 
+// Empty array to capture dynamic data from html form
+let arrayOfDynamicComments = [];
+
+
+// Grabs data from the server
+function getData() {
+    const getPromise = fetch(baseUrl + commentsPath + queryString + API_KEY);
+    
+    getPromise.then((response) => {
+        return response.json();
+    })
+    .then((data) => {
+        arrayOfDynamicComments = data;
+        console.log(arrayOfDynamicComments);
+    });
+}
+
+// Grabs data from the form and sends it to server
 function getVal() {
     let obj = {};       
     obj.name = document.getElementById('name').value;
     obj.comment = document.getElementById('comment').value;
-    console.log(obj);
-        
+
     const init = {
         method: 'POST',
         body: JSON.stringify(obj),
@@ -76,14 +88,14 @@ function getVal() {
             'content-Type': 'application/json',
         }
     }
-    const promise = fetch(baseUrl + commentsPath + API_KEY, init);
+    const postPromise = fetch(baseUrl + commentsPath + queryString + API_KEY, init);
     
-    return promise.then((response) => {
+    postPromise.then((response) => {
         return response.json();
-    }).then((data) => {
-        console.log(data);
-        // commentObject = arrayOfDynamicComments.push(data);
-        //return displayComment(commentObject);
+    })
+    .then((data) => {
+        arrayOfDynamicComments.push(data);
+        return displayComment(arrayOfDynamicComments);
     });
 }
 
@@ -131,13 +143,13 @@ function displayComment(commentObject) {
         commentSection.appendChild(nameElement);
 
         // userNames, userComments, and time displayed
-        spanElement.innerHTML = commentObject[i].userName;        
-        paragraphElement.innerHTML = commentObject[i].userComment;
-        let currentTime = formattedDispalyTime();
-        timeElement.innerHTML = currentTime;             
+        spanElement.innerHTML = commentObject[i].name;        
+        paragraphElement.innerHTML = commentObject[i].comment;
+        // let currentTime = formattedDispalyTime();
+        // timeElement.innerHTML = currentTime;             
     }        
 }
- 
+/* 
 //Displays date when userComment is posted
 function formattedDispalyTime() {
     
