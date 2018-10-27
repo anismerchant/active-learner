@@ -58,13 +58,16 @@ function messageDisppear() {
     return message;
 }
 
+// Current Date | Reserved for future development
+let currentDate = formattedDispalyTime();
+
 // Empty array to capture dynamic data from html form
 let arrayOfDynamicComments = [];
 
 // Grabs data from the server
 function getData() {
   const getPromise = fetch(baseUrl + commentsPath + queryString + API_KEY);
-   getPromise.then((response) => {
+  getPromise.then((response) => {
     return response.json();
     })
     .then((data) => {
@@ -147,26 +150,48 @@ function displayComment(commentObject) {
         // userNames, userComments, and time displayed
         spanElement.innerHTML = commentObject[i].name;        
         paragraphElement.innerHTML = commentObject[i].comment;
-        timeElement.innerHTML = commentObject[i].timestamp;
-        // let currentTime = formattedDispalyTime();
-        //timeDiff(commentObject);
-
+        //timeElement.innerHTML = commentObject[i].timestamp;
+        
+        let date = new Date();
+        let milliSeconds = date.getTime();
+        let timeElapsed = Math.floor((milliSeconds - commentObject[i].timestamp) / 1000);      
+        timeElement.innerHTML = Math.floor(timeElapsed);
+        if (timeElement.innerHTML < 60) {
+            timeElement.innerHTML = "Just now";       
+        } else if (timeElement.innerHTML < 120) {
+            timeElement.innerHTML = "1 minute ago";
+        } else if (timeElement.innerHTML < 180) {
+            timeElement.innerHTML = "2 minutes ago";
+        } else if (timeElement.innerHTML < 240) {
+            timeElement.innerHTML = "3 minutes ago";
+        } else if (timeElement.innerHTML < 300) {
+            timeElement.innerHTML = "4 minutes ago";
+        } else if (timeElement.innerHTML < 360) {
+            timeElement.innerHTML = "5 minutes ago";
+        } else if (timeElement.innerHTML > 360 && timeElement.innerHTML < 1800) {
+            timeElement.innerHTML = "More than 10 minutes ago";
+        } else if (timeElement.innerHTML > 1800 && timeElement.innerHTML < 3600) {
+            timeElement.innerHTML = "More than 30 minutes ago";
+        } else if (timeElement.innerHTML > 3600 && timeElement.innerHTML < 7200) {
+            timeElement.innerHTML = "More than an hour ago";
+        } else if (timeElement.innerHTML > 7200 && timeElement.innerHTML < 10800) {
+            timeElement.innerHTML = "More than two hours ago";
+        } else if (timeElement.innerHTML > 10800 && timeElement.innerHTML < 43200) {
+            timeElement.innerHTML = "More than 6 hours ago";
+        } else if (timeElement.innerHTML > 43200 && timeElement.innerHTML < 86400) {
+            timeElement.innerHTML = "More than 12 hours ago";
+        } else if (timeElement.innerHTML > 86400 && timeElement.innerHTML < 172800) {
+            timeElement.innerHTML = "More than a day ago";
+        } else if (timeElement.innerHTML > 172800 && timeElement.innerHTML < 345600) {
+            timeElement.innerHTML = "More than two days";
+        } else if (timeElement.innerHTML > 345600 && timeElement.innerHTML < 2592000) {
+            timeElement.innerHTML = Math.floor((milliSeconds - commentObject[i].timestamp) / 1000/3600/24) + " days ago";
+        } else {
+            timeElement.innerHTML = Math.floor((milliSeconds - commentObject[i].timestamp) / 1000/3600/24/30) + " months ago";
+        }
     }        
 }
      
-// calculate running time since comment was posted
-// function timeDiff(postTime) {
-//     let date = new Date();
-//     let milliSeconds = date.getTime();
-//     let td = (postTime - milliSeconds)/1000;
-//     return td;
-// }
-
-// let commentTimeStamp = commentObject[i].timestamp;
-// console.log(commentTimeStamp);
-// timeDiff(commentTimeStamp);
-
-/*
 //Displays date when userComment is posted
 function formattedDispalyTime() {
     
@@ -180,29 +205,10 @@ function formattedDispalyTime() {
     let currentMonth = currentDate.getMonth();
     let currentDayOfMonth = currentDate.getDate();
     
-    let dayOfWeekArray = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    let monthArray = [];
-    monthArray[0] = "January";
-    monthArray[1] = "February";
-    monthArray[2] = "March";
-    monthArray[3] = "April";
-    monthArray[4] = "May";
-    monthArray[5] = "June";
-    monthArray[6] = "July";
-    monthArray[7] = "August";
-    monthArray[8] = "September";
-    monthArray[9] = "October";
-    monthArray[10] = "November";
-    monthArray[11] = "December";
-*/
-    /*
+    let dayOfWeekArray = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];  
     let monthArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    for (i=0; i<monthArray.length; i++) {
-        monthArray[i] = 
-        return monthArray[currentMonth] = i;
-    }  
-    */
-/*
+   
+
     // Build current time    
     let currentTime = new Date();
     let hour = currentTime.getHours();
@@ -225,52 +231,29 @@ function formattedDispalyTime() {
         if (seconds < 10) {
             seconds = "0" + seconds;
         }
-
-    // Assign a variable to the element id where timestamp will appear 
-    let postTimeId = document.getElementById("comments__posts__name--time");
-    
+   
     // Display newly formatted timestamp
     // let timeStamp = "" + seconds;
     // let timeStamp = postTimeId.innerHTML = "" + currentYear + " " + currentMonth + " " + currentDay + "T" + hour + ":" + minutes + ":" + seconds +"Z"
     // let timeStamp = postTimeId.innerHTML = "" + dayOfWeekArray[currentDay]+ " " + currentDayOfMonth + " " + monthArray[currentMonth] + " " +  currentYear + " | " + hour + ":" + minutes + ":" + seconds;
-    let timeStamp = postTimeId.innerHTML = "" + dayOfWeekArray[currentDay]+ " " + currentDayOfMonth + " " + monthArray[currentMonth] + " " +  currentYear;
+    let timeStamp = dayOfWeekArray[currentDay]+ " " + currentDayOfMonth + " " + monthArray[currentMonth] + " " +  currentYear;
     
     return timeStamp;     
 }
-*/
 
-
-/* PSEUDO CODE: For later... (in development)*/
-/*
-function timeDiff(commentObject) {
-    let date = new Date();
-    let milliSeconds = date.getTime();
-    
-    if (diff < 60) {
-        return "just now";
-    } else if (diff < 120) {
-        return "1 minute ago";
-    } else if (diff < 3600) {
-        return Math.floor (diff / 3600) + " minutes ago";
-    } else if (diff < 7200) {
-        return " 1 hour " + Math.floor (diff / 3600) + " minutes ago"'
-    } else if ( diff < 7200 && diff < 43200) {
-        return "More than two hours ago";
-    } else if (diff > 43200 && diff < 86400) {
-        return "More than 12 hours ago";
-    } else if (diff >= 86400 && diff < 172800) {
-        return "More than a day ago";
-    } else {
-        return "More than two days";
-    }
-    console.log(timeDiff());
-
+/* Experiments 
+function grabTimeStamp() {
+    const timePromise = fetch(baseUrl + commentsPath + queryString + API_KEY);
+    timePromise.then((response) => {
+        return response.json();
+        })
+    .then((data) => {
+        arrayOfDynamicComments = data;
+        //console.log(arrayOfDynamicComments);
+    });    
 }
-//;
-*/
 
-/*
 setInterval(() => {
-    timeDiff();
+    grabTimeStamp();
 }, 5000);
 */
