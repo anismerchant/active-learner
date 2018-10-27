@@ -159,23 +159,23 @@ function displayComment(commentObject) {
         if (timeElement.innerHTML < 60) {
             timeElement.innerHTML = "Just now";       
         } else if (timeElement.innerHTML < 120) {
-            timeElement.innerHTML = "1 minute ago";
+            timeElement.innerHTML = "About 1 minute ago";
         } else if (timeElement.innerHTML < 180) {
-            timeElement.innerHTML = "2 minutes ago";
+            timeElement.innerHTML = "About 2 minutes ago";
         } else if (timeElement.innerHTML < 240) {
-            timeElement.innerHTML = "3 minutes ago";
+            timeElement.innerHTML = "About 3 minutes ago";
         } else if (timeElement.innerHTML < 300) {
-            timeElement.innerHTML = "4 minutes ago";
+            timeElement.innerHTML = "About 4 minutes ago";
         } else if (timeElement.innerHTML < 360) {
-            timeElement.innerHTML = "5 minutes ago";
+            timeElement.innerHTML = "About 5 minutes ago";
         } else if (timeElement.innerHTML > 360 && timeElement.innerHTML < 1800) {
-            timeElement.innerHTML = "More than 10 minutes ago";
+            timeElement.innerHTML = "About 10 minutes ago";
         } else if (timeElement.innerHTML > 1800 && timeElement.innerHTML < 3600) {
-            timeElement.innerHTML = "More than 30 minutes ago";
+            timeElement.innerHTML = "About 30 minutes ago";
         } else if (timeElement.innerHTML > 3600 && timeElement.innerHTML < 7200) {
-            timeElement.innerHTML = "More than an hour ago";
+            timeElement.innerHTML = "More an hour ago";
         } else if (timeElement.innerHTML > 7200 && timeElement.innerHTML < 10800) {
-            timeElement.innerHTML = "More than two hours ago";
+            timeElement.innerHTML = "More two hours ago";
         } else if (timeElement.innerHTML > 10800 && timeElement.innerHTML < 43200) {
             timeElement.innerHTML = "More than 6 hours ago";
         } else if (timeElement.innerHTML > 43200 && timeElement.innerHTML < 86400) {
@@ -187,12 +187,12 @@ function displayComment(commentObject) {
         } else if (timeElement.innerHTML > 345600 && timeElement.innerHTML < 2592000) {
             timeElement.innerHTML = Math.floor((milliSeconds - commentObject[i].timestamp) / 1000/3600/24) + " days ago";
         } else {
-            timeElement.innerHTML = Math.floor((milliSeconds - commentObject[i].timestamp) / 1000/3600/24/30) + " months ago";
+            timeElement.innerHTML = "About " + Math.floor((milliSeconds - commentObject[i].timestamp) / 1000/3600/24/30) + " months ago";
         }
     }        
 }
      
-//Displays date when userComment is posted
+//For future Development | Displays date when userComment is posted
 function formattedDispalyTime() {
     
     // Build current date 
