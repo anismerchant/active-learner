@@ -13,11 +13,12 @@ commentForm.addEventListener("submit", function(e) {
     setTimeout(() => {messageAppear()}, 10);
     setTimeout(() => {messageDisppear()}, 4000);
     
-    // Get values and subsequently display values
-    //getData()
+    // Get values from API and subsequently display them
     postVal();
-    //displayComment(arrayOfDynamicComments);
-
+    
+    // For testing purposes
+    // displayComment(arrayOfSampleComments);
+    
     // Clear fields 
     document.getElementById('name').value = "";
     document.getElementById('comment').value = "";
