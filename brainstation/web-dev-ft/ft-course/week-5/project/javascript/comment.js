@@ -1,4 +1,5 @@
 // Container from where all user values are grabbed
+
 let commentForm = document.getElementById('grabComments');
 
 commentForm.addEventListener("submit", function(e) {
@@ -9,13 +10,13 @@ commentForm.addEventListener("submit", function(e) {
     document.getElementById('comments__posts').innerHTML="";
     
     // Comment posted confirmation message
-    //setTimeout(() => {messageAppear()}, 10);
-    //setTimeout(() => {messageDisppear()}, 4000);
+    setTimeout(() => {messageAppear()}, 10);
+    setTimeout(() => {messageDisppear()}, 4000);
     
     // Get values and subsequently display values
-    getData()
-    getVal();
-    displayComment(arrayOfDynamicComments);
+    //getData()
+    postVal();
+    //displayComment(arrayOfDynamicComments);
 
     // Clear fields 
     document.getElementById('name').value = "";
@@ -45,7 +46,6 @@ let arrayOfSampleComments = [
     }
 ]
 
-
 // Message confirming to user that their comment posted
 function messageAppear() {
     let message = document.getElementById('message').innerHTML = "Thanks for sharing your comment!";
@@ -61,22 +61,23 @@ function messageDisppear() {
 // Empty array to capture dynamic data from html form
 let arrayOfDynamicComments = [];
 
-
 // Grabs data from the server
 function getData() {
-    const getPromise = fetch(baseUrl + commentsPath + queryString + API_KEY);
-    
-    getPromise.then((response) => {
-        return response.json();
+  const getPromise = fetch(baseUrl + commentsPath + queryString + API_KEY);
+   getPromise.then((response) => {
+    return response.json();
     })
     .then((data) => {
         arrayOfDynamicComments = data;
-        console.log(arrayOfDynamicComments);
-    });
+        return displayComment(arrayOfDynamicComments);
+    });    
 }
 
+// Grabs data and posts when 'Home' page refreshes 
+getData();
+
 // Grabs data from the form and sends it to server
-function getVal() {
+function postVal() {
     let obj = {};       
     obj.name = document.getElementById('name').value;
     obj.comment = document.getElementById('comment').value;
@@ -115,7 +116,8 @@ function displayComment(commentObject) {
         // Classes for each newly constructed elements: userName and userComment
         nameElement.className = 'comments__posts__name';
         spanElement.className = 'comments__posts__name--bold';
-        timeElement.id = 'comments__posts__name--time';
+        timeElement.id = commentObject[i].id;
+        timeElement.className = 'comments__posts__name--time';
         paragraphElement.className = 'comments__posts__name--paragraph'; 
 
         // Elements in-line css
@@ -145,11 +147,28 @@ function displayComment(commentObject) {
         // userNames, userComments, and time displayed
         spanElement.innerHTML = commentObject[i].name;        
         paragraphElement.innerHTML = commentObject[i].comment;
+        timeElement.innerHTML = commentObject[i].timestamp;
         // let currentTime = formattedDispalyTime();
-        // timeElement.innerHTML = currentTime;             
+        //timeDiff(commentObject);
+
     }        
 }
-/* 
+
+
+     
+// calculate running time since comment was posted
+// function timeDiff(postTime) {
+//     let date = new Date();
+//     let milliSeconds = date.getTime();
+//     let td = (postTime - milliSeconds)/1000;
+//     return td;
+// }
+
+// let commentTimeStamp = commentObject[i].timestamp;
+// console.log(commentTimeStamp);
+// timeDiff(commentTimeStamp);
+
+/*
 //Displays date when userComment is posted
 function formattedDispalyTime() {
     
@@ -177,7 +196,15 @@ function formattedDispalyTime() {
     monthArray[9] = "October";
     monthArray[10] = "November";
     monthArray[11] = "December";
-
+*/
+    /*
+    let monthArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    for (i=0; i<monthArray.length; i++) {
+        monthArray[i] = 
+        return monthArray[currentMonth] = i;
+    }  
+    */
+/*
     // Build current time    
     let currentTime = new Date();
     let hour = currentTime.getHours();
@@ -212,37 +239,38 @@ function formattedDispalyTime() {
     
     return timeStamp;     
 }
-
+*/
 /*
 setInterval(() => {
     formattedDispalyTime();
 }, 5000);
 */
 
-/* PSEUDO CODE: For later... (in development)
+/* PSEUDO CODE: For later... (in development)*/
 
-function timeDiff() {
-    let date = new Date();
-    let milliSeconds = date.getTime();
-
-    diff = (postDate - milliSeconds);
-
-}
-    if diff < 60 {
-        "just now"
+function timeDiff(commentObject) {
+    
+    /*
+    if (diff < 60) {
+        return "just now";
     } else if (diff < 120) {
-        " 1 minute ago"
+        return "1 minute ago";
     } else if (diff < 3600) {
-        Math.floor (diff / 3600) + " minutes ago"
+        return Math.floor (diff / 3600) + " minutes ago";
     } else if (diff < 7200) {
-        " 1 hour " + Math.floor (diff / 3600) + " minutes ago"
+        return " 1 hour " + Math.floor (diff / 3600) + " minutes ago"'
     } else if ( diff < 7200 && diff < 43200) {
-        "More than two hours ago"
+        return "More than two hours ago";
     } else if (diff > 43200 && diff < 86400) {
-        "More than 12 hours ago"
+        return "More than 12 hours ago";
     } else if (diff >= 86400 && diff < 172800) {
-        "More than a day ago"
+        return "More than a day ago";
     } else {
-        "More than two days"
+        return "More than two days";
     }
+    //console.log(timeDiff());
 */
+}
+//timeDiff();
+
+
