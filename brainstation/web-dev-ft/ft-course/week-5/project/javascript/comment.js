@@ -153,8 +153,6 @@ function displayComment(commentObject) {
 
     }        
 }
-
-
      
 // calculate running time since comment was posted
 // function timeDiff(postTime) {
@@ -240,17 +238,14 @@ function formattedDispalyTime() {
     return timeStamp;     
 }
 */
-/*
-setInterval(() => {
-    formattedDispalyTime();
-}, 5000);
-*/
+
 
 /* PSEUDO CODE: For later... (in development)*/
-
+/*
 function timeDiff(commentObject) {
+    let date = new Date();
+    let milliSeconds = date.getTime();
     
-    /*
     if (diff < 60) {
         return "just now";
     } else if (diff < 120) {
@@ -268,9 +263,14 @@ function timeDiff(commentObject) {
     } else {
         return "More than two days";
     }
-    //console.log(timeDiff());
-*/
+    console.log(timeDiff());
+
 }
-//timeDiff();
+//;
+*/
 
-
+/*
+setInterval(() => {
+    timeDiff();
+}, 5000);
+*/
