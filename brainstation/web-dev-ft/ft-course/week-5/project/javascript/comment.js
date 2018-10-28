@@ -145,23 +145,23 @@ function displayComment(commentObject) {
         // Elements in-line css
         const mq = window.matchMedia("(max-width:760px)");
         if (mq.matches) {
-            nameElement.style.cssText="width: 320px; margin-left: 1.1em; border-top: 1px solid #D7D7D7; padding: 2em 0; font-size: 1em;"
+            nameElement.style.cssText = "width: 320px; margin-left: 1.1em; border-top: 1px solid #D7D7D7; padding: 2em 0; font-size: 1em";
         } else {
-            nameElement.style.cssText="width: 590px; margin-left: 7.5em; border-top: 1px solid #D7D7D7; padding: 2em 0;"
+            nameElement.style.cssText = "width: 590px; margin-left: 7.5em; border-top: 1px solid #D7D7D7; padding: 2em 0";
         }      
                 
-        spanElement.style.cssText = "width: 100%; font-size: 1.25em; font-family: 'Poppins-Bold';";
+        spanElement.style.cssText = "width: 100%; font-size: 1.25em; font-family: 'Poppins-Bold'";
         
         if (mq.matches) {
-            timeElement.style.cssText="width: 100%; font-size: 1em; font-family: 'Poppins-Regular';  padding-left: 1em; color: #A0A0A0;";
+            timeElement.style.cssText = "width: 100%; font-size: 1em; font-family: 'Poppins-Regular'; padding-left: 1em; color: #A0A0A0";
         } else {
-            timeElement.style.cssText="width: 100%; font-size: 1.25em; font-family: 'Poppins-Regular';  padding-left: 1em; color: #A0A0A0;";
+            timeElement.style.cssText = "width: 100%; font-size: 1.25em; font-family: 'Poppins-Regular'; padding-left: 1em; color: #A0A0A0";
         }          
       
-        paragraphElement.style.cssText = "width: 100%; font-size: 1.25em; font-family: 'Poppins-Regular'; padding-top: 1em;";
+        paragraphElement.style.cssText = "width: 100%; font-size: 1.25em; font-family: 'Poppins-Regular'; padding-top: 1em";
         deleteButtonElement.style.cssText = "font-size: 0.8em; font-family: 'Poppins-Bold'; margin-top: 1em; background-color: #000000; color: #FFFFFF; padding: 0.4em; border-radius: 4px";
-        likeButtonElement.style.cssText = "font-size: 0.8em; font-family: 'Poppins-Bold'; margin-top: 1em; background-color: #000000; color: #FFFFFF; padding: 0.4em; border-radius: 4px;";
-        displayLikes.style.cssText = "font-size: 1em; font-family: 'Poppins-SemiBold'; margin-top: 1em; background-color: #A0A0A0; color: #FFFFFF; padding: 0.4em; border-radius: 4px;";
+        likeButtonElement.style.cssText = "font-size: 0.8em; font-family: 'Poppins-Bold'; margin-top: 1em; background-color: #000000; color: #FFFFFF; padding: 0.4em; border-radius: 4px";
+        displayLikes.style.cssText = "font-size: 1em; font-family: 'Poppins-SemiBold'; margin-top: 1em; background-color: #A0A0A0; color: #FFFFFF; padding: 0.4em; border-radius: 4px";
         
         // Elements attached to their relative parents
         nameElement.appendChild(spanElement);
