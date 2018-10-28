@@ -13,7 +13,7 @@ commentForm.addEventListener("submit", function(e) {
     setTimeout(() => {messageAppear()}, 10);
     setTimeout(() => {messageDisppear()}, 4000);
     
-    // Get values from API and subsequently display them
+    // Store new comments on server and subsequently display them
     postVal();
     
     // For testing purposes
@@ -171,8 +171,10 @@ function displayComment(commentObject) {
             timeElement.innerHTML = "About 5 minutes ago";
         } else if (timeElement.innerHTML > 360 && timeElement.innerHTML < 1800) {
             timeElement.innerHTML = "About 10 minutes ago";
-        } else if (timeElement.innerHTML > 1800 && timeElement.innerHTML < 3600) {
+        } else if (timeElement.innerHTML > 1800 && timeElement.innerHTML < 2700) {
             timeElement.innerHTML = "About 30 minutes ago";
+        } else if (timeElement.innerHTML > 2700 && timeElement.innerHTML < 3600) {
+            timeElement.innerHTML = "About 45 minutes ago";
         } else if (timeElement.innerHTML > 3600 && timeElement.innerHTML < 7200) {
             timeElement.innerHTML = "More an hour ago";
         } else if (timeElement.innerHTML > 7200 && timeElement.innerHTML < 10800) {
