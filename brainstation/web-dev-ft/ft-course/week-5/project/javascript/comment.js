@@ -116,8 +116,10 @@ function displayComment(commentObject) {
         let spanElement = document.createElement('span');
         let timeElement = document.createElement('span');
         let paragraphElement = document.createElement('p');
-        let divOfDeleteButtonElement = document.createElement('div');
+        let divOfCommentButtonElements = document.createElement('div');
         let deleteButtonElement = document.createElement('button');
+        let likeButtonElement = document.createElement('button');
+        let displayLikes = document.createElement('h4');
 
         // Classes for each newly constructed elements: userName and userComment
         nameElement.className = 'comments__posts__name';
@@ -127,13 +129,18 @@ function displayComment(commentObject) {
         timeElement.id = commentObject[i].id;
         paragraphElement.className = 'comments__posts__name--paragraph';
         paragraphElement.id = commentObject[i].id;
-        divOfDeleteButtonElement.className = 'comments__posts__name--deletediv';
-        deleteButtonElement.className = 'comments__posts__name--delete';
+        divOfCommentButtonElements.className = 'comments__posts__name--commentbuttondiv';
+        deleteButtonElement.className = 'comments__posts__name--deletebutton';
+        likeButtonElement.className = 'comments__posts__name--likebutton';
+        displayLikes.className = 'comments__posts__name--likes'
         deleteButtonElement.id = commentObject[i].id;
+        likeButtonElement.id = commentObject[i].id;        
         
         // Set type attribute
         deleteButtonElement.value = "delete";
         deleteButtonElement.setAttribute("onclick","deleteComment()");
+        likeButtonElement.value = "like";
+        likeButtonElement.setAttribute("onclick","likeUserComment.addLike()");
 
         // Elements in-line css
         const mq = window.matchMedia("(max-width:760px)");
@@ -153,19 +160,25 @@ function displayComment(commentObject) {
       
         paragraphElement.style.cssText = "width: 100%; font-size: 1.25em; font-family: 'Poppins-Regular'; padding-top: 1em;";
         deleteButtonElement.style.cssText = "font-size: 0.8em; font-family: 'Poppins-Bold'; margin-top: 1em; background-color: #000000; color: #FFFFFF; padding: 0.4em; border-radius: 4px";
-
+        likeButtonElement.style.cssText = "font-size: 0.8em; font-family: 'Poppins-Bold'; margin-top: 1em; background-color: #000000; color: #FFFFFF; padding: 0.4em; border-radius: 4px;";
+        displayLikes.style.cssText = "font-size: 1em; font-family: 'Poppins-SemiBold'; margin-top: 1em; background-color: #A0A0A0; color: #FFFFFF; padding: 0.4em; border-radius: 4px;";
+        
         // Elements attached to their relative parents
         nameElement.appendChild(spanElement);
         nameElement.appendChild(timeElement);
         nameElement.appendChild(paragraphElement);
-        divOfDeleteButtonElement.appendChild(deleteButtonElement);
-        nameElement.appendChild(divOfDeleteButtonElement);  
+        divOfCommentButtonElements.appendChild(deleteButtonElement);
+        divOfCommentButtonElements.appendChild(likeButtonElement);
+        nameElement.appendChild(divOfCommentButtonElements);
+        nameElement.appendChild(displayLikes);   
         commentSection.appendChild(nameElement);
 
         // userNames, userComments, and time displayed
         spanElement.innerHTML = commentObject[i].name;        
         paragraphElement.innerHTML = commentObject[i].comment;
         deleteButtonElement.innerHTML = "Delete";
+        likeButtonElement.innerHTML = "Like";
+        displayLikes.innerHTML = commentObject[i]["likes"] + " likes";
         
         let date = new Date();
         let milliSeconds = date.getTime();
@@ -229,6 +242,37 @@ function deleteComment() {
         });
     }   
 }
+
+// Like Comment
+class LikeComment {
+    constructor(like) {
+        this.like = 0;
+    }
+    
+    addLike() {
+        document.onclick = function(e) {
+            let likeButtonUniqueId = e.target.getAttribute('id');
+            const init = {
+                method: 'PUT',
+                headers: {
+                    'content-Type': 'application/json',
+                }
+            }
+            const likePromise = fetch(baseUrl + commentsPath + '/' + likeButtonUniqueId + '/like' + queryString + API_KEY, init);
+            this.like++;
+
+            likePromise.then((response) => {
+                return response.json();
+            })
+            .then((data) => {       
+                return console.log(data);
+            });
+        }        
+    }
+}
+
+let likeUserComment = new LikeComment();
+likeUserComment.addLike();
      
 //For future Development | Displays date when userComment is posted
 function formattedDispalyTime() {
