@@ -122,15 +122,18 @@ function displayComment(commentObject) {
         // Classes for each newly constructed elements: userName and userComment
         nameElement.className = 'comments__posts__name';
         spanElement.className = 'comments__posts__name--bold';
-        timeElement.id = commentObject[i].id;
+        spanElement.id = commentObject[i].id;
         timeElement.className = 'comments__posts__name--time';
+        timeElement.id = commentObject[i].id;
         paragraphElement.className = 'comments__posts__name--paragraph';
+        paragraphElement.id = commentObject[i].id;
         divOfDeleteButtonElement.className = 'comments__posts__name--deletediv';
         deleteButtonElement.className = 'comments__posts__name--delete';
         deleteButtonElement.id = commentObject[i].id;
         
         // Set type attribute
         deleteButtonElement.value = "delete";
+        deleteButtonElement.setAttribute("onclick","deleteComment()");
 
         // Elements in-line css
         const mq = window.matchMedia("(max-width:760px)");
@@ -163,7 +166,6 @@ function displayComment(commentObject) {
         spanElement.innerHTML = commentObject[i].name;        
         paragraphElement.innerHTML = commentObject[i].comment;
         deleteButtonElement.innerHTML = "Delete";
-        //timeElement.innerHTML = commentObject[i].timestamp;
         
         let date = new Date();
         let milliSeconds = date.getTime();
@@ -203,39 +205,29 @@ function displayComment(commentObject) {
             timeElement.innerHTML = Math.floor((milliSeconds - commentObject[i].timestamp) / 1000/3600/24) + " days ago";
         } else {
             timeElement.innerHTML = "About " + Math.floor((milliSeconds - commentObject[i].timestamp) / 1000/3600/24/30) + " months ago";
-        }
-        
-    }        
+        }        
+    }
 }
 
-/*
-function test() {
-    
-    let deleteButton = document.getElementsByClassName("comments__posts__name--delete");
-    //let idValue = document.getElementByTagName("button").getAttribute("id"); 
-
-    deleteButton.addEventListener("click", function() {console.log("hello")});
-};
-*/
-
 // Delete Comment
-function deleteComment() {
-    
-    const init = {
-        method: 'DELETE',
-        body: JSON.stringify(obj),
-        headers: {
-            'content-Type': 'application/json',
+function deleteComment() {   
+    document.onclick = function(e) {
+        let deleteButtonUniqueId = e.target.getAttribute('id');
+        const init = {
+            method: 'DELETE',
+            headers: {
+                'content-Type': 'application/json',
+            }
         }
-    }
-    const deletePromise = fetch(baseUrl + commentsPath + '/' + id + queryString + API_KEY, init);
+        const deletePromise = fetch(baseUrl + commentsPath + '/' + deleteButtonUniqueId + queryString + API_KEY, init);
     
-    deletePromise.then((response) => {
-        return response.json();
-    })
-    .then((data) => {        
-        return console.log(data);
-    });
+        deletePromise.then((response) => {
+            return response.json();
+        })
+        .then((data) => {        
+            return console.log(data);
+        });
+    }   
 }
      
 //For future Development | Displays date when userComment is posted
