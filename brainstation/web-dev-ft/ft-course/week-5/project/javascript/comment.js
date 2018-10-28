@@ -201,8 +201,10 @@ function displayComment(commentObject) {
             timeElement.innerHTML = "About 4 minutes ago";
         } else if (timeElement.innerHTML < 360) {
             timeElement.innerHTML = "About 5 minutes ago";
-        } else if (timeElement.innerHTML > 360 && timeElement.innerHTML < 1800) {
+        } else if (timeElement.innerHTML > 360 && timeElement.innerHTML < 900) {
             timeElement.innerHTML = "About 10 minutes ago";
+        } else if (timeElement.innerHTML > 900 && timeElement.innerHTML < 1800) {
+            timeElement.innerHTML = "About 15 minutes ago";
         } else if (timeElement.innerHTML > 1800 && timeElement.innerHTML < 2700) {
             timeElement.innerHTML = "About 30 minutes ago";
         } else if (timeElement.innerHTML > 2700 && timeElement.innerHTML < 3600) {
