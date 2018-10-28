@@ -178,7 +178,12 @@ function displayComment(commentObject) {
         paragraphElement.innerHTML = commentObject[i].comment;
         deleteButtonElement.innerHTML = "Delete";
         likeButtonElement.innerHTML = "Like";
-        displayLikes.innerHTML = commentObject[i]["likes"] + " likes";
+        
+        if (commentObject[i]["likes"] === 1) {
+            displayLikes.innerHTML = commentObject[i]["likes"] + " like";
+        } else {
+            displayLikes.innerHTML = commentObject[i]["likes"] + " likes";
+        }
         
         let date = new Date();
         let milliSeconds = date.getTime();
@@ -187,7 +192,7 @@ function displayComment(commentObject) {
         if (timeElement.innerHTML < 60) {
             timeElement.innerHTML = "Just now";       
         } else if (timeElement.innerHTML < 120) {
-            timeElement.innerHTML = "About 1 minute ago";
+            timeElement.innerHTML = "About a minute ago";
         } else if (timeElement.innerHTML < 180) {
             timeElement.innerHTML = "About 2 minutes ago";
         } else if (timeElement.innerHTML < 240) {
