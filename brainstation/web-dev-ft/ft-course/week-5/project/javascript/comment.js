@@ -116,13 +116,21 @@ function displayComment(commentObject) {
         let spanElement = document.createElement('span');
         let timeElement = document.createElement('span');
         let paragraphElement = document.createElement('p');
+        let divOfDeleteButtonElement = document.createElement('div');
+        let deleteButtonElement = document.createElement('button');
 
         // Classes for each newly constructed elements: userName and userComment
         nameElement.className = 'comments__posts__name';
         spanElement.className = 'comments__posts__name--bold';
         timeElement.id = commentObject[i].id;
         timeElement.className = 'comments__posts__name--time';
-        paragraphElement.className = 'comments__posts__name--paragraph'; 
+        paragraphElement.className = 'comments__posts__name--paragraph';
+        divOfDeleteButtonElement.className = 'comments__posts__name--deletediv';
+        deleteButtonElement.className = 'comments__posts__name--delete';
+        deleteButtonElement.id = commentObject[i].id;
+        
+        // Set type attribute
+        deleteButtonElement.value = "delete";
 
         // Elements in-line css
         const mq = window.matchMedia("(max-width:760px)");
@@ -141,16 +149,20 @@ function displayComment(commentObject) {
         }          
       
         paragraphElement.style.cssText = "width: 100%; font-size: 1.25em; font-family: 'Poppins-Regular'; padding-top: 1em;";
+        deleteButtonElement.style.cssText = "font-size: 0.8em; font-family: 'Poppins-Bold'; margin-top: 1em; background-color: #000000; color: #FFFFFF; padding: 0.4em; border-radius: 4px";
 
         // Elements attached to their relative parents
         nameElement.appendChild(spanElement);
         nameElement.appendChild(timeElement);
-        nameElement.appendChild(paragraphElement); 
+        nameElement.appendChild(paragraphElement);
+        divOfDeleteButtonElement.appendChild(deleteButtonElement);
+        nameElement.appendChild(divOfDeleteButtonElement);  
         commentSection.appendChild(nameElement);
 
         // userNames, userComments, and time displayed
         spanElement.innerHTML = commentObject[i].name;        
         paragraphElement.innerHTML = commentObject[i].comment;
+        deleteButtonElement.innerHTML = "Delete";
         //timeElement.innerHTML = commentObject[i].timestamp;
         
         let date = new Date();
@@ -190,7 +202,38 @@ function displayComment(commentObject) {
         } else {
             timeElement.innerHTML = "About " + Math.floor((milliSeconds - commentObject[i].timestamp) / 1000/3600/24/30) + " months ago";
         }
+        
     }        
+}
+
+/*
+function test() {
+    
+    let deleteButton = document.getElementsByClassName("comments__posts__name--delete");
+    //let idValue = document.getElementByTagName("button").getAttribute("id"); 
+
+    deleteButton.addEventListener("click", function() {console.log("hello")});
+};
+*/
+
+// Delete Comment
+function deleteComment() {
+    
+    const init = {
+        method: 'DELETE',
+        body: JSON.stringify(obj),
+        headers: {
+            'content-Type': 'application/json',
+        }
+    }
+    const deletePromise = fetch(baseUrl + commentsPath + '/' + id + queryString + API_KEY, init);
+    
+    deletePromise.then((response) => {
+        return response.json();
+    })
+    .then((data) => {        
+        return console.log(data);
+    });
 }
      
 //For future Development | Displays date when userComment is posted
