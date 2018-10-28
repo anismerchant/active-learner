@@ -210,9 +210,9 @@ function displayComment(commentObject) {
         } else if (timeElement.innerHTML > 2700 && timeElement.innerHTML < 3600) {
             timeElement.innerHTML = "About 45 minutes ago";
         } else if (timeElement.innerHTML > 3600 && timeElement.innerHTML < 7200) {
-            timeElement.innerHTML = "More an hour ago";
+            timeElement.innerHTML = "More than an hour ago";
         } else if (timeElement.innerHTML > 7200 && timeElement.innerHTML < 10800) {
-            timeElement.innerHTML = "More two hours ago";
+            timeElement.innerHTML = "More than two hours ago";
         } else if (timeElement.innerHTML > 10800 && timeElement.innerHTML < 43200) {
             timeElement.innerHTML = "More than 6 hours ago";
         } else if (timeElement.innerHTML > 43200 && timeElement.innerHTML < 86400) {
