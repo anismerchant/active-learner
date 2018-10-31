@@ -1,0 +1,122 @@
+/* GLOBAL RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#navigation__container {
+	display: flex;
+	padding: 2.5%;
+
+	.navigation__logo {
+		width: 112px;
+		height: 25px;
+		margin: 11px auto;
+
+		img {
+			width: 112px;
+			height: 25px;
+			margin: 0 auto;
+		}
+	}
+
+	.navigation__search {
+		display: flex;
+		justify-content: center;
+		width: 1440px;
+		height: auto;
+
+		.navigation__search--input {
+			width: 502px;
+			height: 44px;
+			background-color: #FFFFFF;
+			border: 1px solid #D4D4D4;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 400;
+			padding: 0 0 0 21px;
+			letter-spacing: -0.3px;
+			border-radius: 2px;
+		}
+
+		input[type="text"] {
+			color: #888888;
+			font-size: 1.125rem;
+		}
+
+		.navigation__search--icon {
+			width: 109px;
+			height: 44px;
+			background-color: #F8F8F8;
+			border: 1px solid #D4D4D4;
+			border-radius: 2px;
+
+			img {
+				display: block;
+				height: 20px;
+				margin: 11px auto;
+			}
+		}
+
+	}
+
+	.navigation__images {
+		display: flex;
+		justify-content: space-evenly;
+		width: 15%;
+
+		.navigation__images--john-gibbons {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background-image: url(../assets/Images/john_gibbons.jpg);
+			background-size: cover;
+			background-position: 50% 50%;
+			
+		}
+	}
+}
