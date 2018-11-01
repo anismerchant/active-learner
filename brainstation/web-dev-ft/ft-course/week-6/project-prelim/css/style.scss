@@ -48,9 +48,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+#container {
 
-/* NAVIGATION */
-#navigation__container {
+	/* NAVIGATION */
+	#navigation__container {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -72,8 +73,8 @@ table {
 	.navigation__search {
 		display: flex;
 		justify-content: center;
-		width: 611px;
-		height: 44px;
+		max-width: 100vw;
+		height: auto;
 
 		.navigation__search--input {
 			width: 502px;
@@ -101,8 +102,9 @@ table {
 
 			img {
 				display: block;
+				width: 20px;
 				height: 20px;
-				margin: 11px auto;
+				margin: 12px auto;
 			}
 		}
 
@@ -129,64 +131,66 @@ table {
 			
 		}
 	}
-}
+	}
 
-/* MAIN */
-
-#video__container {
+	/* MAIN */
+	#video__container {
 	display: flex;
+	justify-content: flex-end;
 	width: 1440px;
 	height: auto;
 	margin: 0 auto;
 
-	.video__container__main {		
-		width: 60%;
-		height: auto;
-
-		.video__container__main--image {
-			width: 100%;
+		.video__container__main {		
+			width: 50%;
 			height: auto;
+
+			.video__container__main--image {
+				width: 100%;
+				height: auto;
+
+			}
+
+			.video__container__main--stats {
+				width: 100%;
+				height: auto;
+				display: flex;
+				justify-content: space-between;
+
+				.video__container__main--reaction {
+					display: flex;
+					width: 30%;
+					height: auto;
+				}
+				.video__container__main--thumbsup {
+					width: 33%;
+					height: auto;
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+				}
+				.video__container__main--thumbsdown {
+					width: 33%;
+					height: auto;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				.video__container__main--share {
+					width: 33%;
+					height: auto;
+					display: flex;
+					justify-content: flex-end;
+					align-items: center;
+				}
+			}
 
 		}
 
-		.video__container__main--stats {
-			width: 100%;
+		.video__container__sidebar {
+			width: 40%;
 			height: auto;
-			display: flex;
-			justify-content: space-between;
-
-			.video__container__main--reaction {
-				display: flex;
-				width: 30%;
-				height: auto;
-			}
-			.video__container__main--thumbsup {
-				width: 33%;
-				height: auto;
-				display: flex;
-				justify-content: flex-start;
-				align-items: center;
-			}
-			.video__container__main--thumbsdown {
-				width: 33%;
-				height: auto;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-			}
-			.video__container__main--share {
-				width: 33%;
-				height: auto;
-				display: flex;
-				justify-content: flex-end;
-				align-items: center;
-			}
+			padding: 0 2%;
 		}
-
-	}
-
-	.video__container__sidebar {
-		width: 40%;
-		height: auto;
 	}
 }
