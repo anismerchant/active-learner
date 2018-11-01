@@ -53,6 +53,7 @@ table {
   border-spacing: 0;
 }
 
+/* NAVIGATION */
 #navigation__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,7 +127,15 @@ table {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 15%;
+}
+
+#navigation__container .navigation__images .navigation__images--content-upload {
+  width: 36px;
+  height: 33px;
 }
 
 #navigation__container .navigation__images .navigation__images--john-gibbons {
@@ -136,5 +145,91 @@ table {
   background-image: url(../assets/Images/john_gibbons.jpg);
   background-size: cover;
   background-position: 50% 50%;
+}
+
+/* MAIN */
+#video__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1440px;
+  height: auto;
+  margin: 0 auto;
+}
+
+#video__container .video__container__main {
+  width: 60%;
+  height: auto;
+}
+
+#video__container .video__container__main .video__container__main--image {
+  width: 100%;
+  height: auto;
+}
+
+#video__container .video__container__main .video__container__main--stats {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#video__container .video__container__main .video__container__main--stats .video__container__main--reaction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  height: auto;
+}
+
+#video__container .video__container__main .video__container__main--stats .video__container__main--thumbsup {
+  width: 33%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#video__container .video__container__main .video__container__main--stats .video__container__main--thumbsdown {
+  width: 33%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#video__container .video__container__main .video__container__main--stats .video__container__main--share {
+  width: 33%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#video__container .video__container__sidebar {
+  width: 40%;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */
