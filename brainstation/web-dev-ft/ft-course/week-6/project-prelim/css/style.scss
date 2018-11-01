@@ -116,21 +116,21 @@ table {
 		align-items: center;
 		width: 15%;
 
-		.navigation__images--content-upload {
-			width: 36px;
-			height: 33px;
-		}
+			.navigation__images--content-upload {
+				width: 36px;
+				height: 33px;
+			}
 
-		.navigation__images--john-gibbons {
-			width: 40px;
-			height: 40px;
-			border-radius: 50%;
-			background-image: url(../assets/Images/john_gibbons.jpg);
-			background-size: cover;
-			background-position: 50% 50%;
-			
+			.navigation__images--john-gibbons {
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background-image: url(../assets/Images/john_gibbons.jpg);
+				background-size: cover;
+				background-position: 50% 50%;
+				
+			}
 		}
-	}
 	}
 
 	/* MAIN */
@@ -145,7 +145,7 @@ table {
 			width: 50%;
 			height: auto;
 
-			.video__container__main--image {
+			.video__container__main--video {
 				width: 100%;
 				height: auto;
 
