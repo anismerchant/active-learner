@@ -54,6 +54,7 @@ table {
 }
 
 #container {
+  font-family: 'Roboto', sans-serif;
   /* NAVIGATION */
   /* MAIN */
 }
@@ -99,7 +100,6 @@ table {
   height: 2.75rem;
   background-color: #FFFFFF;
   border: 1px solid #D4D4D4;
-  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   padding: 0 0 0 1.313rem;
   letter-spacing: -0.3px;
@@ -162,6 +162,7 @@ table {
   width: 100%;
   height: auto;
   margin: 0 auto;
+  padding-top: 2%;
 }
 
 #container #video__container .video__container__main {
@@ -172,6 +173,11 @@ table {
 #container #video__container .video__container__main .video__container__main--video {
   width: 100%;
   height: auto;
+  padding-bottom: 2%;
+}
+
+#container #video__container .video__container__main .video__container__main--text {
+  padding-bottom: 2%;
 }
 
 #container #video__container .video__container__main .video__container__main--stats {
@@ -183,14 +189,23 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-bottom: 1px solid #D4D4D4;
+  padding-bottom: 2%;
+}
+
+#container #video__container .video__container__main .video__container__main--stats .video__container__main--views {
+  color: #888888;
 }
 
 #container #video__container .video__container__main .video__container__main--stats .video__container__main--reaction {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 30%;
+  width: 35%;
   height: auto;
+  color: #888888;
+  font-size: 0.625rem;
+  font-weight: 700;
 }
 
 #container #video__container .video__container__main .video__container__main--stats .video__container__main--thumbsup {
@@ -205,6 +220,11 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-right: 1%;
+}
+
+#container #video__container .video__container__main .video__container__main--stats .video__container__main--thumbsup img {
+  padding-right: 10%;
 }
 
 #container #video__container .video__container__main .video__container__main--stats .video__container__main--thumbsdown {
@@ -221,6 +241,10 @@ table {
           align-items: center;
 }
 
+#container #video__container .video__container__main .video__container__main--stats .video__container__main--thumbsdown img {
+  padding-right: 10%;
+}
+
 #container #video__container .video__container__main .video__container__main--stats .video__container__main--share {
   width: 33%;
   height: auto;
@@ -235,9 +259,163 @@ table {
           align-items: center;
 }
 
+#container #video__container .video__container__main .video__container__main--stats .video__container__main--share img {
+  padding-right: 10%;
+}
+
+#container #video__container .video__container__main--channel {
+  width: 100%;
+  padding-top: 4%;
+  border-bottom: 1px solid #D4D4D4;
+  padding-bottom: 5%;
+}
+
+#container #video__container .video__container__main--channel .video__container__main--channel-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+#container #video__container .video__container__main--channel .video__container__main--channel-info .video__container__main--channel-info-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 50%;
+}
+
+#container #video__container .video__container__main--channel .video__container__main--channel-info .video__container__main--channel-info-author .video__container__main--channel-info-author-image {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-image: url(../assets/Images/john_gibbons.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#container #video__container .video__container__main--channel .video__container__main--channel-info .video__container__main--channel-info-author .video__container__main--channel-info-publish-details {
+  padding-left: 5%;
+}
+
+#container #video__container .video__container__main--channel .video__container__main--channel-info .video__container__main--channel-info-author .video__container__main--channel-info-publish-details .video__container__main--channel-info-publish-details-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+#container #video__container .video__container__main--channel .video__container__main--channel-info .video__container__main--channel-info-author .video__container__main--channel-info-publish-details .video__container__main--channel-info-publish-details-date {
+  font-size: 0.7rem;
+  color: #888888;
+  padding-top: 3%;
+}
+
+#container #video__container .video__container__main--channel .video__container__main--channel-info .video__container__main--channel-info-subscribe {
+  margin: 0;
+  width: 10rem;
+}
+
+#container #video__container .video__container__main--channel .video__container__main--channel-info .video__container__main--channel-info-subscribe .video__container__main--channel-info-subscribe-btn {
+  padding: 0.8rem 0;
+  width: 10rem;
+  background-color: #0095FF;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+#container #video__container .video__container__main--channel .video__container__main--channel-info .video__container__main--channel-info-subscribe .video__container__main--channel-info-subscribe-btn span {
+  padding-left: 12%;
+  color: #D4D4D4;
+}
+
+#container #video__container .video__container__main--channel .video__container__main--video-details {
+  font-size: 0.8rem;
+  margin-left: 4rem;
+}
+
+#container #video__container .video__container__main--channel .video__container__main--video-details .video__container__main--video-details-desc {
+  padding-bottom: 5%;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+#container #video__container .video__container__main--channel .video__container__main--video-details .video__container__main--videos-details-show-more {
+  font-size: 0.75rem;
+  color: #888888;
+}
+
 #container #video__container .video__container__sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 40%;
   height: auto;
-  padding: 0 2%;
+  padding: 0 1.5%;
+}
+
+#container #video__container .video__container__sidebar .video__container__sidebar--heading {
+  padding-bottom: 2%;
+}
+
+#container #video__container .video__container__sidebar .video__container__sidebar--heading .video__container__sidebar--upnext {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+#container #video__container .video__container__sidebar .video__container__sidebar--video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+  padding-top: 2%;
+}
+
+#container #video__container .video__container__sidebar .video__container__sidebar--video .video__container__sidebar--video-artifact {
+  width: 10vw;
+  height: 10vh;
+}
+
+#container #video__container .video__container__sidebar .video__container__sidebar--video .video__container__sidebar--video-artifact img {
+  width: 10vw;
+  height: 10vh;
+}
+
+#container #video__container .video__container__sidebar .video__container__sidebar--video .video__container__sidebar--video-info {
+  font-size: 0.7rem;
+}
+
+#container #video__container .video__container__sidebar .video__container__sidebar--video .video__container__sidebar--video-info .video__container__sidebar--text {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0 0 1% 3%;
+}
+
+#container #video__container .video__container__sidebar .video__container__sidebar--video .video__container__sidebar--video-info .video__container__sidebar--name {
+  font-size: 0.7rem;
+  color: #888888;
+  padding: 1% 3%;
+}
+
+#container #video__container .video__container__sidebar .video__container__sidebar--video .video__container__sidebar--video-info .video__container__sidebar--views {
+  font-size: 0.7rem;
+  color: #888888;
+  padding: 1.5% 3%;
 }
 /*# sourceMappingURL=style.css.map */
