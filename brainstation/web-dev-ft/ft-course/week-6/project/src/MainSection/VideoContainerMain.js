@@ -4,7 +4,7 @@ class VideoContainerMain extends Component {
     render() {
         return (
             <div className="video__container__main">
-            <video poster = "./assets/Images/920x920.jpg" className="video__container__main--video" width="100%" height="auto" controls>
+            <video poster = "./assets/Images/maxresdefault.jpg" className="video__container__main--video" width="100%" height="auto" controls>
                 <source src="./assets/videos/BrainStation Sample Video.mp4" type="video/mp4" />
             </video>
             <div className="video__container__main--text">
@@ -30,7 +30,7 @@ class VideoContainerMain extends Component {
             <div className="video__container__main--channel"> 
                 <div className="video__container__main--channel-info">
                     <div className="video__container__main--channel-info-author">
-                        <img className="video__container__main--channel-info-author-image" src="./assets/Images/john_gibbons.jpg" alt="Author Video"/>
+                        <img className="video__container__main--channel-info-author-image" src="./assets/Images/john_gibbons-resized.jpg" alt="Author Video" />
                         <div className="video__container__main--channel-info-publish-details">
                             <h6 className="video__container__main--channel-info-publish-details-name">MLB</h6>
                             <h6 className="video__container__main--channel-info-publish-details-date">Published on Oct 14, 2015</h6>

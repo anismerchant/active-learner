@@ -15,7 +15,7 @@ class NavBar extends Component {
                 </div>
                 <div className="navigation__images">
                     <img className="navigation__images--content-upload" src={"./assets/Icons/Content Upload.svg"} alt="Content Upload" /> 
-                    <img className="navigation__images--john-gibbons" src={"./assets/Images/john_gibbons.jpg"} alt="Author" />
+                    <img className="navigation__images--john-gibbons" src={"./assets/Images/john_gibbons-resized.jpg"} alt="Author" />
                 </div>      
             </nav>
         );
