@@ -53,6 +53,27 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url("Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("Roboto-Medium.woff2") format("woff2"), url("Roboto-Medium.woff") format("woff"), url("Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff"), url("Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 #container {
   font-family: 'Roboto', sans-serif;
   /* NAVIGATION */
@@ -147,9 +168,6 @@ table {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  background-image: url(../assets/Images/john_gibbons.jpg);
-  background-size: cover;
-  background-position: 50% 50%;
 }
 
 #container #video__container {
@@ -294,9 +312,6 @@ table {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background-image: url(../assets/Images/john_gibbons.jpg);
-  background-size: cover;
-  background-position: 50% 50%;
 }
 
 #container #video__container .video__container__main--channel .video__container__main--channel-info .video__container__main--channel-info-author .video__container__main--channel-info-publish-details {
