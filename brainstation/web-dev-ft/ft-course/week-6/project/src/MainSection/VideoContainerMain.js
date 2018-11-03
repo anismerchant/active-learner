@@ -4,7 +4,7 @@ class VideoContainerMain extends Component {
     render() {
         return (
             <div className="video__container__main">
-            <video poster = "./assets/Images/maxresdefault.jpg" className="video__container__main--video" width="100%" height="auto" controls>
+            <video className="video__container__main--video" poster="./assets/Images/maxresdefault.jpg" width="100%" height="auto" controls>
                 <source src="./assets/videos/BrainStation Sample Video.mp4" type="video/mp4" />
             </video>
             <div className="video__container__main--text">
