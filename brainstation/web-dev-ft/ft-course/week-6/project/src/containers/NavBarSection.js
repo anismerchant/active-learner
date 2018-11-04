@@ -3,7 +3,7 @@ import MediaQuery from 'react-responsive';
 import NavBarMobile from '../components/NavBarSection/NavBarMobile';
 import NavBarDesktopLaptop from '../components/NavBarSection/NavBarDesktopLaptop';
 
-class NavBar extends Component {
+class NavBarSection extends Component {
     render() {
         return (
             <MediaQuery maxDeviceWidth={600}>
@@ -25,4 +25,4 @@ class NavBar extends Component {
     }
 }
 
-export default NavBar;
+export default NavBarSection;
