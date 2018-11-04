@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import VideoContainerMain from './MainSection/VideoContainerMain';
-import VideoContainerSidebar from './MainSection/VideoContainerSidebar';
+import VideoContainerMain from './components/MainSection/VideoContainerMain';
+import VideoContainerSidebar from './components/MainSection/VideoContainerSidebar';
 
 class MainSection extends Component {
     render() {

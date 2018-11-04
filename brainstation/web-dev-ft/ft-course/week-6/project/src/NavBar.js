@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import MediaQuery from 'react-responsive';
-import NavBarMobile from './NavBarSection/NavBarMobile';
-import NavBarDesktopLaptop from './NavBarSection/NavBarDesktopLaptop';
+import NavBarMobile from './components/NavBarSection/NavBarMobile';
+import NavBarDesktopLaptop from './components/NavBarSection/NavBarDesktopLaptop';
 
 class NavBar extends Component {
     render() {
