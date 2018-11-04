@@ -61,21 +61,21 @@ table {
 
 @font-face {
   font-family: 'Roboto';
-  src: url("../typography/Roboto/Roboto-Bold.ttf") format("truetype");
+  src: url("./typography/Roboto/Roboto-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url("../typography/Roboto/Roboto-Medium.ttf") format("truetype");
+  src: url("./typography/Roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url("../typography/Roboto/Roboto-Regular.ttf") format("truetype");
+  src: url("./typography/Roboto/Roboto-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
