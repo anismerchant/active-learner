@@ -67,7 +67,7 @@ table {
 
 	/* NAVIGATION */
 	#navigation__container {
-	@include displyFlexSpaceBetween();
+	@include displayFlexSpaceAround();
 	align-items: center;
 	width: 100vw;
 	height: 5rem;
@@ -178,8 +178,7 @@ table {
 	}
 
 	.navigation__images {
-		display: flex;
-		justify-content: space-around;
+		@include displayFlexSpaceAround();
 		align-items: center;
 		width: 15%;
 

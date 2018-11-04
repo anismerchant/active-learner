@@ -4,6 +4,11 @@
     display: flex;
 	justify-content: space-between;
 }
+@mixin displayFlexSpaceAround()
+{
+    display: flex;
+	justify-content: space-around;
+}
 @mixin displayFlexCenter()
 {
     display: flex;
