@@ -8,8 +8,9 @@ class VideoContainerSidebar extends Component {
             return (
             <div className="video__container__sidebar">
                 <SidebarVideoSectionHeading />
-                    { videos.map ( video => {
-                        return <SidebarVideo
+                    { videos.map ( (video, index) => {
+                        return <SidebarVideo 
+                            key={index}
                             title={video.title}
                             channel={video.channel}
                             views={video.views}
