@@ -4,7 +4,7 @@ class MainVideoHeading extends Component {
     render() {
         return (
             <div className="video__container__main--text">
-                <h4>Jose Bautista hammers go-ahead three-run shot in ALDS Game 5, delivers epic bat flip</h4>
+                <h4>{this.props.titlemain}</h4>
             </div>
         );
     }
