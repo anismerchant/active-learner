@@ -9,7 +9,10 @@ class VideoContainerMain extends Component {
         let videos = this.props.videoArray;
         return (
             <div className="video__container__main">
-                <MainVideo mainvideo={videos[0].mainvideo} />
+                <MainVideo 
+                    mainvideo={videos[0].mainvideo} 
+                    poster={videos[0].poster}
+                    />
                 <MainVideoHeading titlemain={videos[0].titlemain}/>
                 <MainVideoStats 
                     viewsmain={videos[0].viewsmain}
