@@ -11,7 +11,9 @@ const videos = [
         "publishdate": "Published on Oct 14, 2015",
         "descmain": "10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
         "comment" : "That was easily the most spectacular baseball moment I have ever witnessed.",
-        "image" : "./assets/Images/hqdefault.jpg"
+        "image" : "./assets/Images/hqdefault.jpg",
+        "subscribe": "1.2M",
+        "poster": "./assets/Images/maxresdefault.jpg"
     },
     {
         "title": "TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning",
@@ -25,7 +27,8 @@ const videos = [
         "publishdate": "Published on Oct 14, 2015",
         "descmain": "10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
         "comment" : "That was easily the most spectacular baseball moment I have ever witnessed.",
-        "image" : "./assets/Images/donaldson.jpg"
+        "image" : "./assets/Images/donaldson.jpg",
+        "subscribe": "1.2M"
     },
     {
         "title": "TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning",
@@ -39,7 +42,8 @@ const videos = [
         "publishdate": "Published on Oct 14, 2015",
         "descmain": "10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
         "comment" : "That was easily the most spectacular baseball moment I have ever witnessed.",
-        "image" : "./assets/Images/r241851_600x400_3-2.jpg"
+        "image" : "./assets/Images/r241851_600x400_3-2.jpg",
+        "subscribe": "1.2M"
     },
     {
         "title": "TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning",
@@ -53,7 +57,8 @@ const videos = [
         "publishdate": "Published on Oct 14, 2015",
         "descmain": "10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
         "comment" : "That was easily the most spectacular baseball moment I have ever witnessed.",
-        "image" : "./assets/Images/PR6AGOQ7XREI5B7UMKM3KAGWFA.jpg"
+        "image" : "./assets/Images/PR6AGOQ7XREI5B7UMKM3KAGWFA.jpg",
+        "subscribe": "1.2M"
     },
     {
         "title": "TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning",
@@ -67,7 +72,8 @@ const videos = [
         "publishdate": "Published on Oct 14, 2015",
         "descmain": "10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
         "comment" : "That was easily the most spectacular baseball moment I have ever witnessed.",
-        "image" : "./assets/Images/920x920.jpg"
+        "image" : "./assets/Images/920x920.jpg",
+        "subscribe": "1.2M"
     },
     {
         "title": "TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning",
@@ -81,7 +87,8 @@ const videos = [
         "publishdate": "Published on Oct 14, 2015",
         "descmain": "10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
         "comment" : "That was easily the most spectacular baseball moment I have ever witnessed.",
-        "image" : "./assets/Images/Big-Read-Vladimir-Guerrero-Jr-Swings-470x264.jpg"
+        "image" : "./assets/Images/Big-Read-Vladimir-Guerrero-Jr-Swings-470x264.jpg",
+        "subscribe": "1.2M"
     },
     {
         "title": "TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning",
@@ -95,7 +102,8 @@ const videos = [
         "publishdate": "Published on Oct 14, 2015",
         "descmain": "10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
         "comment" : "That was easily the most spectacular baseball moment I have ever witnessed.",
-        "image" : "./assets/Images/BASEBALL-MLB-HOU-LAD-.jpg"
+        "image" : "./assets/Images/BASEBALL-MLB-HOU-LAD-.jpg",
+        "subscribe": "1.2M"
     },
     {
         "title": "TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning",
@@ -109,7 +117,8 @@ const videos = [
         "publishdate": "Published on Oct 14, 2015",
         "descmain": "10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
         "comment" : "That was easily the most spectacular baseball moment I have ever witnessed.",
-        "image" : "./assets/Images/THKMOYWFLWJCPXQ.20170430201114.jpg"
+        "image" : "./assets/Images/THKMOYWFLWJCPXQ.20170430201114.jpg",
+        "subscribe": "1.2M"
     },
 ];
 
