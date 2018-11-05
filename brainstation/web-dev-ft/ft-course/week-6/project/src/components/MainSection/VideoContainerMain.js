@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import MainVideo from './MainVideo';
 import MainVideoHeading from './MainVideoHeading';
 import MainVideoStats from './MainVideoStats';
-import MainVideoComment from './MainVideoComment';
+import MainVideoDesc from './MainVideoDesc';
 
 class VideoContainerMain extends Component {
     render() {
@@ -16,7 +16,12 @@ class VideoContainerMain extends Component {
                     thumbsup={videos[0].thumbsup}
                     thumbsdown={videos[0].thumbsdown}
                 />
-                <MainVideoComment />
+                <MainVideoDesc 
+                    channel={videos[0].channel}
+                    publishdate={videos[0].publishdate}
+                    subscribe={videos[0].subscribe}
+                    descmain={videos[0].descmain}
+                />
             </div>
         );
     }
