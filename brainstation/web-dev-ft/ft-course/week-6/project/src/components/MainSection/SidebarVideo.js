@@ -5,12 +5,12 @@ class SidebarVideo extends Component {
         return(
             <div className="video__container__sidebar--video">
                 <div className="video__container__sidebar--video-artifact">
-                    <img src="./assets/Images/hqdefault.jpg" alt="Video" />
+                    <img src={this.props.image} alt="Video" />
                 </div>
                 <div className="video__container__sidebar--video-info">
-                    <h6 className="video__container__sidebar--text">TEX @TOR Gm5: Blue Jays take lead in wild 7th inning</h6>
-                    <h6 className="video__container__sidebar--name">MLB</h6>
-                    <h6 className="video__container__sidebar--views">1.1M Views</h6>
+                    <h6 className="video__container__sidebar--text">{this.props.title}</h6>
+                    <h6 className="video__container__sidebar--name">{this.props.channel}</h6>
+                    <h6 className="video__container__sidebar--views">{this.props.views} Views</h6>
                 </div>
             </div>
         );
