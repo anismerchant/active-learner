@@ -3,98 +3,114 @@ const videos = [
         "title": "TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning",
         "channel": "MLB",
         "views": "1.1M",
+        "mainvideo": "./assets/videos/BrainStation Sample Video.mp4",
         "titlemain" : "Jose Bautista hammers go-ahead three-run shot in ALDS Game 5, delivers epic bat flip",
         "viewsmain": "2,304,189",
         "thumbsup": "6.9K",
         "thumbsdown": "202",
         "publishdate": "Published on Oct 14, 2015",
         "descmain": "10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
-        "comments" : "That was easily the most spectacular baseball moment I have ever witnessed."
+        "comment" : "That was easily the most spectacular baseball moment I have ever witnessed.",
+        "image" : "./assets/Images/hqdefault.jpg"
     },
     {
         "title": "TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning",
         "channel": "MLB",
         "views": "1.1M",
+        "mainvideo": "./assets/videos/BrainStation Sample Video.mp4",
         "titlemain" : "Jose Bautista hammers go-ahead three-run shot in ALDS Game 5, delivers epic bat flip",
         "viewsmain": "2,304,189",
         "thumbsup": "6.9K",
         "thumbsdown": "202",
         "publishdate": "Published on Oct 14, 2015",
         "descmain": "10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
-        "comments" : "That was easily the most spectacular baseball moment I have ever witnessed."
+        "comment" : "That was easily the most spectacular baseball moment I have ever witnessed.",
+        "image" : "./assets/Images/donaldson.jpg"
     },
     {
         "title": "TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning",
         "channel": "MLB",
         "views": "1.1M",
+        "mainvideo": "./assets/videos/BrainStation Sample Video.mp4",
         "titlemain" : "Jose Bautista hammers go-ahead three-run shot in ALDS Game 5, delivers epic bat flip",
         "viewsmain": "2,304,189",
         "thumbsup": "6.9K",
         "thumbsdown": "202",
         "publishdate": "Published on Oct 14, 2015",
         "descmain": "10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
-        "comments" : "That was easily the most spectacular baseball moment I have ever witnessed."
+        "comment" : "That was easily the most spectacular baseball moment I have ever witnessed.",
+        "image" : "./assets/Images/r241851_600x400_3-2.jpg"
     },
     {
         "title": "TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning",
         "channel": "MLB",
         "views": "1.1M",
+        "mainvideo": "./assets/videos/BrainStation Sample Video.mp4",
         "titlemain" : "Jose Bautista hammers go-ahead three-run shot in ALDS Game 5, delivers epic bat flip",
         "viewsmain": "2,304,189",
         "thumbsup": "6.9K",
         "thumbsdown": "202",
         "publishdate": "Published on Oct 14, 2015",
         "descmain": "10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
-        "comments" : "That was easily the most spectacular baseball moment I have ever witnessed."
+        "comment" : "That was easily the most spectacular baseball moment I have ever witnessed.",
+        "image" : "./assets/Images/PR6AGOQ7XREI5B7UMKM3KAGWFA.jpg"
     },
     {
         "title": "TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning",
         "channel": "MLB",
         "views": "1.1M",
+        "mainvideo": "./assets/videos/BrainStation Sample Video.mp4",
         "titlemain" : "Jose Bautista hammers go-ahead three-run shot in ALDS Game 5, delivers epic bat flip",
         "viewsmain": "2,304,189",
         "thumbsup": "6.9K",
         "thumbsdown": "202",
         "publishdate": "Published on Oct 14, 2015",
         "descmain": "10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
-        "comments" : "That was easily the most spectacular baseball moment I have ever witnessed."
+        "comment" : "That was easily the most spectacular baseball moment I have ever witnessed.",
+        "image" : "./assets/Images/920x920.jpg"
     },
     {
         "title": "TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning",
         "channel": "MLB",
         "views": "1.1M",
+        "mainvideo": "./assets/videos/BrainStation Sample Video.mp4",
         "titlemain" : "Jose Bautista hammers go-ahead three-run shot in ALDS Game 5, delivers epic bat flip",
         "viewsmain": "2,304,189",
         "thumbsup": "6.9K",
         "thumbsdown": "202",
         "publishdate": "Published on Oct 14, 2015",
         "descmain": "10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
-        "comments" : "That was easily the most spectacular baseball moment I have ever witnessed."
+        "comment" : "That was easily the most spectacular baseball moment I have ever witnessed.",
+        "image" : "./assets/Images/Big-Read-Vladimir-Guerrero-Jr-Swings-470x264.jpg"
     },
     {
         "title": "TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning",
         "channel": "MLB",
         "views": "1.1M",
+        "mainvideo": "./assets/videos/BrainStation Sample Video.mp4",
         "titlemain" : "Jose Bautista hammers go-ahead three-run shot in ALDS Game 5, delivers epic bat flip",
         "viewsmain": "2,304,189",
         "thumbsup": "6.9K",
         "thumbsdown": "202",
         "publishdate": "Published on Oct 14, 2015",
         "descmain": "10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
-        "comments" : "That was easily the most spectacular baseball moment I have ever witnessed."
+        "comment" : "That was easily the most spectacular baseball moment I have ever witnessed.",
+        "image" : "./assets/Images/BASEBALL-MLB-HOU-LAD-.jpg"
     },
     {
         "title": "TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning",
         "channel": "MLB",
         "views": "1.1M",
+        "mainvideo": "./assets/videos/BrainStation Sample Video.mp4",
         "titlemain" : "Jose Bautista hammers go-ahead three-run shot in ALDS Game 5, delivers epic bat flip",
         "viewsmain": "2,304,189",
         "thumbsup": "6.9K",
         "thumbsdown": "202",
         "publishdate": "Published on Oct 14, 2015",
         "descmain": "10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
-        "comments" : "That was easily the most spectacular baseball moment I have ever witnessed."
-    }
+        "comment" : "That was easily the most spectacular baseball moment I have ever witnessed.",
+        "image" : "./assets/Images/THKMOYWFLWJCPXQ.20170430201114.jpg"
+    },
 ];
 
 export default videos;
