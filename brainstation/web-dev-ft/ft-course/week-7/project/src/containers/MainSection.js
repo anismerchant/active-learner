@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import videos from '../videoData';
-import VideoContainerMain from '../components/MainSection/VideoContainerMain';
-import VideoContainerSidebar from '../components/MainSection/VideoContainerSidebar';
+import MainVideoContainer from '../components/MainSection/MainVideoContainer';
+import SidebarVideoContainer from '../components/MainSection/SidebarVideoContainer';
 
 class MainSection extends Component {
     state = {
@@ -11,8 +11,8 @@ class MainSection extends Component {
     render() {
         return(
             <main id="video__container">
-                <VideoContainerMain videoArray={this.state.videos} />
-                <VideoContainerSidebar videoArray={this.state.videos} />
+                <MainVideoContainer videoArray={this.state.videos} />
+                <SidebarVideoContainer videoArray={this.state.videos} />
             </main>
         );
     }
