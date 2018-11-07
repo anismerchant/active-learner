@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import MainVideo from './MainVideo';
 
-class VideoContainerMain extends Component {
+class MainVideoContainer extends Component {
     render() {
         let videos = this.props.videoArray;
         return (
@@ -21,4 +21,4 @@ class VideoContainerMain extends Component {
     }
 }
 
-export default VideoContainerMain;
+export default MainVideoContainer;

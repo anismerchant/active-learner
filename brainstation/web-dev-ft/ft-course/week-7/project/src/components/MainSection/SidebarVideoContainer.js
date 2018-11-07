@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SidebarVideo from './SidebarVideo';
 
-class VideoContainerSidebar extends Component {
+class SidebarVideoContainer extends Component {
     render() {
         let videos = this.props.videoArray;
             return (
@@ -24,4 +24,4 @@ class VideoContainerSidebar extends Component {
         }
     }
 
-export default VideoContainerSidebar;
+export default SidebarVideoContainer;
