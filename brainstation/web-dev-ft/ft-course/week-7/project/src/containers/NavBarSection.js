@@ -7,19 +7,9 @@ class NavBarSection extends Component {
     render() {
         return (
             <MediaQuery maxDeviceWidth={600}>
-                {
-                    (matches) => {
-                        if (matches) {
-                            return (
-                                <NavBarMobile />
-                            );
-                        } else {
-                            return (
-                                <NavBarDesktopLaptop />
-                            );
-                        }
-                    }
-                }
+            {
+                (matches) => (matches) ? <NavBarMobile /> : <NavBarDesktopLaptop /> 
+            }
             </MediaQuery>
         );
     }
