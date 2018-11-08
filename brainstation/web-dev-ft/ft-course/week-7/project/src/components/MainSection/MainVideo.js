@@ -47,8 +47,10 @@ class MainVideo extends Component {
                 </div>
                 <div className="video__container__main--comments">
                     <img className="video__container__main--subscriber-pic" src="./assets/Images/john_gibbons-resized.jpg" alt="Subscriber" />
-                    <form id="video__container__main--grabComment">    
-                        <input name="comment" className="video__container__main--comment" placeholder="Add a public comment"></input>                        
+                    <form id="video__container__main--grabComment">
+                        <label className= "video__container__main--comment">
+                            <input className="video__container__main--comment-input" name="comment" placeholder="Add a public comment"></input>
+                        </label>                  
                         <div className="video__container__main--comment-buttons"> 
                             <button className="video__container__main--cancel" type="cancel">CANCEL</button>
                             <button className="video__container__main--submit" type="submit">COMMENT</button>  

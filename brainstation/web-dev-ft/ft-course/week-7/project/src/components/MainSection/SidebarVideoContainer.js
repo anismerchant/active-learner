@@ -15,6 +15,7 @@ class SidebarVideoContainer extends Component {
                         title={video.title}
                         channel={video.channel}
                         views={video.views}
+                        duration={video.duration}
                         image={video.image}
                     />
                     })

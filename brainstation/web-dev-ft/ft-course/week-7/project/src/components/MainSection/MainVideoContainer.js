@@ -6,16 +6,16 @@ class MainVideoContainer extends Component {
         let videos = this.props.videoArray;
         return (
             <MainVideo 
-                mainvideo={videos[0].mainvideo} 
-                poster={videos[0].poster}
-                titlemain={videos[0].titlemain}
-                viewsmain={videos[0].viewsmain}
-                thumbsup={videos[0].thumbsup}
-                thumbsdown={videos[0].thumbsdown}
-                channel={videos[0].channel}
-                publishdate={videos[0].publishdate}
-                subscribe={videos[0].subscribe}
-                descmain={videos[0].descmain}
+                // mainvideo={videos[0].mainvideo} 
+                // poster={videos[0].poster}
+                // titlemain={videos[0].titlemain}
+                // viewsmain={videos[0].viewsmain}
+                // thumbsup={videos[0].thumbsup}
+                // thumbsdown={videos[0].thumbsdown}
+                // channel={videos[0].channel}
+                // publishdate={videos[0].publishdate}
+                // subscribe={videos[0].subscribe}
+                // descmain={videos[0].descmain}
             />
         );
     }
