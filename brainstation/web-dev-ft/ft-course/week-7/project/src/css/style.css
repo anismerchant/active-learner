@@ -588,7 +588,7 @@ table {
   padding-left: 5%;
 }
 
-#container #video__container .video__container__main .video__container__main--comments .video__container__main--comment {
+#container #video__container .video__container__main .video__container__main--comments #video__container__main--grabComment .video__container__main--comment .video__container__main--comment-input {
   width: 100%;
   border: none;
   height: 1.5vh;
@@ -596,7 +596,7 @@ table {
   font-size: 0.7rem;
 }
 
-#container #video__container .video__container__main .video__container__main--comments .video__container__main--comment-buttons {
+#container #video__container .video__container__main .video__container__main--comments #video__container__main--grabComment .video__container__main--comment-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -607,7 +607,7 @@ table {
   padding-top: 2%;
 }
 
-#container #video__container .video__container__main .video__container__main--comments .video__container__main--comment-buttons .video__container__main--cancel {
+#container #video__container .video__container__main .video__container__main--comments #video__container__main--grabComment .video__container__main--comment-buttons .video__container__main--cancel {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   padding: 0;
@@ -616,14 +616,14 @@ table {
 }
 
 @media (max-width: 600px) {
-  #container #video__container .video__container__main .video__container__main--comments .video__container__main--comment-buttons .video__container__main--cancel {
+  #container #video__container .video__container__main .video__container__main--comments #video__container__main--grabComment .video__container__main--comment-buttons .video__container__main--cancel {
     width: 10vw;
     font-size: 0.6rem;
     line-height: 0.5vh;
   }
 }
 
-#container #video__container .video__container__main .video__container__main--comments .video__container__main--comment-buttons .video__container__main--submit {
+#container #video__container .video__container__main .video__container__main--comments #video__container__main--grabComment .video__container__main--comment-buttons .video__container__main--submit {
   height: 4vh;
   width: 10vw;
   background-color: #B2DFFF;
@@ -638,7 +638,7 @@ table {
 }
 
 @media (max-width: 600px) {
-  #container #video__container .video__container__main .video__container__main--comments .video__container__main--comment-buttons .video__container__main--submit {
+  #container #video__container .video__container__main .video__container__main--comments #video__container__main--grabComment .video__container__main--comment-buttons .video__container__main--submit {
     width: 20vw;
     font-size: 0.6rem;
     line-height: 0.5vh;

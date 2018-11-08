@@ -429,55 +429,57 @@ table {
 				#video__container__main--grabComment {
 					width: 100%;
 					padding-left: 5%;
-				}
-				.video__container__main--comment {
-					width: 100%;
-					border: none;
-					height: 1.5vh;
-					font-family: $site-font-family;
-					font-size: 0.7rem;
-				}
-				.video__container__main--comment-buttons {
-					display: flex;
-					justify-content: flex-end;
-					border-top: 1px solid #D4D4D4;
-					padding-top: 2%;
+					.video__container__main--comment {
 
-					.video__container__main--cancel {
-						font-family: $site-font-family;
-						font-weight: $font-weight-bold;
-						padding: 0;
-						border: 0;
-						background-color: #FFFFFF;
-
-						@media (max-width: $mobile-max-width) { 
+						.video__container__main--comment-input {
+							width: 100%;
+							border: none;
+							height: 1.5vh;
+							font-family: $site-font-family;
+							font-size: 0.7rem;
+						}
+					}
+					.video__container__main--comment-buttons {
+						display: flex;
+						justify-content: flex-end;
+						border-top: 1px solid #D4D4D4;
+						padding-top: 2%;
+	
+						.video__container__main--cancel {
+							font-family: $site-font-family;
+							font-weight: $font-weight-bold;
+							padding: 0;
+							border: 0;
+							background-color: #FFFFFF;
+	
+							@media (max-width: $mobile-max-width) { 
+								width: 10vw;
+								font-size: 0.6rem;
+								line-height: 0.5vh;
+							}
+						}
+	
+						.video__container__main--submit {
+							height: 4vh;
 							width: 10vw;
-							font-size: 0.6rem;
-							line-height: 0.5vh;
-						}
-					}
-
-					.video__container__main--submit {
-					    height: 4vh;
-    					width: 10vw;
-						background-color: #B2DFFF;
-						border-radius: 2px;
-						border: none;
-						color: #FFFFFF;
-						font-family: $site-font-family;
-						font-size: 0.8rem;
-						font-weight: bold;
-						text-align: center;
-						margin-left: 0.5rem;
-
-						@media (max-width: $mobile-max-width) { 
-							width: 20vw;
-							font-size: 0.6rem;
-							line-height: 0.5vh;
+							background-color: #B2DFFF;
+							border-radius: 2px;
+							border: none;
+							color: #FFFFFF;
+							font-family: $site-font-family;
+							font-size: 0.8rem;
+							font-weight: bold;
+							text-align: center;
+							margin-left: 0.5rem;
+	
+							@media (max-width: $mobile-max-width) { 
+								width: 20vw;
+								font-size: 0.6rem;
+								line-height: 0.5vh;
+							}
 						}
 					}
 				}
-
 			}
 		}
 		
