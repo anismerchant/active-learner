@@ -3,19 +3,17 @@ import MainVideo from './MainVideo';
 
 class MainVideoContainer extends Component {
     render() {
-        let videos = this.props.videoArray;
+        let videos = this.props.videoDetailsArray;
         return (
             <MainVideo 
-                // mainvideo={videos[0].mainvideo} 
-                // poster={videos[0].poster}
-                // titlemain={videos[0].titlemain}
-                // viewsmain={videos[0].viewsmain}
-                // thumbsup={videos[0].thumbsup}
-                // thumbsdown={videos[0].thumbsdown}
-                // channel={videos[0].channel}
-                // publishdate={videos[0].publishdate}
-                // subscribe={videos[0].subscribe}
-                // descmain={videos[0].descmain}
+               mainvideo={`${videos.video}${this.props.apiKey}`}
+               poster={videos.image}
+               titlemain={videos.title}
+               viewsmain={videos.views}
+               thumbsup={videos.thumbsUp}
+               thumbsdown={videos.thumbsDown}
+               channel={videos.channel} 
+               subscribe={videos.subscriberCount}
             />
         );
     }
