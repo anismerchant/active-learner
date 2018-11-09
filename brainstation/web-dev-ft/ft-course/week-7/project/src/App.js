@@ -3,14 +3,19 @@ import React, { Component } from 'react';
 import './css/style.css';
 import NavBarSection from './containers/NavBarSection';
 import MainSection from './containers/MainSection';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
-      <div className="App" id="container">
-        <NavBarSection />
-        <MainSection />
-      </div>
+      <Router>
+        <div className="App" id="container">
+          <NavBarSection />
+          <Route path='/videos/:id' render = {(props) => {
+            return <MainSection {...props} />
+          } }/>
+        </div>
+      </Router>
     );
   }
 }
