@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CommentsContainer from './CommentsContainer';
 
 class MainVideo extends Component {
     render() {
@@ -31,7 +32,7 @@ class MainVideo extends Component {
                             <img className="video__container__main--channel-info-author-image" src="../../assets/Images/john_gibbons-resized.jpg" alt="Author Video" />
                             <div className="video__container__main--channel-info-publish-details">
                                 <h6 className="video__container__main--channel-info-publish-details-name">{this.props.channel}</h6>
-                                <h6 className="video__container__main--channel-info-publish-details-date">{this.props.publishdate}</h6>
+                                <h6 className="video__container__main--channel-info-publish-details-date">Published on Oct 14, 2018</h6>
                             </div>
                         </div>
                         <div className="video__container__main--channel-info-subscribe">                   
@@ -39,21 +40,24 @@ class MainVideo extends Component {
                         </div>
                     </div>
                     <div className="video__container__main--video-details">
-                        <h6 className="video__container__main--video-details-desc">{this.props.descmain}</h6>
+                        <h6 className="video__container__main--video-details-desc">{this.props.description}</h6>
                         <h4 className="video__container__main--videos-details-show-more">SHOW MORE</h4>
                     </div>
                 </div>
                 <div className="video__container__main--comments">
-                    <img className="video__container__main--subscriber-pic" src="../../assets/Images/john_gibbons-resized.jpg" alt="Subscriber" />
-                    <form id="video__container__main--grabComment">
-                        <label className= "video__container__main--comment">
-                            <input className="video__container__main--comment-input" name="comment" placeholder="Add a public comment"></input>
-                        </label>                  
-                        <div className="video__container__main--comment-buttons"> 
-                            <button className="video__container__main--cancel" type="cancel">CANCEL</button>
-                            <button className="video__container__main--submit" type="submit">COMMENT</button>  
-                        </div>         
-                    </form>
+                    <div className = "video__container__main--video-descriptions">
+                        <img className="video__container__main--subscriber-pic" src="../../assets/Images/john_gibbons-resized.jpg" alt="Subscriber" />
+                        <form id="video__container__main--grabComment">
+                            <label className= "video__container__main--comment">
+                                <input className="video__container__main--comment-input" name="comment" placeholder="Add a public comment"></input>
+                            </label>                  
+                            <div className="video__container__main--comment-buttons"> 
+                                <button className="video__container__main--cancel" type="cancel">CANCEL</button>
+                                <button className="video__container__main--submit" type="submit">COMMENT</button>  
+                            </div>         
+                        </form>
+                    </div>
+                    <CommentsContainer commentsArray={this.props.comments} />
                 </div>
             </div>
         );
