@@ -1,4 +1,7 @@
 import React, { Component} from 'react';
+import NavBarUploadImage from './NavBarUploadImage';
+import NavBarLogoImage from './NavBarLogoImage';
+import { Link } from 'react-router-dom';
 
 class NavBarMobile extends Component {
     render() {
@@ -6,10 +9,14 @@ class NavBarMobile extends Component {
             <nav id="navigation__container">
                 <div className="navigation--logo-and-images">
                     <div className="navigation__logo">
-                        <img src={"../../assets/Icons/BrainFlix Logo.svg"} alt="BrainFlix Logo" />
+                        {<Link to='/'>
+                            <NavBarLogoImage />
+                        </Link>}
                     </div>
                     <div className="navigation__images">
-                        <img className="navigation__images--content-upload" src={"../../assets/Icons/Content Upload.svg"} alt="Content Upload" /> 
+                        {<Link to='/upload'>
+                            <NavBarUploadImage />
+                        </Link>}
                         <img className="navigation__images--john-gibbons" src={"../../assets/Images/john_gibbons-resized.jpg"} alt="Author" />
                     </div>
                 </div>

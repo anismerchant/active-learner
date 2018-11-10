@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
+import NavBarUploadImage from './NavBarUploadImage';
+import NavBarLogoImage from './NavBarLogoImage';
+import { Link } from 'react-router-dom';
 
 class NavBarDesktopLaptop extends Component {
     render() {
         return (
             <nav id="navigation__container">
                 <div className="navigation__logo">
-                    <img src={"../../assets/Icons/BrainFlix Logo.svg"} alt="BrainFlix Logo" />
+                    {<Link to='/'>
+                        <NavBarLogoImage />
+                    </Link>}
                 </div>
                 <div className="navigation__search">
                     <input className="navigation__search--input" type="text" placeholder="Search" />
@@ -14,7 +19,9 @@ class NavBarDesktopLaptop extends Component {
                     </div>
                 </div>
                 <div className="navigation__images">
-                    <img className="navigation__images--content-upload" src={"../../assets/Icons/Content Upload.svg"} alt="Content Upload" /> 
+                    {<Link to='/upload'>
+                        <NavBarUploadImage />
+                    </Link>}
                     <img className="navigation__images--john-gibbons" src={"../../assets/Images/john_gibbons-resized.jpg"} alt="Author" />
                 </div>      
             </nav>
