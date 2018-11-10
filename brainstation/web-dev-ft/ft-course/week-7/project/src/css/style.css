@@ -571,24 +571,36 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#container #video__container .video__container__main .video__container__main--comments .video__container__main--video-descriptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 4%;
+  border-bottom: 1px solid #D4D4D4;
+  padding-bottom: 4%;
 }
 
-#container #video__container .video__container__main .video__container__main--comments .video__container__main--subscriber-pic {
+#container #video__container .video__container__main .video__container__main--comments .video__container__main--video-descriptions .video__container__main--subscriber-pic {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
 }
 
-#container #video__container .video__container__main .video__container__main--comments #video__container__main--grabComment {
+#container #video__container .video__container__main .video__container__main--comments .video__container__main--video-descriptions #video__container__main--grabComment {
   width: 100%;
   padding-left: 5%;
 }
 
-#container #video__container .video__container__main .video__container__main--comments #video__container__main--grabComment .video__container__main--comment .video__container__main--comment-input {
+#container #video__container .video__container__main .video__container__main--comments .video__container__main--video-descriptions #video__container__main--grabComment .video__container__main--comment .video__container__main--comment-input {
   width: 100%;
   border: none;
   height: 1.5vh;
@@ -596,7 +608,7 @@ table {
   font-size: 0.7rem;
 }
 
-#container #video__container .video__container__main .video__container__main--comments #video__container__main--grabComment .video__container__main--comment-buttons {
+#container #video__container .video__container__main .video__container__main--comments .video__container__main--video-descriptions #video__container__main--grabComment .video__container__main--comment-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -607,7 +619,7 @@ table {
   padding-top: 2%;
 }
 
-#container #video__container .video__container__main .video__container__main--comments #video__container__main--grabComment .video__container__main--comment-buttons .video__container__main--cancel {
+#container #video__container .video__container__main .video__container__main--comments .video__container__main--video-descriptions #video__container__main--grabComment .video__container__main--comment-buttons .video__container__main--cancel {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   padding: 0;
@@ -616,14 +628,14 @@ table {
 }
 
 @media (max-width: 600px) {
-  #container #video__container .video__container__main .video__container__main--comments #video__container__main--grabComment .video__container__main--comment-buttons .video__container__main--cancel {
+  #container #video__container .video__container__main .video__container__main--comments .video__container__main--video-descriptions #video__container__main--grabComment .video__container__main--comment-buttons .video__container__main--cancel {
     width: 10vw;
     font-size: 0.6rem;
     line-height: 0.5vh;
   }
 }
 
-#container #video__container .video__container__main .video__container__main--comments #video__container__main--grabComment .video__container__main--comment-buttons .video__container__main--submit {
+#container #video__container .video__container__main .video__container__main--comments .video__container__main--video-descriptions #video__container__main--grabComment .video__container__main--comment-buttons .video__container__main--submit {
   height: 4vh;
   width: 10vw;
   background-color: #B2DFFF;
@@ -638,11 +650,30 @@ table {
 }
 
 @media (max-width: 600px) {
-  #container #video__container .video__container__main .video__container__main--comments #video__container__main--grabComment .video__container__main--comment-buttons .video__container__main--submit {
+  #container #video__container .video__container__main .video__container__main--comments .video__container__main--video-descriptions #video__container__main--grabComment .video__container__main--comment-buttons .video__container__main--submit {
     width: 20vw;
     font-size: 0.6rem;
     line-height: 0.5vh;
   }
+}
+
+#container #video__container .video__container__main .video__container__main--comments .video__container__main--user-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5% 0;
+}
+
+#container #video__container .video__container__main .video__container__main--comments .video__container__main--user-comment .video__container__main--user-pic {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+#container #video__container .video__container__main .video__container__main--comments .video__container__main--user-comment .video__container__main--user {
+  width: 100%;
+  padding-left: 4%;
+  font-size: 0.7rem;
 }
 
 #container #video__container .video__container__sidebar {
