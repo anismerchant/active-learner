@@ -11,8 +11,10 @@ const queryString = '?api_key=';
 class MainSection extends Component {
     state = {
         videos: [],
-        videoDetails:[]
+        videoDetails: {
+            comments: []
       }
+    }
 
     componentDidMount() {
         fetch(baseUrl + videosPath + queryString + API_KEY)
@@ -22,8 +24,8 @@ class MainSection extends Component {
         .then((data) => {
             return this.setState({videos: data})
         })
-        .catch( (e) => {
-            console.log("Oops, something went wrong!");
+        .catch( (err) => {
+            console.log(err);
         });
         
         let {match} = this.props;
@@ -34,8 +36,8 @@ class MainSection extends Component {
         .then((data) => {
             return this.setState({videoDetails: data})
         })
-        .catch( (e) => {
-            console.log("Oops, something went wrong!");
+        .catch( (err) => {
+            console.log(err);
         });
     }
     
@@ -49,8 +51,8 @@ class MainSection extends Component {
             .then((data) => {
                 return this.setState({videos: data})
             })
-            .catch( (e) => {
-                console.log("Oops, something went wrong!");
+            .catch( (err) => {
+                console.log(err);
             });
             
             let {match} = this.props;
@@ -61,8 +63,8 @@ class MainSection extends Component {
             .then((data) => {
                 return this.setState({videoDetails: data})
             })
-            .catch( (e) => {
-                console.log("Oops, something went wrong!");
+            .catch( (err) => {
+                console.log(err);
             });
         } 
     }
@@ -70,8 +72,8 @@ class MainSection extends Component {
     render() {
         return(
             <main id="video__container">
-                <MainVideoContainer videoDetailsArray={this.state.videoDetails} apiKey={queryString + API_KEY} /> 
-                <SidebarVideoContainer videoArray={this.state.videos} />
+                <MainVideoContainer videoDetailsObject={this.state.videoDetails} apiKey={queryString + API_KEY} /> 
+                <SidebarVideoContainer {...this.props} videoObject={this.state.videos} />
             </main>
         );
     }
