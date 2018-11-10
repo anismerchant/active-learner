@@ -3,17 +3,20 @@ import React, { Component } from 'react';
 import './css/style.css';
 import NavBarSection from './containers/NavBarSection';
 import MainSection from './containers/MainSection';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
       <Router>
         <div className="App" id="container">
-          <NavBarSection />
-          <Route path='/videos/:id' render = {(props) => {
-            return <MainSection {...props} />
-          } }/>
+            <NavBarSection />
+              <Switch>
+                <Route path='/' exact render = {() => <Redirect to='/videos/1edc16bd-1bad-418b-bd40-c72ddd926672' />} />
+                  <Route path='/videos/:id' render = {(props) => {
+                    return <MainSection {...props} />
+                } }/>
+              </Switch>
         </div>
       </Router>
     );
