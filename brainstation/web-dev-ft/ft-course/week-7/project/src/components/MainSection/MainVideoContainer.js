@@ -8,13 +8,14 @@ class MainVideoContainer extends Component {
         return (
             <MainVideo 
                mainvideo={`${videos.video}${this.props.apiKey}`}
-               poster={videos.image}
                titlemain={videos.title}
                description={videos.description}
+               channel={videos.channel} 
                viewsmain={videos.views}
+               duration={videos.duration}
+               poster={videos.image}
                thumbsup={videos.thumbsUp}
                thumbsdown={videos.thumbsDown}
-               channel={videos.channel} 
                subscribe={videos.subscriberCount}
                comments={
                    videos.comments.map((comment) => {

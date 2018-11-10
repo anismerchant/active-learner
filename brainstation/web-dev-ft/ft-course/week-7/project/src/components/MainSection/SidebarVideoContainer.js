@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SidebarVideo from './SidebarVideo';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 class SidebarVideoContainer extends Component {
     render() {
