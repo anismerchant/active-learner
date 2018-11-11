@@ -6,7 +6,7 @@ import NavBarDesktopLaptop from '../components/NavBarSection/NavBarDesktopLaptop
 class NavBarSection extends Component {
     render() {
         return (
-            <MediaQuery maxDeviceWidth={600}>
+            <MediaQuery maxDeviceWidth={800}>
             {
                 (matches) => (matches) ? <NavBarMobile /> : <NavBarDesktopLaptop /> 
             }
