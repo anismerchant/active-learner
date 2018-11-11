@@ -3,7 +3,7 @@ import CommentsContainer from './CommentsContainer';
 
 class MainVideo extends Component {
     render() {
-        return( 
+        return ( 
             <div className="video__container__main">
                 <video  src={this.props.mainvideo} className="video__container__main--video" poster={this.props.poster} width="100%" height="auto" controls></video>
                 <div className="video__container__main--text">
