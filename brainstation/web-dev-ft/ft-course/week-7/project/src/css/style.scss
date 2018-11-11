@@ -212,6 +212,10 @@ table {
 			width: 50%;
 			height: auto;
 
+			video[poster] {
+				object-fit: cover;
+			}
+
 			@media (max-width: $mobile-max-width) {
 				width: 90vw;
 				margin: 5%;
@@ -220,11 +224,9 @@ table {
 			.video__container__main--video {
 				width: 100%;
 				height: auto;
-				padding-bottom: 2%;
-
 			}
 			.video__container__main--text {
-				padding-bottom: 2%;
+				padding: 2% 0;
 				h4 {
 					font-size: 1.25rem;
 				}
@@ -373,7 +375,7 @@ table {
 						.video__container__main--channel-info-subscribe-btn {
 							padding: 0.8rem 0;
 							width: 10rem;
-							background-color: $subscribe-btn-bg-color;
+							background-color: $btn-bg-color;
 							border-radius: 2px;
 							border: none;
 							color: $subscribe-btn-text-color;
@@ -414,7 +416,7 @@ table {
 					}
 				}
 			}
-			.video__container__main--comments{
+			.video__container__main--comments {
 				display: flex;
 				flex-direction: column;
 				
@@ -422,7 +424,7 @@ table {
 					display: flex;
 					justify-content: space-between;
 					padding-top: 4%;
-					border-bottom: 1px solid #D4D4D4;
+					border-bottom: $border;
     				padding-bottom: 4%;
 	
 					.video__container__main--subscriber-pic {
@@ -466,10 +468,10 @@ table {
 							.video__container__main--submit {
 								height: 4vh;
 								width: 10vw;
-								background-color: #B2DFFF;
+								background-color: $btn-bg-color-comment;
 								border-radius: 2px;
 								border: none;
-								color: #FFFFFF;
+								color: $color-bg;
 								font-family: $site-font-family;
 								font-size: 0.8rem;
 								font-weight: bold;
@@ -508,7 +510,7 @@ table {
 			
 		}
 		
-
+		/* SIDEBAR SECTION */
 		.video__container__sidebar {
 			@include displayFlexFlexStart();
 			flex-direction: column;
@@ -530,55 +532,61 @@ table {
 					font-weight: $font-weight-bold;
 				}
 			}
-			
-			.video__container__sidebar--video {
-				display: flex;
-				height: 10vh;
-				padding-top: 2%;
+			.video__container__sidebar--video-link-container {
+				text-decoration: none;
+				color: black;
 
-				.video__container__sidebar--video-artifact {
-					width: 10vw;
+				.video__container__sidebar--video {
+					display: flex;
 					height: 10vh;
-					@media (max-width: $mobile-max-width) {
-						width: 30vw;
-    					height: 10vh;
-					}
-					
-					img {
-						width: 10vw;
+					padding-top: 2%;
+	
+					.video__container__sidebar--video-artifact {
+						width: 15vw;
 						height: 10vh;
 						@media (max-width: $mobile-max-width) {
-							width: 25vw;
-    						height: 10vh;
+							width: 30vw;
+							height: 10vh;
+						}
+						
+						img {
+							width: 15vw;
+							height: 10vh;
+							object-fit: cover;
+							@media (max-width: $mobile-max-width) {
+								width: 25vw;
+								height: 10vh;
+							}
 						}
 					}
-				}
-				.video__container__sidebar--video-info {
-					font-size: 0.7rem;
-
-					.video__container__sidebar--text {
-						font-size: 0.75rem;
-						font-weight: $font-weight-bold;
-						padding: 0 0 1% 3%;
-						@media (max-width: $mobile-max-width) {
+					.video__container__sidebar--video-info {
+						font-size: 0.7rem;
+	
+						.video__container__sidebar--text {
+							font-size: 0.75rem;
+							font-weight: $font-weight-bold;
+							padding: 0 0 1% 3%;
+							@media (max-width: $mobile-max-width) {
+								font-size: 0.7rem;
+							}
+						}
+						.video__container__sidebar--name {
 							font-size: 0.7rem;
+							color: $color;
+							padding: 1% 3%;
 						}
+						.video__container__sidebar--views {
+							font-size: 0.7rem;
+							color: $color;
+							padding: 1.5% 3%;
+						}
+	
 					}
-					.video__container__sidebar--name {
-						font-size: 0.7rem;
-						color: $color;
-						padding: 1% 3%;
-					}
-					.video__container__sidebar--views {
-						font-size: 0.7rem;
-						color: $color;
-						padding: 1.5% 3%;
-					}
-
+	
 				}
-
 			}
-		}
+			}
+			
 	}
 
 	/* UPLOAD */

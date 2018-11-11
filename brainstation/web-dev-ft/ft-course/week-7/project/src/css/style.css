@@ -266,6 +266,7 @@ table {
   height: auto;
   margin: 0 auto;
   padding-top: 2%;
+  /* SIDEBAR SECTION */
 }
 
 @media (max-width: 600px) {
@@ -282,6 +283,11 @@ table {
   height: auto;
 }
 
+#container #video__container .video__container__main video[poster] {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media (max-width: 600px) {
   #container #video__container .video__container__main {
     width: 90vw;
@@ -292,11 +298,10 @@ table {
 #container #video__container .video__container__main .video__container__main--video {
   width: 100%;
   height: auto;
-  padding-bottom: 2%;
 }
 
 #container #video__container .video__container__main .video__container__main--text {
-  padding-bottom: 2%;
+  padding: 2% 0;
 }
 
 #container #video__container .video__container__main .video__container__main--text h4 {
@@ -710,7 +715,12 @@ table {
   font-weight: bold;
 }
 
-#container #video__container .video__container__sidebar .video__container__sidebar--video {
+#container #video__container .video__container__sidebar .video__container__sidebar--video-link-container {
+  text-decoration: none;
+  color: black;
+}
+
+#container #video__container .video__container__sidebar .video__container__sidebar--video-link-container .video__container__sidebar--video {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -718,53 +728,55 @@ table {
   padding-top: 2%;
 }
 
-#container #video__container .video__container__sidebar .video__container__sidebar--video .video__container__sidebar--video-artifact {
-  width: 10vw;
+#container #video__container .video__container__sidebar .video__container__sidebar--video-link-container .video__container__sidebar--video .video__container__sidebar--video-artifact {
+  width: 15vw;
   height: 10vh;
 }
 
 @media (max-width: 600px) {
-  #container #video__container .video__container__sidebar .video__container__sidebar--video .video__container__sidebar--video-artifact {
+  #container #video__container .video__container__sidebar .video__container__sidebar--video-link-container .video__container__sidebar--video .video__container__sidebar--video-artifact {
     width: 30vw;
     height: 10vh;
   }
 }
 
-#container #video__container .video__container__sidebar .video__container__sidebar--video .video__container__sidebar--video-artifact img {
-  width: 10vw;
+#container #video__container .video__container__sidebar .video__container__sidebar--video-link-container .video__container__sidebar--video .video__container__sidebar--video-artifact img {
+  width: 15vw;
   height: 10vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 600px) {
-  #container #video__container .video__container__sidebar .video__container__sidebar--video .video__container__sidebar--video-artifact img {
+  #container #video__container .video__container__sidebar .video__container__sidebar--video-link-container .video__container__sidebar--video .video__container__sidebar--video-artifact img {
     width: 25vw;
     height: 10vh;
   }
 }
 
-#container #video__container .video__container__sidebar .video__container__sidebar--video .video__container__sidebar--video-info {
+#container #video__container .video__container__sidebar .video__container__sidebar--video-link-container .video__container__sidebar--video .video__container__sidebar--video-info {
   font-size: 0.7rem;
 }
 
-#container #video__container .video__container__sidebar .video__container__sidebar--video .video__container__sidebar--video-info .video__container__sidebar--text {
+#container #video__container .video__container__sidebar .video__container__sidebar--video-link-container .video__container__sidebar--video .video__container__sidebar--video-info .video__container__sidebar--text {
   font-size: 0.75rem;
   font-weight: bold;
   padding: 0 0 1% 3%;
 }
 
 @media (max-width: 600px) {
-  #container #video__container .video__container__sidebar .video__container__sidebar--video .video__container__sidebar--video-info .video__container__sidebar--text {
+  #container #video__container .video__container__sidebar .video__container__sidebar--video-link-container .video__container__sidebar--video .video__container__sidebar--video-info .video__container__sidebar--text {
     font-size: 0.7rem;
   }
 }
 
-#container #video__container .video__container__sidebar .video__container__sidebar--video .video__container__sidebar--video-info .video__container__sidebar--name {
+#container #video__container .video__container__sidebar .video__container__sidebar--video-link-container .video__container__sidebar--video .video__container__sidebar--video-info .video__container__sidebar--name {
   font-size: 0.7rem;
   color: #888888;
   padding: 1% 3%;
 }
 
-#container #video__container .video__container__sidebar .video__container__sidebar--video .video__container__sidebar--video-info .video__container__sidebar--views {
+#container #video__container .video__container__sidebar .video__container__sidebar--video-link-container .video__container__sidebar--video .video__container__sidebar--video-info .video__container__sidebar--views {
   font-size: 0.7rem;
   color: #888888;
   padding: 1.5% 3%;
