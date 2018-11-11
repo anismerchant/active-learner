@@ -4,7 +4,7 @@ import Upload from '../components/UploadSection/Upload';
 class UploadSection extends Component {
     render() {
         return (
-            <div id="upload__container">
+            <div id="upload__background">
                 <Upload />
             </div>           
         );

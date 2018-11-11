@@ -72,9 +72,11 @@ table {
 	width: 100vw;
 	height: 5rem;
 	margin: 0 auto;
+	border-bottom: $border;
+	
 	@media (max-width: $mobile-max-width) {
 		justify-content: flex-start;
-		height: 12vh;
+		height: 7rem;
 	}	
 
 	@media (max-width: $mobile-max-width) {
@@ -198,14 +200,11 @@ table {
 	/* MAIN */
 	#video__container {
 	@include displayFlexFlexEnd();
-	border-top: $border;
 	width: 100%;
 	height: auto;
 	margin: 0 auto;
 	padding-top: 2%;
 	@media (max-width: $mobile-max-width) {
-		border-top: $border;
-		margin-top: 5%;
 		flex-direction: column;
 	}
 
@@ -581,4 +580,96 @@ table {
 			}
 		}
 	}
+
+	/* UPLOAD */
+	#upload__background {
+		width: 100vw;
+		height: 100vh;
+		background-color: #F1F1F1;
+
+		#upload__container {
+		display: flex;
+		justify-content: flex-start;
+		font-family: $site-font-family;
+		font-weight: $font-weight-bold;
+		font-size: 0.9rem;
+		width: 50%;
+		border: 1px solid;
+		margin: 0 auto;
+		height: 50vh;
+		border: $border;
+		background-color: $color-bg;
+		position: relative;
+    	top: 5%;
+
+			#upload__container__form {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				width: 100%;
+				background-color: $color-bg;
+
+				.upload__container__form--title {
+					display: flex;
+					flex-direction: column;
+					margin: 5%;
+
+					.upload__container__form--title-heading {
+						padding: 2% 0;
+					}	
+					.upload__container__form--title-input {
+						border: $border;
+						background-color: #F1F1F1;
+						font-family: $site-font-family;
+						font-size: 0.8rem;
+						padding: 2%;
+					}
+					
+				}
+				.upload__container__form--description {
+					display: flex;
+					flex-direction: column;
+					margin: 5%;
+					@media (max-width: $mobile-max-width) {
+						padding: 5% 0;
+					}
+
+					.upload__container__form--desription-heading {
+						padding: 2% 0;
+						
+					}
+					.upload__container__form--description-input {
+						height: 50vh;
+						border: $border;
+						background-color: #F1F1F1;
+						font-family: $site-font-family;
+						font-size: 0.8rem;
+						padding: 2%;
+					}
+		
+				}
+
+				.upload__container__form--button {
+					display: flex;
+					justify-content: flex-end;
+					height: 10vh;
+					padding: 0 5%;
+
+					.upload__container__form--button-submit {
+						height: 4vh;
+						background-color: $btn-bg-color;
+						border-radius: 2px;
+						border: none;
+						color: #FFFFFF;
+						font-family: "Roboto", sans-serif;
+						font-size: 0.8rem;
+						font-weight: bold;
+						text-align: center;
+					}
+					
+				}
+			}
+		}
+	}
+
 }

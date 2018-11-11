@@ -2,20 +2,22 @@ import React, { Component } from 'react';
 
 class Upload extends Component {
     render() {
-        return (         
-            <form id="upload__container__form">
-                <label className= "upload__container__form--title">
-                    Title:
-                    <input className="upload__container__form--title-input" name="title" placeholder="Please input a title" />
-                </label>
-                <label className= "upload__container__form--description">
-                    Description:
-                    <input className="upload__container__form--description-input" name="description" placeholder="Please input a description" />
-                </label>                   
-                <div className="upload__container__form--button"> 
-                    <button className="upload__container__form--button-submit" type="submit">PUBLISH</button>  
-                </div>         
-            </form>        
+        return (
+            <div id="upload__container">       
+                <form id="upload__container__form">
+                    <label className= "upload__container__form--title">
+                    <span className= "upload__container__form--title-heading">Title:</span>
+                        <input className="upload__container__form--title-input" name="title" placeholder="Add a title to your video" />
+                    </label>
+                    <label className= "upload__container__form--description">
+                        <span className= "upload__container__form--desription-heading">Description:</span>
+                        <textarea className="upload__container__form--description-input" name="description" placeholder="Add a description of your videow"></textarea>
+                    </label>                   
+                    <div className="upload__container__form--button"> 
+                        <button className="upload__container__form--button-submit" type="submit">PUBLISH</button>  
+                    </div>         
+                </form>
+            </div>          
         );
     }
 }
