@@ -883,8 +883,8 @@ table {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  height: 10vh;
-  padding: 0 5%;
+  height: 7vh;
+  padding: 5% 5%;
 }
 
 #container #upload__background #upload__container #upload__container__form .upload__container__form--button .upload__container__form--button-submit {
