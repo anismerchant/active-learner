@@ -11,11 +11,11 @@ class MainVideoContainer extends Component {
                titlemain={videos.title}
                description={videos.description}
                channel={videos.channel} 
-               viewsmain={videos.views}
+               viewsmain={parseFloat(videos.views).toLocaleString('en')}
                duration={videos.duration}
                poster={videos.image}
-               thumbsup={videos.thumbsUp}
-               thumbsdown={videos.thumbsDown}
+               thumbsup={parseFloat(videos.thumbsUp).toLocaleString('en')}
+               thumbsdown={parseFloat(videos.thumbsDown).toLocaleString('en')}
                subscribe={videos.subscriberCount}
                comments={
                    videos.comments.map((comment) => {

@@ -20,7 +20,7 @@ class SidebarVideoContainer extends Component {
                                         key={index}
                                         title={video.title}
                                         channel={video.channel}
-                                        views={video.views}
+                                        views={parseFloat(video.views).toLocaleString('en')}
                                         duration={video.duration}
                                         image={video.image}
                                     />
