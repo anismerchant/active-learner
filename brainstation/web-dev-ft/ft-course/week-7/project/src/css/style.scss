@@ -197,7 +197,7 @@ table {
 		}
 	}
 
-	/* MAIN */
+	/* MAIN SECTION */
 	#video__container {
 	@include displayFlexFlexEnd();
 	width: 100%;
@@ -276,7 +276,7 @@ table {
 					align-items: center;
 					padding-right: 1%;
 					@media (max-width: $mobile-max-width) {
-						width: 25%;
+						width: 30%;
 					}
 
 					img {
@@ -287,6 +287,9 @@ table {
 							width: 1rem;
 							height: 1rem;
 						}
+					}
+					h6{
+						font-size: 0.7rem;
 					}
 				}
 				.video__container__main--thumbsdown {
@@ -295,7 +298,7 @@ table {
 					@include displayFlexCenter();
 					align-items: center;
 					@media (max-width: $mobile-max-width) {
-						width: 40%;
+						width: 35%;
 					}
 
 					img {
@@ -306,6 +309,9 @@ table {
 							width: 1rem;
 							height: 1rem;
 						}
+					}
+					h6{
+						font-size: 0.7rem;
 					}
 				}
 				.video__container__main--share {
@@ -325,6 +331,9 @@ table {
 							width: 1rem;
 							height: 1rem;
 						}
+					}
+					h6{
+						font-size: 0.7rem;
 					}
 				}
 			}
@@ -408,7 +417,7 @@ table {
 					.video__container__main--video-details-desc {
 						padding-bottom: 5%;
 						font-size: 0.75rem;
-						font-weight: $font-weight-500;
+						font-weight: $font-weight-normal;
 					}
 					.video__container__main--videos-details-show-more {
 						font-size: 0.75rem;
@@ -423,9 +432,8 @@ table {
 				.video__container__main--video-descriptions {
 					display: flex;
 					justify-content: space-between;
-					padding-top: 4%;
+					padding: 4% 0;
 					border-bottom: $border;
-    				padding-bottom: 4%;
 	
 					.video__container__main--subscriber-pic {
 						width: 2rem;
@@ -490,7 +498,7 @@ table {
 
 				.video__container__main--user-comment {
 					display: flex;
-					padding: 5% 0;
+					padding: 2% 0;
 
 					.video__container__main--user-pic {
 						width: 2rem;
@@ -502,6 +510,21 @@ table {
 						width: 100%;
 						padding-left: 4%;
 						font-size: 0.7rem;
+
+						.video__container__main--user-name-and-timestamp{
+							display: flex;
+
+							.video__container__main--user-name{
+								padding-right: 4%;
+								font-weight: $font-weight-bold;
+							}
+							.video__container__main--user-timestamp{
+								color: $color;
+							}
+						}
+						.video__container__main--user-comment{
+							font-weight: $font-weight-500;
+						}
 					}
 				}
 
@@ -589,7 +612,7 @@ table {
 			
 	}
 
-	/* UPLOAD */
+	/* UPLOAD SECTION */
 	#upload__background {
 		width: 100vw;
 		height: 100vh;

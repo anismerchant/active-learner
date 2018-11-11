@@ -83,8 +83,8 @@ table {
 #container {
   font-family: "Roboto", sans-serif;
   /* NAVIGATION */
-  /* MAIN */
-  /* UPLOAD */
+  /* MAIN SECTION */
+  /* UPLOAD SECTION */
 }
 
 #container #navigation__container {
@@ -381,7 +381,7 @@ table {
 
 @media (max-width: 600px) {
   #container #video__container .video__container__main .video__container__main--stats .video__container__main--thumbsup {
-    width: 25%;
+    width: 30%;
   }
 }
 
@@ -394,6 +394,10 @@ table {
     width: 1rem;
     height: 1rem;
   }
+}
+
+#container #video__container .video__container__main .video__container__main--stats .video__container__main--thumbsup h6 {
+  font-size: 0.7rem;
 }
 
 #container #video__container .video__container__main .video__container__main--stats .video__container__main--thumbsdown {
@@ -412,7 +416,7 @@ table {
 
 @media (max-width: 600px) {
   #container #video__container .video__container__main .video__container__main--stats .video__container__main--thumbsdown {
-    width: 40%;
+    width: 35%;
   }
 }
 
@@ -425,6 +429,10 @@ table {
     width: 1rem;
     height: 1rem;
   }
+}
+
+#container #video__container .video__container__main .video__container__main--stats .video__container__main--thumbsdown h6 {
+  font-size: 0.7rem;
 }
 
 #container #video__container .video__container__main .video__container__main--stats .video__container__main--share {
@@ -456,6 +464,10 @@ table {
     width: 1rem;
     height: 1rem;
   }
+}
+
+#container #video__container .video__container__main .video__container__main--stats .video__container__main--share h6 {
+  font-size: 0.7rem;
 }
 
 #container #video__container .video__container__main .video__container__main--channel {
@@ -563,7 +575,7 @@ table {
 #container #video__container .video__container__main .video__container__main--channel .video__container__main--video-details .video__container__main--video-details-desc {
   padding-bottom: 5%;
   font-size: 0.75rem;
-  font-weight: 500;
+  font-weight: normal;
 }
 
 #container #video__container .video__container__main .video__container__main--channel .video__container__main--video-details .video__container__main--videos-details-show-more {
@@ -588,9 +600,8 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 4%;
+  padding: 4% 0;
   border-bottom: 1px solid #D4D4D4;
-  padding-bottom: 4%;
 }
 
 #container #video__container .video__container__main .video__container__main--comments .video__container__main--video-descriptions .video__container__main--subscriber-pic {
@@ -665,7 +676,7 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 5% 0;
+  padding: 2% 0;
 }
 
 #container #video__container .video__container__main .video__container__main--comments .video__container__main--user-comment .video__container__main--user-pic {
@@ -678,6 +689,25 @@ table {
   width: 100%;
   padding-left: 4%;
   font-size: 0.7rem;
+}
+
+#container #video__container .video__container__main .video__container__main--comments .video__container__main--user-comment .video__container__main--user .video__container__main--user-name-and-timestamp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#container #video__container .video__container__main .video__container__main--comments .video__container__main--user-comment .video__container__main--user .video__container__main--user-name-and-timestamp .video__container__main--user-name {
+  padding-right: 4%;
+  font-weight: bold;
+}
+
+#container #video__container .video__container__main .video__container__main--comments .video__container__main--user-comment .video__container__main--user .video__container__main--user-name-and-timestamp .video__container__main--user-timestamp {
+  color: #888888;
+}
+
+#container #video__container .video__container__main .video__container__main--comments .video__container__main--user-comment .video__container__main--user .video__container__main--user-comment {
+  font-weight: 500;
 }
 
 #container #video__container .video__container__sidebar {
