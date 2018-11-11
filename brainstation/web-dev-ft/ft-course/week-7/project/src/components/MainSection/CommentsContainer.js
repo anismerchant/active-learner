@@ -4,13 +4,15 @@ import Comment from './Comment';
 class CommentsContainer extends Component {
     render() {
         let comment = this.props.commentsArray;
-        console.log(comment);
+        let date = new Date();
+        let milliSeconds = date.getTime();
+
         return(
             comment.map((userInfo, index) => {
                 return <Comment
                     key={index}
                     userName={userInfo.name}
-                    userTimestamp={`${Math.floor((userInfo.timestamp)/1000/60/60/24/365)} years ago`}  
+                    userTimestamp = {`${(Math.floor((milliSeconds - userInfo.timestamp)/1000)) < 60 ? 'Just Now' : 'A few months ago'}`}
                     userComment= {userInfo.comment}
                 />
             })
