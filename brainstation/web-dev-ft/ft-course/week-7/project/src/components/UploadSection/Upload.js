@@ -11,7 +11,7 @@ class Upload extends Component {
                     </label>
                     <label className= "upload__container__form--description">
                         <span className= "upload__container__form--desription-heading">Description:</span>
-                        <textarea className="upload__container__form--description-input" name="description" placeholder="Add a description of your videow"></textarea>
+                        <textarea className="upload__container__form--description-input" name="description" placeholder="Add a description of your video"></textarea>
                     </label>                   
                     <div className="upload__container__form--button"> 
                         <button className="upload__container__form--button-submit" type="submit">PUBLISH</button>  
