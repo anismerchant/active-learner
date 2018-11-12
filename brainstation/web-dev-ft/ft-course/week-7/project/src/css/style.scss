@@ -375,8 +375,10 @@ table {
 						}
 					}
 					.video__container__main--channel-info-subscribe {
+						display: flex;
+						justify-content: flex-end;
 						margin:0;
-						width: 10rem;
+						width: 50%;
 						@media (max-width: $mobile-max-width) {
 							width: 7rem;
 						}
@@ -515,8 +517,11 @@ table {
 							display: flex;
 
 							.video__container__main--user-name{
-								padding-right: 4%;
+								padding-right: 2%;
 								font-weight: $font-weight-bold;
+								@media (max-width: $mobile-max-width) { 
+									padding-right: 2%;
+								}
 							}
 							.video__container__main--user-timestamp{
 								color: $color;

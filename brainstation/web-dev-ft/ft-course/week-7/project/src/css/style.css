@@ -102,7 +102,7 @@ table {
   border-bottom: 1px solid #D4D4D4;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #navigation__container {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -111,7 +111,7 @@ table {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #navigation__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -175,7 +175,7 @@ table {
   height: auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #navigation__container .navigation__search {
     max-width: 85vw;
   }
@@ -197,7 +197,7 @@ table {
   font-size: 1.125rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #navigation__container .navigation__search input[type="text"] {
     font-size: 0.9rem;
   }
@@ -211,7 +211,7 @@ table {
   border-radius: 0.125rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #navigation__container .navigation__search .navigation__search--icon {
     height: 2rem;
   }
@@ -224,7 +224,7 @@ table {
   margin: 0.75rem auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #navigation__container .navigation__search .navigation__search--icon img {
     width: 1rem;
     height: 0.8rem;
@@ -269,7 +269,7 @@ table {
   /* SIDEBAR SECTION */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #video__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -288,7 +288,7 @@ table {
      object-fit: cover;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #video__container .video__container__main {
     width: 90vw;
     margin: 5%;
@@ -308,7 +308,7 @@ table {
   font-size: 1.25rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #video__container .video__container__main .video__container__main--text h4 {
     font-size: 0.8rem;
   }
@@ -327,7 +327,7 @@ table {
   padding-bottom: 2%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #video__container .video__container__main .video__container__main--stats {
     padding-top: 2%;
   }
@@ -338,7 +338,7 @@ table {
   font-size: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #video__container .video__container__main .video__container__main--stats .video__container__main--views {
     font-size: 0.8rem;
   }
@@ -355,7 +355,7 @@ table {
   font-weight: 500;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #video__container .video__container__main .video__container__main--stats .video__container__main--reaction {
     width: 50%;
   }
@@ -379,7 +379,7 @@ table {
   padding-right: 1%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #video__container .video__container__main .video__container__main--stats .video__container__main--thumbsup {
     width: 30%;
   }
@@ -389,7 +389,7 @@ table {
   padding-right: 5%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #video__container .video__container__main .video__container__main--stats .video__container__main--thumbsup img {
     width: 1rem;
     height: 1rem;
@@ -414,7 +414,7 @@ table {
           align-items: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #video__container .video__container__main .video__container__main--stats .video__container__main--thumbsdown {
     width: 35%;
   }
@@ -424,7 +424,7 @@ table {
   padding-right: 5%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #video__container .video__container__main .video__container__main--stats .video__container__main--thumbsdown img {
     width: 1rem;
     height: 1rem;
@@ -449,7 +449,7 @@ table {
           align-items: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #video__container .video__container__main .video__container__main--stats .video__container__main--share {
     width: 35%;
   }
@@ -459,7 +459,7 @@ table {
   padding-right: 5%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #video__container .video__container__main .video__container__main--stats .video__container__main--share img {
     width: 1rem;
     height: 1rem;
@@ -503,7 +503,7 @@ table {
   border-radius: 50%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #video__container .video__container__main .video__container__main--channel .video__container__main--channel-info .video__container__main--channel-info-author .video__container__main--channel-info-author-image {
     width: 2rem;
     height: 2rem;
@@ -526,11 +526,17 @@ table {
 }
 
 #container #video__container .video__container__main .video__container__main--channel .video__container__main--channel-info .video__container__main--channel-info-subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin: 0;
-  width: 10rem;
+  width: 50%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #video__container .video__container__main .video__container__main--channel .video__container__main--channel-info .video__container__main--channel-info-subscribe {
     width: 7rem;
   }
@@ -553,7 +559,7 @@ table {
   color: #D4D4D4;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #video__container .video__container__main .video__container__main--channel .video__container__main--channel-info .video__container__main--channel-info-subscribe .video__container__main--channel-info-subscribe-btn {
     width: 30vw;
     font-size: 0.6rem;
@@ -566,7 +572,7 @@ table {
   margin-left: 4rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #video__container .video__container__main .video__container__main--channel .video__container__main--video-details {
     margin-left: 0;
   }
@@ -642,7 +648,7 @@ table {
   background-color: #FFFFFF;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #video__container .video__container__main .video__container__main--comments .video__container__main--video-descriptions #video__container__main--grabComment .video__container__main--comment-buttons .video__container__main--cancel {
     width: 10vw;
     font-size: 0.6rem;
@@ -664,7 +670,7 @@ table {
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #video__container .video__container__main .video__container__main--comments .video__container__main--video-descriptions #video__container__main--grabComment .video__container__main--comment-buttons .video__container__main--submit {
     width: 20vw;
     font-size: 0.6rem;
@@ -698,8 +704,14 @@ table {
 }
 
 #container #video__container .video__container__main .video__container__main--comments .video__container__main--user-comment .video__container__main--user .video__container__main--user-name-and-timestamp .video__container__main--user-name {
-  padding-right: 4%;
+  padding-right: 2%;
   font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  #container #video__container .video__container__main .video__container__main--comments .video__container__main--user-comment .video__container__main--user .video__container__main--user-name-and-timestamp .video__container__main--user-name {
+    padding-right: 2%;
+  }
 }
 
 #container #video__container .video__container__main .video__container__main--comments .video__container__main--user-comment .video__container__main--user .video__container__main--user-name-and-timestamp .video__container__main--user-timestamp {
@@ -729,7 +741,7 @@ table {
   padding: 0 1.5%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #video__container .video__container__sidebar {
     width: 90vw;
     margin: 5%;
@@ -763,7 +775,7 @@ table {
   height: 10vh;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #video__container .video__container__sidebar .video__container__sidebar--video-link-container .video__container__sidebar--video .video__container__sidebar--video-artifact {
     width: 30vw;
     height: 10vh;
@@ -777,7 +789,7 @@ table {
      object-fit: cover;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #video__container .video__container__sidebar .video__container__sidebar--video-link-container .video__container__sidebar--video .video__container__sidebar--video-artifact img {
     width: 25vw;
     height: 10vh;
@@ -794,7 +806,7 @@ table {
   padding: 0 0 1% 3%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #video__container .video__container__sidebar .video__container__sidebar--video-link-container .video__container__sidebar--video .video__container__sidebar--video-info .video__container__sidebar--text {
     font-size: 0.7rem;
   }
@@ -887,7 +899,7 @@ table {
   margin: 5%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container #upload__background #upload__container #upload__container__form .upload__container__form--description {
     padding: 5% 0;
   }
