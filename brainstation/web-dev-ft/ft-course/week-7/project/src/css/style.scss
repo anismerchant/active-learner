@@ -568,13 +568,16 @@ table {
 					display: flex;
 					height: 10vh;
 					padding-top: 2%;
+					@media (max-width: $mobile-max-width) {
+						height: 20vh;
+					}
 	
 					.video__container__sidebar--video-artifact {
 						width: 15vw;
 						height: 10vh;
 						@media (max-width: $mobile-max-width) {
-							width: 30vw;
-							height: 10vh;
+							width: 25vw;
+							height: 18vh;
 						}
 						
 						img {
@@ -583,7 +586,7 @@ table {
 							object-fit: cover;
 							@media (max-width: $mobile-max-width) {
 								width: 25vw;
-								height: 10vh;
+								height: 18vh;
 							}
 						}
 					}

@@ -770,6 +770,12 @@ table {
   padding-top: 2%;
 }
 
+@media (max-width: 800px) {
+  #container #video__container .video__container__sidebar .video__container__sidebar--video-link-container .video__container__sidebar--video {
+    height: 20vh;
+  }
+}
+
 #container #video__container .video__container__sidebar .video__container__sidebar--video-link-container .video__container__sidebar--video .video__container__sidebar--video-artifact {
   width: 15vw;
   height: 10vh;
@@ -777,8 +783,8 @@ table {
 
 @media (max-width: 800px) {
   #container #video__container .video__container__sidebar .video__container__sidebar--video-link-container .video__container__sidebar--video .video__container__sidebar--video-artifact {
-    width: 30vw;
-    height: 10vh;
+    width: 25vw;
+    height: 18vh;
   }
 }
 
@@ -792,7 +798,7 @@ table {
 @media (max-width: 800px) {
   #container #video__container .video__container__sidebar .video__container__sidebar--video-link-container .video__container__sidebar--video .video__container__sidebar--video-artifact img {
     width: 25vw;
-    height: 10vh;
+    height: 18vh;
   }
 }
 
