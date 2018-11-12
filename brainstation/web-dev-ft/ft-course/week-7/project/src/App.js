@@ -9,6 +9,9 @@ import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-d
 class App extends Component {
   render() {
     return (
+      // setup route for the entire site 
+      // and pass route props to evaluate 
+      // previous and current states in MainSection component
       <Router>
         <div className="App" id="container">
             <NavBarSection />

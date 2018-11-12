@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 class NavBarMobile extends Component {
     render() {
+        // Mobile version of nav bar
         return(
             <nav id="navigation__container">
                 <div className="navigation--logo-and-images">

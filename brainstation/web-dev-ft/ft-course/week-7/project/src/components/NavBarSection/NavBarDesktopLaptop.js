@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 class NavBarDesktopLaptop extends Component {
     render() {
+        // Desktop version of nav bar
         return (
             <nav id="navigation__container">
                 <div className="navigation__logo">

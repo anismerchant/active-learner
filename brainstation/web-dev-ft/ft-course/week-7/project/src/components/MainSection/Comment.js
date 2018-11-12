@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class Comment extends Component {
     render() {
+        // Receives props (i.e. data) from its parent component
         return (
             <div className="video__container__main--user-comment">
                 <img className="video__container__main--user-pic" src="../../assets/Images/john_gibbons-resized.jpg" alt="Subscriber" />

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class Upload extends Component {
     render() {
+        // Receives props (i.e. data) from its parent component
         return (
             <div id="upload__container">       
                 <form id="upload__container__form">

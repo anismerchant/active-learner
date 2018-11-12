@@ -3,8 +3,10 @@ import SidebarVideo from './SidebarVideo';
 import { Link } from 'react-router-dom';
 
 class SidebarVideoContainer extends Component {
+    // Logic to loop through fetched data stored in videos array
+    // of objects and displays it within its child component
     render() {
-        let videos = this.props.videoObject;
+        let videos = this.props.videoArray;
         let {match} = this.props;
             return (
                 <div className="video__container__sidebar">

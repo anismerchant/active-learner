@@ -3,6 +3,7 @@ import CommentsContainer from './CommentsContainer';
 
 class MainVideo extends Component {
     render() {
+        // Receives props (i.e. data) from its parent component
         return ( 
             <div className="video__container__main">
                 <video  src={this.props.mainvideo} className="video__container__main--video" poster={this.props.poster} width="100%" height="auto" controls></video>

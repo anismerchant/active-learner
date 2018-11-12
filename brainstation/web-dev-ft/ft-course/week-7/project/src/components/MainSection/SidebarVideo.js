@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 class SidebarVideo extends Component {
+    // Receives props (i.e. data) from its parent component
     render() {
         return(
             <div className="video__container__sidebar--video">

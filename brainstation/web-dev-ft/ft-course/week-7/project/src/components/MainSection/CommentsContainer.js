@@ -3,15 +3,20 @@ import Comment from './Comment';
 
 class CommentsContainer extends Component {
     render() {
+        // Logic to determine current time in milliseconds
         let comment = this.props.commentsArray;
         let date = new Date();
         let milliSeconds = date.getTime();
 
         return(
+            // And logic to loop through fetched data stored in comments'
+            // array and displays it within its child component
             comment.map((userInfo, index) => {
                 return <Comment
                     key={index}
                     userName={userInfo.name}
+                    
+                    // Logic to determine when comments were posted
                     userTimestamp = {
                         `${(Math.floor((milliSeconds - userInfo.timestamp)/1000)) < 60 ? 'Just Now' 
                         : (Math.floor((milliSeconds - userInfo.timestamp)/1000)) < 120 ? 'A minute ago' 
