@@ -12,7 +12,6 @@ class CommentsContainer extends Component {
                 return <Comment
                     key={index}
                     userName={userInfo.name}
-                    // userTimestamp = {`${(Math.floor((milliSeconds - userInfo.timestamp)/1000)) < 60 ? 'Just Now' : 'A few months ago'}`}
                     userTimestamp = {
                         `${(Math.floor((milliSeconds - userInfo.timestamp)/1000)) < 60 ? 'Just Now' 
                         : (Math.floor((milliSeconds - userInfo.timestamp)/1000)) < 120 ? 'A minute ago' 
