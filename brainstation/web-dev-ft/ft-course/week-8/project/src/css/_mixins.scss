@@ -1,0 +1,49 @@
+/* Flexbox */
+@mixin displyFlexSpaceBetween()
+{
+    display: flex;
+	justify-content: space-between;
+}
+@mixin displayFlexSpaceAround()
+{
+    display: flex;
+	justify-content: space-around;
+}
+@mixin displayFlexCenter()
+{
+    display: flex;
+	justify-content: center;
+}
+@mixin displayFlexFlexStart()
+{
+	display: flex;
+	justify-content: flex-start;
+}
+@mixin displayFlexFlexEnd()
+{
+    display: flex;
+	justify-content: flex-end;
+}
+
+/* Custom Fonts */
+@mixin fontFaceBold()
+{
+    font-family: 'Roboto';
+    src: url('./typography/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: $font-weight-bold;
+    font-style: normal;
+}
+@mixin fontFace500()
+{
+    font-family: 'Roboto';
+    src: url('./typography/Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: $font-weight-500;
+    font-style: normal;
+}
+@mixin fontFaceNormal()
+{
+    font-family: 'Roboto';
+    src: url('./typography/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: $font-weight-normal;
+    font-style: normal;
+}
