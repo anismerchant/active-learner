@@ -15,7 +15,7 @@ class MainSection extends Component {
         videos: [],
         videoDetails: {
             comments: []
-      }
+        }
     }
 
     // Two fetch requests once components mount: 
