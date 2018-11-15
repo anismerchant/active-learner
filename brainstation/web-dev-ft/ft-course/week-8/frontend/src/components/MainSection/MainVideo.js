@@ -18,11 +18,15 @@ class MainVideo extends Component {
         // our user comment inputs and pull out the .value
         
         let userComment = this.userCommentInput.current.value;
-        submitHandler(userComment);
+        let userCommentObject = {
+            comment: userComment
+        }
+        this.submitHandler(userCommentObject);
     }
 
     submitHandler = (comment) => {
         // Make a POST request to the server
+
         const init = {
             method: 'POST',
             body: JSON.stringify(comment),
@@ -36,7 +40,7 @@ class MainVideo extends Component {
             return response.json();
         })
         .then((data) => {
-            this.props.comments.push(data);
+           data
         })
         .catch( (err) => {
             console.log(err);
