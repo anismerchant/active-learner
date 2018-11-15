@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import CommentsContainer from './CommentsContainer';
 
 class MainVideo extends Component {
-
     constructor(){
         super();
-
-       // Creating a 'ref' for comment input and storing
-       // it in 'this', which is the instance that's created.
+        // Creating a 'ref' for comment input and storing
+        // it in 'this', which is the instance that's created.
         this.userCommentInput = React.createRef();
     }
 
@@ -35,12 +33,12 @@ class MainVideo extends Component {
             }
         }
 
-        fetch(this.props.apiKey, init)
+        fetch('http://localhost:8080/videos/:id/comments', init)
         .then((response) => {
             return response.json();
         })
         .then((data) => {
-           data
+           return data;
         })
         .catch( (err) => {
             console.log(err);
