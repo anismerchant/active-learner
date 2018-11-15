@@ -10,7 +10,7 @@ class MainVideoContainer extends Component {
             // Logic to loop through fetched data stored in videoDetails object
             // and displays it within its child component
             <MainVideo 
-               mainvideo={`${videos.video}${this.props.apiKey}`}
+               mainvideo={`${videos.video}`}
                titlemain={videos.title}
                description={videos.description}
                channel={videos.channel} 
