@@ -31,7 +31,9 @@ app.get('/videos', (req, res) => {
 app.get('/videos/:id', (req, res) => {
     let videoId = req.params.id;
     let targetVideo = videoArray.find(
-        (videoDetailsId) => { if (+videoDetailsId.id === +videoId) {
+        (videoDetails) => {
+            //console.log(videoDetails) 
+        if (videoDetails.id === videoId) {
             return true;
         } else {
             return false;
@@ -39,7 +41,7 @@ app.get('/videos/:id', (req, res) => {
 })
     targetVideo == null ? res.status(400).send("Oops, no such video yo!") :  res.json(targetVideo);
     // console.log(targetVideo);
-    // res.json(targetVideo);
+    //res.json(targetVideo);
 });
 
 app.listen(8080, () => {
