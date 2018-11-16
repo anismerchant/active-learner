@@ -16,7 +16,7 @@ class App extends Component {
         <div className="App" id="container">
             <NavBarSection />
             <Switch>
-              <Route path='/' exact render = {() => <Redirect to='/videos/1edc16bd-1bad-418b-bd40-c72ddd926672' />} />
+              <Route path='/' exact render = {() => <Redirect to='/videos/70eec852-c6a9-4793-b12d-ffc59acffd61' />} />
               <Route path='/videos/:id' render = {(props) => {return <MainSection {...props} /> }}/>
               <Route path='/upload' exact render = {() => {return <UploadSection />}}/>
             </Switch>

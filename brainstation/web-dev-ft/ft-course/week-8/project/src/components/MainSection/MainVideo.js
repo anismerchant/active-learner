@@ -2,49 +2,6 @@ import React, { Component } from 'react';
 import CommentsContainer from './CommentsContainer';
 
 class MainVideo extends Component {
-    constructor(){
-        super();
-        // Creating a 'ref' for comment input and storing
-        // it in 'this', which is the instance that's created.
-        this.userCommentInput = React.createRef();
-    }
-
-    commentSubmit = (e) => {
-        e.preventDefault();
-
-        // using 'ref' to access the DOM objects of 
-        // our user comment inputs and pull out the .value
-        
-        let userComment = this.userCommentInput.current.value;
-        let userCommentObject = {
-            comment: userComment
-        }
-        this.submitHandler(userCommentObject);
-    }
-
-    submitHandler = (comment) => {
-        // Make a POST request to the server
-
-        const init = {
-            method: 'POST',
-            body: JSON.stringify(comment),
-            headers: {
-                'content-Type': 'application/json',
-            }
-        }
-
-        fetch('http://localhost:8080/videos/:id/comments', init)
-        .then((response) => {
-            return response.json();
-        })
-        .then((data) => {
-           return data;
-        })
-        .catch( (err) => {
-            console.log(err);
-        });
-    }
-
     render() {
         // Receives props (i.e. data) from its parent component
         return ( 
@@ -91,9 +48,9 @@ class MainVideo extends Component {
                 <div className="video__container__main--comments">
                     <div className = "video__container__main--video-descriptions">
                         <img className="video__container__main--subscriber-pic" src="../../assets/Images/john_gibbons-resized.jpg" alt="Subscriber" />
-                        <form id="video__container__main--grabComment" onSubmit={this.commentSubmit}>
+                        <form id="video__container__main--grabComment">
                             <label className= "video__container__main--comment">
-                                <input className="video__container__main--comment-input" name="comment" placeholder="Add a public comment" ref={this.userCommentInput}></input>
+                                <input className="video__container__main--comment-input" name="comment" placeholder="Add a public comment"></input>
                             </label>                  
                             <div className="video__container__main--comment-buttons"> 
                                 <button className="video__container__main--cancel" type="cancel">CANCEL</button>
