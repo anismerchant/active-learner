@@ -67,6 +67,7 @@ class MainSection extends Component {
             });
             
             let {match} = this.props;
+            //console.log(baseUrl + videosPath + '/' + match.params.id + queryString + API_KEY);
             fetch(baseUrl + videosPath + '/' + match.params.id + queryString + API_KEY)
             .then((response) => {
                 return response.json();
