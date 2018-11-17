@@ -567,22 +567,22 @@ table {
 				.video__container__sidebar--video {
 					display: flex;
 					height: 10vh;
-					padding-top: 2%;
+					padding: 2% 0 3% 0;
 					@media (max-width: $mobile-max-width) {
 						height: 20vh;
 					}
 	
 					.video__container__sidebar--video-artifact {
-						width: 15vw;
-						height: 10vh;
+						width: 12vw;
+						height: 12vh;
 						@media (max-width: $mobile-max-width) {
 							width: 25vw;
 							height: 18vh;
 						}
 						
 						img {
-							width: 15vw;
-							height: 10vh;
+							width: 12vw;
+							height: 12vh;
 							object-fit: cover;
 							@media (max-width: $mobile-max-width) {
 								width: 25vw;

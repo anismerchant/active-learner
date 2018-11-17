@@ -767,7 +767,7 @@ table {
   display: -ms-flexbox;
   display: flex;
   height: 10vh;
-  padding-top: 2%;
+  padding: 2% 0 3% 0;
 }
 
 @media (max-width: 800px) {
@@ -777,8 +777,8 @@ table {
 }
 
 #container #video__container .video__container__sidebar .video__container__sidebar--video-link-container .video__container__sidebar--video .video__container__sidebar--video-artifact {
-  width: 15vw;
-  height: 10vh;
+  width: 12vw;
+  height: 12vh;
 }
 
 @media (max-width: 800px) {
@@ -789,8 +789,8 @@ table {
 }
 
 #container #video__container .video__container__sidebar .video__container__sidebar--video-link-container .video__container__sidebar--video .video__container__sidebar--video-artifact img {
-  width: 15vw;
-  height: 10vh;
+  width: 12vw;
+  height: 12vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
