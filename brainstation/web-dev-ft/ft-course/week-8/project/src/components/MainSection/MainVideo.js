@@ -10,7 +10,7 @@ class MainVideo extends Component {
     }
 
     commentSubmit = (e) => {
-        e.preventDefault();
+        //e.preventDefault();
 
         // using 'ref' to access the DOM objects of 
         // our user comment inputs and pull out the .value
