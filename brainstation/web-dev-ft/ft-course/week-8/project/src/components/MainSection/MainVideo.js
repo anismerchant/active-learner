@@ -104,7 +104,7 @@ class MainVideo extends Component {
                             </div>         
                         </form>
                     </div>
-                    <CommentsContainer commentsArray={this.props.comments} />
+                    <CommentsContainer commentsArray={videos.comments} />
                 </div>
             </div>
         );
