@@ -16,6 +16,7 @@ class MainVideo extends Component {
         // our user comment inputs and pull out the .value
         
         let userComment = this.userCommentInput.current.value;
+        console.log(userComment);
         let userCommentObject = {
             comment: userComment
         }
@@ -29,12 +30,13 @@ class MainVideo extends Component {
             method: 'POST',
             body: JSON.stringify(comment),
             headers: {
-                'content-Type': 'application/json',
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
             }
         }
-
-        fetch('http://localhost:8080/videos/:id/comments', init)
-        .then((response) => {
+    
+        const urlComments = `http://localhost:8080/videos/${this.props.id}/comments`;
+        fetch(urlComments, init).then((response) => {
             return response.json();
         })
         .then((data) => {
@@ -44,7 +46,6 @@ class MainVideo extends Component {
             console.log(err);
         });
     }
-
 
     render() {
         // Receives props (i.e. data) from its parent component

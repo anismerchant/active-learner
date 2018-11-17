@@ -8,7 +8,8 @@ class MainVideoContainer extends Component {
         let videos = this.props.videoDetailsObject;
          
         return (
-            <MainVideo 
+            <MainVideo
+               id={`${videos.id}`}  
                mainvideo={`${videos.video}${this.props.apiKey}`}
                titlemain={videos.title}
                description={videos.description}
