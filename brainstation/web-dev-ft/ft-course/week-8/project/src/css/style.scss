@@ -517,10 +517,10 @@ table {
 							display: flex;
 
 							.video__container__main--user-name{
-								padding-right: 2%;
+								margin-right: 2%;
 								font-weight: $font-weight-bold;
 								@media (max-width: $mobile-max-width) { 
-									padding-right: 2%;
+									margin-right: 2%;
 								}
 							}
 							.video__container__main--user-timestamp{

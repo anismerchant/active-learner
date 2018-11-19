@@ -704,13 +704,13 @@ table {
 }
 
 #container #video__container .video__container__main .video__container__main--comments .video__container__main--user-comment .video__container__main--user .video__container__main--user-name-and-timestamp .video__container__main--user-name {
-  padding-right: 2%;
+  margin-right: 2%;
   font-weight: bold;
 }
 
 @media (max-width: 800px) {
   #container #video__container .video__container__main .video__container__main--comments .video__container__main--user-comment .video__container__main--user .video__container__main--user-name-and-timestamp .video__container__main--user-name {
-    padding-right: 2%;
+    margin-right: 2%;
   }
 }
 
