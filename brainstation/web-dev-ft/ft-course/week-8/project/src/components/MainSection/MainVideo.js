@@ -47,6 +47,11 @@ class MainVideo extends Component {
         });
     }
 
+    cancelComment = (e) => {
+        e.preventDefault();
+        document.getElementById("cancel").innerHTML= "";
+    }
+
     render() {
         // Receives props (i.e. data) from its parent component
         let {videos} = this.props;
@@ -96,10 +101,10 @@ class MainVideo extends Component {
                         <img className="video__container__main--subscriber-pic" src="../../assets/Images/john_gibbons-resized.jpg" alt="Subscriber" />
                         <form id="video__container__main--grabComment" onSubmit={this.commentSubmit}>
                             <label className= "video__container__main--comment">
-                                <input className="video__container__main--comment-input" name="comment" placeholder="Add a public comment" ref={this.userCommentInput}></input>
+                                <input id="cancel" className="video__container__main--comment-input" name="comment" placeholder="Add a public comment" ref={this.userCommentInput}></input>
                             </label>                  
                             <div className="video__container__main--comment-buttons"> 
-                                <button className="video__container__main--cancel" type="cancel">CANCEL</button>
+                                <button className="video__container__main--cancel" type="cancel" onClick={this.cancelComment}>CANCEL</button>
                                 <button className="video__container__main--submit" type="submit">COMMENT</button>  
                             </div>         
                         </form>
