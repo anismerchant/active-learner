@@ -1,6 +1,6 @@
 # BrainStation Full-Stack Web Development Program (FT)
 
-## Program Overview
+## PROGRAM OVERVIEW
 
 **BrainStation's Web Development Program** is an immersive, project-based program that replicates real-world experience with weekly stand-ups, pair-programming and collaborative projects using JIRA, and individual projects that include style guide requirements and strict deadlines. It's an intensive 12-week bootcamp taught by industry leaders and professionals, covering the MERN technology stack. 
 
@@ -32,7 +32,7 @@
        
 ## PROJECTS
 
-**Week-one**
+**Week-one:**
   * **Project:** Created a simple art gallery web page. 
   * **Technology Stack:** HTML/CSS, Git.
 
@@ -41,7 +41,7 @@
   * **Technology Stack:** HTML/CSS, Git.
 
 **Week-three:** 
-  * **Project:**Created a multi-page, responsive band website (sprint-one) using flexbox.
+  * **Project:** Created a multi-page, responsive band website (sprint-one) using flexbox.
   * **Technology Stack:**  HTML, SCSS/CSS/BEM, Git.
 
 **Week-four:** 
