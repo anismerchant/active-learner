@@ -57,11 +57,11 @@
   * **Technology Stack:** React, Postman, API, JavaScript, HTML, SCSS/CSS/BEM, Git. 
 
 **Week-seven:** 
-  * **Project:** Built a video streaming platform (sprint-two).
+  * **Project:** Built a video streaming platform (sprint-two), accomodating additional requirements.
   * **Technology Stack:** React-router, React, API, JavaScript, HTML, SCSS/CSS/BEM, Git. 
 
 **Week-eight:** 
-  * **Project:** Built a video streaming platform (sprint-three).
+  * **Project:** Built a video streaming platform (sprint-three), accomodating additional requirements.
   * **Technology Stack:** Node, Express, React-router, React, Postman, API, JavaScript, HTML, SCSS/CSS/BEM, Git.
 
 **Week-nine:** 
