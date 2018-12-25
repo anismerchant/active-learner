@@ -1,4 +1,4 @@
-# BrainStation Full-Stack Web Development Program (full-time)
+# BrainStation Full-Stack Web Development Program (FT)
 
 ## Program Overview
 
