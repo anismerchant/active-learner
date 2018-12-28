@@ -71,7 +71,7 @@ I graduated from this program with a diploma in December of 2018. Please find wi
   * **Technology Stack:** Node, Express, React, Postman, API, JavaScript, HTML, SCSS/CSS/BEM, Git.
 
 **Week-ten:** 
-  * **Project:** Built a warehouse inventory and tracking application with team ignuana.
+  * **Project:** Built a warehouse inventory and tracking application with team iguana.
   * **Technology Stack:** JIRA, Node, Express, React-router, React, Postman, API, JavaScript, HTML, SCSS/CSS/BEM, Git.
 
 **Week-eleven:** 
