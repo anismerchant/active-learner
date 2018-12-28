@@ -32,7 +32,7 @@ I graduated from this program with a diploma in December of 2018. Please find wi
       
 **Week-twelve:** Job Search & Resume, Networking, Interviewing & Hiring Standards.
        
-## PROJECTS I COMPLETED
+## PROJECTS I CREATED
 
 **Week-one:**
   * **Project:** Created a simple art gallery web page. 
