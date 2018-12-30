@@ -1,0 +1,6 @@
+frontend/public/assets/* linguist-vendored
+frontend/src/css/* linguist-vendored
+frontend/src/App.css linguist-vendored
+frontend/src/index.css linguist-vendored
+project-prelim/assets/* linguist-vendored
+project-prelim/css/* linguist-vendored
