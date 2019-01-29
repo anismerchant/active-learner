@@ -6,6 +6,20 @@
 
 I graduated from this program with a diploma in December of 2018. Please find within this folder (and below) details of my projects.
 
+## SAMPLE PROJECTS' SCREENSHOTS
+
+### 1. Simple Art Gallery Web Page (static)
+
+![week-one-project](https://user-images.githubusercontent.com/5770541/50426481-38889780-085c-11e9-8b0c-03473a4807fd.png)
+
+### 2. Multi-Page Band Website (dynamic)
+
+![week-three-project](https://user-images.githubusercontent.com/5770541/50426248-26f0c100-0857-11e9-8444-5f1c16ef4a83.png)
+
+### 3. Video Streaming Platform (dynamic)
+
+![week-six-to-eight-project](https://user-images.githubusercontent.com/5770541/50426307-b185f000-0858-11e9-9de0-b766409d08a0.png)
+
 ## PROGRAM DETAILS
 
 **Week-one:** Markup & HTML, HTML & CSS, CSS Specificity & Units, CSS Box Model & Display.
@@ -80,17 +94,3 @@ I graduated from this program with a diploma in December of 2018. Please find wi
  
 **Week-twelve:** 
   * **Project:** Presented capstone project on demo day to industry professionals and guests.
-
-## SAMPLE PROJECTS' SCREENSHOTS
-
-### 1. Simple Art Gallery Web Page (static)
-
-![week-one-project](https://user-images.githubusercontent.com/5770541/50426481-38889780-085c-11e9-8b0c-03473a4807fd.png)
-
-### 2. Multi-Page Band Website (dynamic)
-
-![week-three-project](https://user-images.githubusercontent.com/5770541/50426248-26f0c100-0857-11e9-8444-5f1c16ef4a83.png)
-
-### 3. Video Streaming Platform (dynamic)
-
-![week-six-to-eight-project](https://user-images.githubusercontent.com/5770541/50426307-b185f000-0858-11e9-9de0-b766409d08a0.png)
